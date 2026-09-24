@@ -1,0 +1,78 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "QUI · 24 SET",
+ "tag": "TRUMP × XI",
+ "gancho": {
+  "linha": "Trump recebeu Xi na Casa Branca",
+  "promessa": "o que saiu do encontro, e o que ficou de fora",
+  "dur": 5.6,
+  "credito": "Foto: Casa Branca / domínio público · Trump e Xi em 2025",
+  "foto_cheia": "photos/n24r_trumpxi.jpg",
+  "posicao": "50% 35%",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "Xi anunciou que manda",
+   "valor": "2 pandas",
+   "legenda": "para o Zoo Atlanta \"nos próximos dias\": Ping Ping e Fu Shuang. A China tinha levado de volta os pandas de lá em 2024.",
+   "credito": "Foto: Tim / CC BY 2.0 · panda no Zoo Atlanta (arquivo)",
+   "dur": 6.8,
+   "foto_cheia": "photos/n24r_panda.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "numero",
+   "kicker": "E convidou",
+   "valor": "100 mil",
+   "legenda": "estudantes americanos para estudar na China nos próximos 5 anos.",
+   "credito": "Foto: Casa Branca / domínio público · Xi Jinping",
+   "dur": 6.0,
+   "foto_cheia": "photos/n24r_xi.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "COMÉRCIO",
+   "titulo": "Trégua até 10 de janeiro",
+   "texto": "A trégua das tarifas foi estendida até 10/01. E os EUA criam com a China um \"Conselho de Comércio\" para proteger alguns produtos das brigas.",
+   "credito": "Foto: biofriendly / CC BY 2.0 · porto de Long Beach (EUA)",
+   "dur": 7.6,
+   "foto_cheia": "photos/n24r_porto.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "INTELIGÊNCIA ARTIFICIAL",
+   "titulo": "IA \"sob controle humano\"",
+   "texto": "Xi disse que os dois países lideram a IA e pediu que ela fique sempre sob controle humano. Trump: \"bem-vindos ao mundo da superinteligência\".",
+   "credito": "Foto: Casa Branca / domínio público · Xi Jinping",
+   "dur": 7.6,
+   "foto_cheia": "photos/n24r_xi.jpg",
+   "posicao": "50% 25%",
+   "zoom_y": 800
+  },
+  {
+   "tipo": "texto",
+   "chip": "O QUE FICOU DE FORA",
+   "ressalva": true,
+   "titulo": "Taiwan e Irã: sem resposta",
+   "texto": "Trump chamou de \"ótima reunião\", mas não respondeu sobre Taiwan nem sobre o Irã. Acordo comercial amplo, ainda não há.",
+   "credito": "Foto: Casa Branca / domínio público · Trump e Xi em 2025",
+   "dur": 7.2,
+   "foto_cheia": "photos/n24r_trumpxi.jpg",
+   "posicao": "50% 35%",
+   "zoom_y": 900
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque acompanha\na briga EUA × China:",
+  "cta": "O jogo mudou de tom."
+ }
+}

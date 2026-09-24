@@ -1,0 +1,100 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "layout": "capa9",
+ "edition": "noite",
+ "date_label": "QUI · 24 SET · NOITE",
+ "cta": "Mandou pra alguém? É assim que cresce.",
+ "cartao_para_mandar": {
+  "cartao": 7,
+  "destinatario": "quem mora em SP, RJ, MG, PR, SC ou no Centro-Oeste"
+ },
+ "cover": {
+  "headline_before": "O que rolou na",
+  "headline_accent": "noite",
+  "headline_after": "\nde quinta?",
+  "subtitle": "9 notícias em 1 minuto.",
+  "photos": [
+   "photos/n24c_amodei3.jpg",
+   "photos/n24c_zuck.jpg",
+   "photos/n24c_altman2.jpg"
+  ],
+  "credits": "Fotos: UK Prime Minister (CC BY 2.0), Jeff Sainlar/Meta (CC BY-SA 4.0), Steve Jurvetson (CC BY 2.0)",
+  "story_photo": "photos/n24c_amodei3.jpg"
+ },
+ "news": [
+  {
+   "tag": "IA",
+   "headline": "Aliados de Trump miram o chefe da Anthropic",
+   "body": "Um memorando que circula na Casa Branca nesta semana põe Dario Amodei, chefe da Anthropic, no centro do “doomerismo”, o pessimismo sobre a IA, e do movimento altruísmo eficaz. Foi escrito por um conselheiro político de Trump sem cargo oficial. Dario e a irmã, Daniela, negam laços próximos com o movimento. A Anthropic prepara um IPO que deve ser recorde.",
+   "source": "Axios e Yahoo Finance",
+   "photo": "photos/n24c_amodei3.jpg",
+   "photo_credit": "Foto: UK Prime Minister / CC BY 2.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "MUNDO",
+   "headline": "Brent vai a US$ 107 com plano de paz em etapas",
+   "body": "Negociadores em Nova York estudam um acordo em fases: o Irã reabriria o Estreito de Ormuz e os EUA suspenderiam o bloqueio aos portos iranianos. “Uma saída seria resolver a crise em etapas”, disse um alto funcionário iraniano. O petróleo subiu: o Brent avançou 4,49%, a US$ 107,71, e o WTI, 3,60%, a US$ 95,48.",
+   "source": "Reuters e Bloomberg",
+   "photo": "photos/n24c_ormuz.jpg",
+   "photo_credit": "Foto: Departamento de Defesa dos EUA / domínio público · navio e petroleiro no Estreito de Ormuz (arquivo)"
+  },
+  {
+   "tag": "GUERRA",
+   "headline": "Ataque russo mata 8 e atinge maternidade em Kiev",
+   "body": "Drones e mísseis russos mataram oito pessoas na Ucrânia nesta quinta, seis delas numa propriedade agrícola na região de Kharkiv. Em Kiev, duas pessoas morreram e oito ficaram feridas; uma das vítimas estava no estacionamento de uma maternidade atingida. Nenhum paciente se feriu. Segundo a Força Aérea ucraniana, a Rússia lançou 282 drones.",
+   "source": "CNN Brasil e Correio Braziliense",
+   "photo": "photos/n24c_kyiv_c.jpg",
+   "photo_credit": "Foto: Serviço de Emergência da Ucrânia / CC BY 4.0 · Kiev após ataque russo (arquivo, 2025)"
+  },
+  {
+   "tag": "TECNOLOGIA",
+   "headline": "Meta aposta tudo na IA Muse e ação sobe 4,5%",
+   "body": "No evento Connect, Mark Zuckerberg pôs o agente de IA Muse no centro da estratégia da Meta. Mostrou óculos de realidade virtual de US$ 1.299, Ray-Ban sem câmera e um pingente com IA, o Muse Charm. Nesta quinta, a ação da Meta subiu 4,50%, a US$ 777,59.",
+   "source": "CNN e CNBC",
+   "photo": "photos/n24c_zuck.jpg",
+   "photo_credit": "Foto: Jeff Sainlar / Meta / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "SEU BOLSO",
+   "headline": "Galípolo quer frear crédito “predatório”",
+   "body": "O presidente do Banco Central disse nesta quinta que há ofertas de crédito “agressivas ou mesmo predatórias” e que o cartão tem um “problema de design”, com inadimplência de 65%. Cerca de 100 milhões de pessoas têm dívida no cartão, e metade paga juros perto de 15% ao mês. O BC estuda restringir essas ofertas.",
+   "source": "InfoMoney e Gazeta do Povo",
+   "photo": "photos/n24c_galipolo.jpg",
+   "photo_credit": "Foto: Agência Senado / CC BY 2.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "BRASIL",
+   "headline": "PF faz busca em gabinete de desembargador",
+   "body": "A PF fez buscas no gabinete de Newton Ramos, desembargador do TRF-1, por ordem do corregedor nacional de Justiça, Benedito Gonçalves (na foto). Mensagens do banqueiro Daniel Vorcaro, ex-dono do Banco Master, citam Ramos e a mulher, a advogada Camilla Ramos, como “turma do KN”. A PF achou um contrato de R$ 427 milhões ligado a precatórios.",
+   "source": "Metrópoles e CNN Brasil",
+   "photo": "photos/n24c_benedito.jpg",
+   "photo_credit": "Foto: STJ / CC BY 2.0 · Benedito Gonçalves (Wikimedia Commons)"
+  },
+  {
+   "tag": "CLIMA",
+   "headline": "Alerta vermelho de onda de calor em 8 estados",
+   "body": "O Inmet emitiu aviso de “grande perigo” para SP, RJ, MG, PR, SC, GO, MT e MS, das 12h de sábado (26) às 18h de quarta (30). A temperatura pode ficar 5 °C acima da média por mais de cinco dias. Cuiabá pode chegar a 41 °C e Campo Grande, a 40 °C. É a primeira onda de calor da primavera.",
+   "source": "Inmet e Estadão",
+   "photo": "photos/n24c_calor.jpg",
+   "photo_credit": "Foto: Erik dos Santos / CC0 · onda de calor em Piracicaba, 2023 (Wikimedia Commons)"
+  },
+  {
+   "tag": "SAÚDE",
+   "headline": "Hormônio em comprimido eleva risco de trombose",
+   "body": "Um estudo dinamarquês publicado no BMJ mostra que a reposição hormonal da menopausa por via oral aumenta o risco de coágulos nas pernas e nos pulmões, qualquer que seja a dose ou o tempo de uso. Foram acompanhadas mulheres de 50 a 69 anos, de 2003 a 2021. Adesivos e géis na pele não mostraram aumento geral do risco.",
+   "source": "BMJ e Healio",
+   "photo": "photos/n24c_hormonio.jpg",
+   "photo_credit": "Foto: Asatsuyu2022 / CC BY-SA 4.0 · comprimidos de estradiol (Wikimedia Commons)"
+  },
+  {
+   "tag": "IA",
+   "headline": "OpenAI cria prova de IA em saúde mental",
+   "body": "A OpenAI lançou o MentalHealthBench, um teste aberto com 1.215 conversas simuladas para avaliar como as IAs respondem, de conversas sobre estresse a emergências. Foi feito com mais de 80 psicólogos e psiquiatras de 22 países, em 19 idiomas, com 5.262 critérios de avaliação. Outros pesquisadores podem usar e testar.",
+   "source": "OpenAI e Unite.AI",
+   "photo": "photos/n24c_altman2.jpg",
+   "photo_credit": "Foto: Steve Jurvetson / CC BY 2.0 · Sam Altman, chefe da OpenAI (Wikimedia Commons)"
+  }
+ ],
+ "caption": "Piscada da noite (qui, 24/09) — piscou? O mundo já mudou:\n\n1️⃣ Aliados de Trump miram o chefe da Anthropic\n2️⃣ Brent vai a US$ 107 com plano de paz em etapas\n3️⃣ Ataque russo mata 8 e atinge maternidade em Kiev\n4️⃣ Meta aposta tudo na IA Muse e ação sobe 4,5%\n5️⃣ Galípolo quer frear crédito “predatório”\n6️⃣ PF faz busca em gabinete de desembargador\n7️⃣ Alerta vermelho de onda de calor em 8 estados\n8️⃣ Hormônio em comprimido eleva risco de trombose\n9️⃣ OpenAI cria prova de IA em saúde mental\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 7 pra quem mora em SP, RJ, MG, PR, SC ou no Centro-Oeste: o calor forte começa no sábado ao meio-dia.\n\nO Pisca é feito com o Claude, da Anthropic — a empresa do card 1.\n\n💬 Você usaria uma IA para conversar sobre saúde mental?\n\nFontes: Axios, Yahoo Finance, Reuters, Bloomberg, CNN Brasil, Correio Braziliense, CNN, CNBC, InfoMoney, Gazeta do Povo, Metrópoles, Inmet, Estadão, BMJ, Healio, OpenAI e Unite.AI.\n\n#noticias #atualidades #ia #ondadecalor #mundo"
+}
