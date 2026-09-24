@@ -19,12 +19,19 @@
   {
    "tipo": "reels",
    "quando": "2026-09-24T18:30",
-   "estado": "pendente",
-   "tentativas": 0,
-   "issue": 6
+   "estado": "publicado",
+   "tentativas": 1,
+   "issue": 6,
+   "links": [
+    "https://www.facebook.com/reel/1095037496312263/",
+    "https://www.instagram.com/reel/Ddr_Q3PDaXb/",
+    "https://www.threads.com/@pisca.news/post/Ddr_qGyj0gr"
+   ],
+   "publicado_em": "2026-09-24T19:48"
   }
  ],
  "problemas": {},
  "minutos_agente": 2,
- "custo_referencia_usd": 0.18016200000000002
+ "custo_referencia_usd": 0.18016200000000002,
+ "fechada": true
 }
