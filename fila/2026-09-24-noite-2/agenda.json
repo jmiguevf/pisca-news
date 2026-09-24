@@ -16,13 +16,11 @@
    "tipo": "carrossel",
    "quando": "2026-09-24T19:30",
    "estado": "publicado",
-   "tentativas": 1,
+   "tentativas": 0,
    "issue": 5,
    "links": [
-    "https://www.facebook.com/122115896169469462/posts/122116712835469462",
     "https://www.instagram.com/p/Ddr8nWhmDMv/"
-   ],
-   "publicado_em": "2026-09-24T19:23"
+   ]
   }
  ],
  "problemas": {},
