@@ -101,7 +101,7 @@ def main():
                     alerta(f"Não saiu: {it['tipo']} de {ag['id']}", "Não consegui baixar os arquivos da produção.")
                 continue
             recentes = recentes if recentes is not None else legendas_recentes()
-            if it["tentativas"] and (link := ja_saiu(it["tipo"], ag, recentes)):
+            if (link := ja_saiu(it["tipo"], ag, recentes)):          # sempre: nunca publica em dobro
                 it["estado"] = "publicado"; it["links"] = [link]; mudou = True
                 comentar(ag.get("issue"), f"✅ {it['tipo'].capitalize()} já estava no ar: {link}")
                 continue
