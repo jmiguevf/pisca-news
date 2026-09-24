@@ -9,6 +9,8 @@ on:
     - cron: "26 21 * * *"    # 18h26              (Reels da noite, 18h30)
     - cron: "26 22 * * *"    # 19h26              (carrossel da noite, 19h30)
     - cron: "56 23 * * *"    # 20h56              (repescagem)
+  issue_comment:              # aprovou na prévia: já confere e publica o que estiver no horário
+    types: [created]
   workflow_dispatch:
     inputs:
       agora:
@@ -23,7 +25,7 @@ permissions:
   actions: read
 jobs:
   publicar:
-    if: github.event_name == 'workflow_dispatch' || vars.PISCA_LIGADO != '0'
+    if: (github.event_name == 'workflow_dispatch' || vars.PISCA_LIGADO != '0') && (github.event_name != 'issue_comment' || github.event.comment.user.login == github.repository_owner)
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:

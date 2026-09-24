@@ -11,6 +11,9 @@ on:
       edicao:
         description: "manha, meio ou noite (vazio = pela hora)"
         required: false
+      refazer:
+        description: "Refazer a edição do dia (ex.: 2) — cria uma nova prévia"
+        required: false
 concurrency:
   group: produzir
   cancel-in-progress: false
@@ -28,6 +31,7 @@ jobs:
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       IG_USER_ID: ${{ vars.IG_USER_ID }}
+      REFAZER: ${{ inputs.refazer }}
       MODELO: ${{ vars.MODELO || 'claude-opus-5-5' }}
       MODELO_RAPIDO: ${{ vars.MODELO_RAPIDO || 'claude-sonnet-5' }}
     steps:

@@ -106,6 +106,28 @@ def cancelamentos(numero):
     return fora
 
 
+def aprovacoes(numero):
+    """24/09, ordem dele: "vc só publica depois de eu aprovar". Comentários do DONO na prévia:
+    'aprovar' / 'aprovado' / 'pode publicar' / 'ok' (tudo) ou 'aprovar reels' / 'aprovar carrossel'."""
+    if not numero:
+        return set()
+    d = json.loads(gh("issue", "view", str(numero), "--json", "comments") or "{}")
+    sim = set()
+    for c in d.get("comments", []):
+        if (c.get("author") or {}).get("login", "").lower() != DONO.lower():
+            continue
+        for linha in c.get("body", "").lower().splitlines():
+            linha = linha.strip(" .!👍✅")
+            if re.match(r"^(aprov|pode publicar|publica|ok\b|sim\b)", linha):
+                if "reel" in linha and "carross" not in linha:
+                    sim.add("reels")
+                elif "carross" in linha and "reel" not in linha:
+                    sim.add("carrossel")
+                else:
+                    sim |= {"reels", "carrossel"}
+    return sim
+
+
 def env_sem_chaves():
     """ambiente para o agente de produção: sem nenhuma chave de publicação (ele não publica)"""
     fora = {"META_PAGE_TOKEN", "THREADS_TOKEN", "MIDIA_TOKEN", "GH_TOKEN", "GITHUB_TOKEN", "ANTHROPIC_API_KEY",

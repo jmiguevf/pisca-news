@@ -8,17 +8,18 @@
   {
    "tipo": "reels",
    "quando": "2026-09-24T18:30",
-   "estado": "pendente",
+   "estado": "cancelado",
    "tentativas": 0
   },
   {
    "tipo": "carrossel",
    "quando": "2026-09-24T19:30",
-   "estado": "pendente",
+   "estado": "cancelado",
    "tentativas": 0
   }
  ],
  "problemas": {},
  "minutos_agente": 17,
- "custo_referencia_usd": 5.420577799999997
+ "custo_referencia_usd": 5.420577799999997,
+ "fechada": true
 }

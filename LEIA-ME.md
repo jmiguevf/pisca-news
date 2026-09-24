@@ -15,13 +15,15 @@ publica no horário, depois da prévia.
 Cada Reels vai para Instagram (com convite de collab), Facebook e story nos dois; cada carrossel vai para Instagram,
 Facebook e story nos dois; os dois vão também para o Threads (o vídeo, hospedado no **pisca-midia**, que é público).
 
-## A prévia (chega por e-mail, como issue)
+## A prévia (chega por e-mail, como issue) — SÓ PUBLICA COM APROVAÇÃO
 
-Mostra a folha do carrossel, os quadros do Reels e as legendas. Para **não** publicar, comente na prévia:
+Mostra a folha do carrossel, os cartões do Reels e as legendas. Comente na prévia:
 
-- `cancelar reels` · `cancelar carrossel` · `cancelar tudo`
+- `aprovar` → sai tudo no horário (aprovou depois do horário? sai na hora, até 6 h depois)
+- `aprovar reels` · `aprovar carrossel` → sai só aquele
+- `cancelar reels` · `cancelar carrossel` · `cancelar tudo` → não sai
 
-Sem comentário, sai no horário. Se algo não passou nas travas, a prévia já diz o que ficou de fora e por quê.
+Sem aprovação, não sai nada.
 
 ## As travas (as mesmas de sempre, conferidas na produção e de novo antes de publicar)
 

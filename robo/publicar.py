@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Robô publicador: solta no horário o que está na fila e não foi cancelado na prévia.
 
-Uso: python3 robo/publicar.py            (publica o que venceu: até 10 min antes do horário e até 4 h depois)
+Uso: python3 robo/publicar.py            (publica o que venceu E foi APROVADO: de 10 min antes do horário até 6 h depois)
      python3 robo/publicar.py --agora ID (publica já a edição ID, ignorando o horário)
 Cada item passa de novo pelas travas (checar_edicao.py) e só então vai para publica_tudo.py
 (Instagram + Facebook + stories + Threads). Antes de tentar de novo, confere se já saiu (nunca publica em dobro).
@@ -11,9 +11,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from comum import EDICOES, FILA, RAIZ, agora, alerta, cancelamentos, comentar, fechar, gh, gravar, legendas_recentes, ler  # noqa: E402
+from comum import EDICOES, FILA, RAIZ, agora, alerta, aprovacoes, cancelamentos, comentar, fechar, gh, gravar, legendas_recentes, ler  # noqa: E402
 
-ANTES, DEPOIS = timedelta(minutes=10), timedelta(hours=4)
+ANTES, DEPOIS = timedelta(minutes=10), timedelta(hours=6)
 
 
 def baixa_artefato(ag):
@@ -78,15 +78,17 @@ def main():
             quando = datetime.fromisoformat(it["quando"])
             if not so_id and not (quando - ANTES <= agora_ <= quando + DEPOIS):
                 if agora_ > quando + DEPOIS:
-                    it["estado"] = "perdido"; mudou = True
-                    alerta(f"Não saiu: {it['tipo']} de {ag['id']}", f"Passou do horário ({it['quando']}) sem publicar. "
-                           f"Veja a prévia #{ag.get('issue')} e o registro na aba Actions.")
+                    it["estado"] = "expirado"; mudou = True
+                    comentar(ag.get("issue"), f"⌛ {it['tipo'].capitalize()} não foi aprovado a tempo e não foi publicado.")
                 continue
             if fora is None:
                 fora = cancelamentos(ag.get("issue"))
             if it["tipo"] in fora:
                 it["estado"] = "cancelado"; mudou = True
                 comentar(ag.get("issue"), f"🚫 {it['tipo'].capitalize()} cancelado, como pedido. Não publiquei.")
+                continue
+            if it["tipo"] not in aprovacoes(ag.get("issue")):      # regra dele: só sai com aprovação
+                print(f"aguardando aprovação: {it['tipo']} de {ag['id']}")
                 continue
             if not baixa_artefato(ag):
                 it["tentativas"] += 1; mudou = True

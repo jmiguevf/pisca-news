@@ -53,7 +53,7 @@ def main():
     ed = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in EDICOES else escolhe_edicao()
     E = EDICOES[ed]
     hoje = agora()
-    ident = f"{hoje:%Y-%m-%d}-{ed}"
+    ident = f"{hoje:%Y-%m-%d}-{ed}" + (f"-{os.environ['REFAZER']}" if os.environ.get("REFAZER") else "")
     pasta = FILA / ident
     ag = ler(pasta / "agenda.json")
     if ag and ag.get("itens"):
@@ -132,8 +132,11 @@ Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel
         linhas += [f"### ⚠️ {tipo.capitalize()} NÃO vai sair (não passou nas travas)", ""] + [f"- {e}" for e in erros] + [""]
     if resumo.get("observacoes"):
         linhas += ["### Observação do editor", resumo["observacoes"], ""]
-    linhas += ["---", "Para não publicar, comente aqui: `cancelar reels`, `cancelar carrossel` ou `cancelar tudo`.",
-               "Sem comentário, sai no horário no Instagram, Facebook (feed e story) e Threads."]
+    linhas += ["---", "**Só publico com a sua aprovação.** Comente aqui:",
+               "- `aprovar` → sai tudo no horário (se já passou do horário, sai na hora)",
+               "- `aprovar reels` ou `aprovar carrossel` → sai só aquele",
+               "- `cancelar reels`, `cancelar carrossel` ou `cancelar tudo` → não sai",
+               "", "Sai no Instagram (feed + story), Facebook (feed + story) e Threads. Sem aprovação, não sai."]
     titulo = f"Prévia: {E['nome']} de {hoje:%d/%m} (" + ", ".join(
         f"{i['tipo']} {E[i['tipo']]}" for i in itens) + ")" if itens else f"Edição {E['nome']} de {hoje:%d/%m} sem post"
     numero = abrir_issue(titulo, "\n".join(linhas), "previa" if itens else "alerta")
