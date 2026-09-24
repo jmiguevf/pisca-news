@@ -90,7 +90,7 @@ def main():
             fora = cancelamentos(iss)
             if it["tipo"] in fora:
                 it["estado"] = "cancelado"; mudou = True
-                comentar(ag.get("issue"), f"🚫 {it['tipo'].capitalize()} cancelado, como pedido. Não publiquei.")
+                comentar(iss, f"🚫 {it['tipo'].capitalize()} cancelado, como pedido. Não publiquei.")
                 continue
             if it["tipo"] not in aprovacoes(iss):      # regra dele: só sai com aprovação
                 print(f"aguardando aprovação: {it['tipo']} de {ag['id']}")
@@ -104,7 +104,7 @@ def main():
             recentes = recentes if recentes is not None else legendas_recentes()
             if (link := ja_saiu(it["tipo"], ag, recentes)):          # sempre: nunca publica em dobro
                 it["estado"] = "publicado"; it["links"] = [link]; mudou = True
-                comentar(ag.get("issue"), f"✅ {it['tipo'].capitalize()} já estava no ar: {link}")
+                comentar(iss, f"✅ {it['tipo'].capitalize()} já estava no ar: {link}")
                 continue
             ok, saida, travado = publica(it["tipo"], ag)
             it["tentativas"] += 1; mudou = True
@@ -112,12 +112,12 @@ def main():
                 it["estado"] = "publicado"; it["links"] = links(saida)
                 it["publicado_em"] = agora().strftime("%Y-%m-%dT%H:%M")
                 pend = [l for l in saida.splitlines() if l.startswith(("PENDENTE", "FALHOU"))]
-                comentar(ag.get("issue"), f"✅ {it['tipo'].capitalize()} publicado.\n\n" + "\n".join(f"- {l}" for l in it["links"])
+                comentar(iss, f"✅ {it['tipo'].capitalize()} publicado.\n\n" + "\n".join(f"- {l}" for l in it["links"])
                          + ("\n\nFicou de fora:\n" + "\n".join(f"- {p}" for p in pend) if pend else ""))
             elif travado or it["tentativas"] >= 3:
                 it["estado"] = "falhou"
                 alerta(f"Não saiu: {it['tipo']} de {ag['id']}", f"Prévia #{ag.get('issue')}.\n\n```\n{saida}\n```")
-                comentar(ag.get("issue"), f"❌ {it['tipo'].capitalize()} não saiu. Detalhes no alerta.")
+                comentar(iss, f"❌ {it['tipo'].capitalize()} não saiu. Detalhes no alerta.")
             else:
                 recentes = legendas_recentes()      # a próxima rodada confere se saiu antes de tentar de novo
                 print(f"falhou ({it['tentativas']}ª tentativa), tento de novo na próxima rodada:\n{saida[-1500:]}")
