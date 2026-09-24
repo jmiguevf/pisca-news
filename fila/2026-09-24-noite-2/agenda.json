@@ -1,0 +1,24 @@
+{
+ "id": "2026-09-24-noite-2",
+ "edicao": "noite",
+ "issue": 4,
+ "run_id": "36056831904",
+ "artefato": "edicao-2026-09-24-noite-2",
+ "itens": [
+  {
+   "tipo": "reels",
+   "quando": "2026-09-24T18:30",
+   "estado": "pendente",
+   "tentativas": 0
+  },
+  {
+   "tipo": "carrossel",
+   "quando": "2026-09-24T19:30",
+   "estado": "pendente",
+   "tentativas": 0
+  }
+ ],
+ "problemas": {},
+ "minutos_agente": 19,
+ "custo_referencia_usd": 2.722302000000001
+}

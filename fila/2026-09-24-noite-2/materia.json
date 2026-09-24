@@ -1,0 +1,78 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "QUI · 24 SET",
+ "tag": "TRUMP × XI",
+ "gancho": {
+  "linha": "Xi chegou à Casa Branca com presentes para Trump",
+  "promessa": "o que saiu do encontro, e o que ainda não saiu",
+  "dur": 5.6,
+  "credito": "Foto: Casa Branca / domínio público · Trump e Xi na Coreia do Sul, 2025",
+  "foto_cheia": "photos/n24r2_trumpxi.jpg",
+  "posicao": "50% 35%",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "Xi anunciou que manda",
+   "valor": "2 pandas",
+   "legenda": "para o Zoo Atlanta \"nos próximos dias\": Ping Ping e Fu Shuang. O zoológico estava sem pandas desde 2024.",
+   "credito": "Foto: Rob / CC BY 2.0 · panda no Zoo Atlanta (arquivo)",
+   "dur": 6.8,
+   "foto_cheia": "photos/n24r2_panda.jpg",
+   "posicao": "72% 45%",
+   "zoom_y": 300
+  },
+  {
+   "tipo": "numero",
+   "kicker": "E convidou",
+   "valor": "100 mil",
+   "legenda": "estudantes americanos para estudar na China nos próximos 5 anos.",
+   "credito": "Foto: N509FZ / CC BY-SA 4.0 · Universidade de Pequim",
+   "dur": 6.0,
+   "foto_cheia": "photos/n24r2_campus.jpg",
+   "posicao": "50% 40%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "COMÉRCIO",
+   "titulo": "Trégua até 10 de janeiro",
+   "texto": "A trégua das tarifas, que vencia em novembro, foi estendida até 10/01. Os EUA seguram tarifas; a China mantém as terras raras chegando.",
+   "credito": "Foto: Ken Lund / CC BY-SA 2.0 · portos de Los Angeles e Long Beach",
+   "dur": 7.6,
+   "foto_cheia": "photos/n24r2_porto.jpg",
+   "posicao": "50% 75%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "INTELIGÊNCIA ARTIFICIAL",
+   "titulo": "A corrida da IA na mesa",
+   "texto": "Xi: \"somos plenamente capazes de achar o caminho para duas potências coexistirem\". Trump: \"bem-vindos ao novo mundo da superinteligência\".",
+   "credito": "Foto: Carl Lender / CC BY 2.0 · data center (ilustrativa)",
+   "dur": 7.6,
+   "foto_cheia": "photos/n24r2_datacenter.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 800
+  },
+  {
+   "tipo": "texto",
+   "chip": "O QUE AINDA NÃO SAIU",
+   "ressalva": true,
+   "titulo": "Acordo amplo? Ainda não",
+   "texto": "A trégua só ganha tempo para negociar. Taiwan e Irã ficaram sem resposta clara de Trump.",
+   "credito": "Foto: Casa Branca / domínio público · Xi e Trump em Mar-a-Lago, 2017",
+   "dur": 7.2,
+   "foto_cheia": "photos/n24r2_maralago.jpg",
+   "posicao": "50% 35%",
+   "zoom_y": 900
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque acompanha\na briga EUA × China:",
+  "cta": "O jogo mudou de tom."
+ }
+}
