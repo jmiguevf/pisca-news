@@ -24,6 +24,8 @@ Recorte da edição:
 - noite: a tarde de hoje.
 Regras (todas valem para o carrossel e para o Reels):
 - Duas fontes grandes e diferentes por notícia, com data visível; número copiado literalmente da fonte.
+  Comunicado da própria empresa + site pequeno NÃO conta como duas fontes grandes (24/09, card da OpenAI): sem dois
+  veículos grandes, troque a notícia pela reserva.
 - Sem esporte. Sem campanha eleitoral brasileira. Político só como centro de notícia com fato, tratamento igual para todos.
 - Pelo menos 1/3 das notícias de tecnologia ou IA. Notícia da Anthropic entra SEMPRE que houver (mesmo teste de fontes;
   notícia ruim da Anthropic entra igual); nesse caso a legenda leva a linha
