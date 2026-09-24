@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Folha de contato do Reels pronto: 1 quadro a cada ~4 s, com as linhas da área segura (250 e 1520 px) marcadas.
-Uso: python3 robo/folha_video.py reels.mp4 folha.jpg"""
+Uso: python3 robo/folha_video.py reels.mp4 folha.jpg [materia.json]"""
 import subprocess, sys, tempfile
 from pathlib import Path
 from PIL import Image, ImageDraw
@@ -8,11 +8,24 @@ from PIL import Image, ImageDraw
 video, saida = sys.argv[1], sys.argv[2]
 dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", video],
                            capture_output=True, text=True).stdout.strip() or 0)
-n = max(4, min(16, int(dur // 4)))
+# com o materia.json: 1 quadro no meio de CADA cartão (a folha mostra cada cartão uma vez só)
+tempos = []
+if len(sys.argv) > 3 and Path(sys.argv[3]).exists():
+    import json
+    m = json.loads(Path(sys.argv[3]).read_text(encoding="utf-8"))
+    durs = [m.get("gancho", {}).get("dur", 5)] + [b.get("dur", 6) for b in m.get("blocos", [])]
+    ini = 0.0
+    for d_ in durs:
+        tempos.append(ini + d_ / 2); ini += d_
+    tempos.append(min(dur - 0.5, ini + 1.5))          # cartão final
+    esc = dur / max(ini + 3, 1)                       # ajusta se o motor esticou ou encolheu os tempos
+    tempos = [min(dur - 0.3, t * esc) for t in tempos]
+if not tempos:
+    n = max(4, min(16, int(dur // 4)))
+    tempos = [dur * (i + 0.5) / n for i in range(n)]
 quadros = []
 with tempfile.TemporaryDirectory() as tmp:
-    for i in range(n):
-        t = dur * (i + 0.5) / n
+    for i, t in enumerate(tempos):
         f = Path(tmp) / f"q{i:02d}.jpg"
         subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.2f}", "-i", video, "-frames:v", "1", "-y", str(f)])
         if f.exists():

@@ -15,6 +15,40 @@ import foto_repete as FR      # noqa: E402
 import boas_praticas as BP    # noqa: E402
 
 
+def repetidas_no_post(caminho) -> list[str]:
+    """24/09 (cobrança dele na prévia do Reels): a MESMA foto não pode aparecer duas vezes no mesmo post —
+    nem com outro nome de arquivo (compara a imagem), nem capa repetindo cartão."""
+    import json as _j
+    d = _j.loads(Path(caminho).read_text(encoding="utf-8"))
+    usos = []
+    def walk(x):
+        if isinstance(x, dict):
+            for k in ("photo", "foto_cheia", "foto_alta"):
+                if isinstance(x.get(k), str):
+                    usos.append(x[k])
+            if isinstance(x.get("photos"), list):
+                usos.extend(f for f in x["photos"] if isinstance(f, str))
+            for k, v in x.items():
+                if k != "story_photo" and isinstance(v, (dict, list)):
+                    walk(v)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v)
+    walk(d)
+    vistos, erros = [], []
+    for f in usos:
+        q = Path(f) if Path(f).is_absolute() else RAIZ / f
+        if not q.exists():
+            continue
+        h = FR._hash(q)
+        for nome, h0 in vistos:
+            if FR._dist(h, h0) <= FR.LIMIAR:
+                erros.append(f"foto repetida DENTRO do post: {q.name} = {nome}")
+                break
+        vistos.append((q.name, h))
+    return erros
+
+
 def checa_carrossel(p: Path) -> list[str]:
     erros = []
     cj, pasta = p / "content.json", p / "carrossel"
@@ -31,6 +65,7 @@ def checa_carrossel(p: Path) -> list[str]:
     rep = NR.parecidas(NR.manchetes(str(cj)))
     erros += [f"carrossel: \"{a}\" repete \"{b}\" ({q})" for a, b, q, _ in rep]
     erros += [f"carrossel: foto repetida {a} = {b} ({q}, {post})" for a, b, q, post in FR.repetidas(cj)]
+    erros += [f"carrossel: {e}" for e in repetidas_no_post(cj)]
     return erros
 
 
@@ -45,6 +80,7 @@ def checa_reels(p: Path) -> list[str]:
     erros += [f"reels, legenda: {x}" for x in e]
     if mj.exists():
         erros += [f"reels: foto repetida {a} = {b} ({q}, {post})" for a, b, q, post in FR.repetidas(mj)]
+        erros += [f"reels: {e}" for e in repetidas_no_post(mj)]
         rep = NR.parecidas(NR.manchetes(str(mj)))
         erros += [f"reels: \"{a}\" repete \"{b}\" ({q})" for a, b, q, _ in rep]
         cj = p / "content.json"

@@ -41,6 +41,9 @@ Regras (todas valem para o carrossel e para o Reels):
   (`python3 buscafoto.py "termo"` lista candidatos com licença; `python3 baixafoto.py` baixa — leia o topo dos dois).
 - NUNCA repetir foto dos últimos 30 dias (a trava compara a IMAGEM): rosto conhecido → procure OUTRA foto da pessoa.
   Confira com `python3 foto_repete.py checa <arquivo.json>` antes de renderizar.
+- NUNCA a mesma foto duas vezes no MESMO post (24/09, ele cobrou na prévia: Trump/Xi no início e no fim do Reels, Xi
+  em dois cartões). Cada cartão do Reels tem foto própria; a capa do carrossel usa OUTRAS fotos das mesmas pessoas
+  (não a do cartão). Para cartão sem foto nova possível, troque o cartão ou use outra foto do assunto.
 - Olhe cada foto baixada (ferramenta Read na imagem): tem que mostrar a pessoa/coisa certa (há arquivos com nome errado
   no Commons). Capa: 3 rostos conhecidos, assunto grande e de frente.
 - Sem borda: a foto sempre preenche o quadro (os motores já fazem; recorte pelo rosto é automático).
@@ -60,7 +63,7 @@ Regras (todas valem para o carrossel e para o Reels):
 1. Escreva `$PASTA/materia.json` no formato de `exemplos/reels_materia.json` (gancho → fato → número → mecanismo →
    o que muda pra você → ressalva). Cartões de 5,5–8 s.
 2. `python3 reels_materia.py $PASTA/materia.json $PASTA/reels.mp4` (NUNCA dois ao mesmo tempo: pasta de quadros compartilhada).
-3. Folha de quadros: `python3 robo/folha_video.py $PASTA/reels.mp4 $PASTA/reels_folha.jpg` e abra a folha (Read).
+3. Folha de quadros: `python3 robo/folha_video.py $PASTA/reels.mp4 $PASTA/reels_folha.jpg $PASTA/materia.json` e abra a folha (Read).
    Texto só entre 250 px do topo e 1520 px (área segura do Reels), rosto inteiro, foto certa.
 4. Legenda em `$PASTA/legenda.txt` no estilo de `exemplos/reels_legenda.txt`: curta (até 1.200 caracteres), emoji
    marcando as linhas, chamada para mandar com destinatário, pergunta, "Fontes: ...", "📷 Fotos (Wikimedia Commons): ..."
