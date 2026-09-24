@@ -221,6 +221,7 @@ até passar, e acrescente em resumo.json "observacoes" uma linha dizendo o que f
     for arq in ("content.json", "materia.json"):
         if (pasta / arq).exists():
             fotos |= {str(p.relative_to(RAIZ)) for p in FR.fotos(pasta / arq)}
+    (RAIZ / "artefato_nome.txt").write_text(art, encoding="utf-8")
     (RAIZ / "artefato.txt").write_text("\n".join([f"fila/{ident}"] + sorted(fotos)), encoding="utf-8")
     print("prévia aberta:", numero, "| itens:", [i["tipo"] for i in itens], "| problemas:", list(problemas))
     return 0 if itens else 1

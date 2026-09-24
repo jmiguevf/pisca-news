@@ -73,11 +73,12 @@ jobs:
           python robo/produzir.py "${{ inputs.edicao }}"
           if [ -f artefato.txt ]; then { echo 'lista<<FIM'; cat artefato.txt; echo; echo 'FIM'; } >> "$GITHUB_OUTPUT"; fi
           ID=$(head -1 artefato.txt 2>/dev/null | sed 's#fila/##'); echo "id=$ID" >> "$GITHUB_OUTPUT"
+          echo "nome=$(cat artefato_nome.txt 2>/dev/null)" >> "$GITHUB_OUTPUT"
       - name: Guardar os arquivos da edição (3 dias)
         if: always() && steps.produzir.outputs.id != ''
         uses: actions/upload-artifact@v4
         with:
-          name: edicao-${{ steps.produzir.outputs.id }}
+          name: ${{ steps.produzir.outputs.nome }}
           path: ${{ steps.produzir.outputs.lista }}
           retention-days: 3
           include-hidden-files: false
