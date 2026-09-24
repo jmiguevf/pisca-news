@@ -30,6 +30,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      MIDIA_TOKEN: ${{ secrets.MIDIA_TOKEN }}
       IG_USER_ID: ${{ vars.IG_USER_ID }}
       REFAZER: ${{ inputs.refazer }}
       MODELO: ${{ vars.MODELO || 'claude-opus-5-5' }}

@@ -49,6 +49,37 @@ def miniatura(origem, destino, largura=1100):
     im.save(destino, "JPEG", quality=80)
 
 
+def sobe_previa(ident, arquivos):
+    """Hospeda as artes da prévia no pisca-midia (público, release "previas") para aparecerem inteiras na issue e no
+    e-mail. Devolve {nome: url}. Sem MIDIA_TOKEN, devolve {} (a prévia fica só com as miniaturas)."""
+    import requests
+    tok, repo = os.environ.get("MIDIA_TOKEN"), os.environ.get("MIDIA_REPO", "jmiguevf/pisca-midia")
+    if not tok:
+        return {}
+    H = {"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"}
+    r = requests.get(f"https://api.github.com/repos/{repo}/releases/tags/previas", headers=H, timeout=60)
+    if r.status_code == 404:
+        r = requests.post(f"https://api.github.com/repos/{repo}/releases", headers=H, timeout=60,
+                          json={"tag_name": "previas", "name": "Prévias do Pisca", "body": "Artes para aprovação."})
+    rel = r.json()
+    urls = {}
+    for arq in arquivos:
+        arq = Path(arq)
+        if not arq.exists():
+            continue
+        nome = f"{ident}-{arq.parent.name}-{arq.name}" if arq.parent.name == "carrossel" else f"{ident}-{arq.name}"
+        tipo = "video/mp4" if arq.suffix == ".mp4" else "image/jpeg"
+        try:
+            up = requests.post(f"https://uploads.github.com/repos/{repo}/releases/{rel['id']}/assets",
+                               params={"name": nome}, headers={**H, "Content-Type": tipo}, data=arq.read_bytes(),
+                               timeout=600)
+            if up.ok:
+                urls[arq.name] = up.json()["browser_download_url"]
+        except Exception as e:
+            print("prévia: não subiu", arq.name, str(e)[:120])
+    return urls
+
+
 def main():
     ed = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in EDICOES else escolhe_edicao()
     E = EDICOES[ed]
@@ -116,18 +147,27 @@ Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel
             miniatura(origem, pasta / nome)
 
     repo, sha = os.environ.get("GITHUB_REPOSITORY", ""), os.environ.get("GITHUB_SHA", "main")
+    slides = sorted((pasta / "carrossel").glob("slide_*.jpg"))
+    artes = sobe_previa(ident, slides + [pasta / "carrossel" / "story.jpg", pasta / "reels.mp4", pasta / "previa_reels.jpg"])
     img = lambda n: f"https://github.com/{repo}/blob/main/fila/{ident}/{n}?raw=true"  # noqa: E731
     linhas = [f"## {E['nome'].capitalize()} de {hoje:%d/%m}", ""]
     if any(i["tipo"] == "reels" for i in itens):
         leg = (pasta / "legenda.txt").read_text(encoding="utf-8")
         linhas += [f"### 🎬 Reels — sai às **{E['reels']}**", f"**{resumo.get('reels', '')}**", "",
-                   f"![Reels]({img('previa_reels.jpg')})", "", "<details><summary>Legenda</summary>", "", leg, "",
-                   "</details>", ""]
+                   f"![Reels]({artes.get('previa_reels.jpg') or img('previa_reels.jpg')})", ""]
+        if artes.get("reels.mp4"):
+            linhas += [f"▶️ **[Assistir o Reels inteiro]({artes['reels.mp4']})**", ""]
+        linhas += ["**Legenda:**", "", leg, ""]
     if any(i["tipo"] == "carrossel" for i in itens):
         cap = json.loads((pasta / "content.json").read_text(encoding="utf-8")).get("caption", "")
         linhas += [f"### 🗞️ Carrossel — sai às **{E['carrossel']}**", "",
-                   f"![Carrossel]({img('previa_carrossel.jpg')})", "", "<details><summary>Legenda</summary>", "",
-                   cap, "", "</details>", ""]
+                   f"![Carrossel]({img('previa_carrossel.jpg')})", ""]
+        for sl in slides:                                   # cada arte inteira, na ordem em que sai
+            if artes.get(sl.name):
+                linhas += [f"![{sl.stem}]({artes[sl.name]})", ""]
+        if artes.get("story.jpg"):
+            linhas += ["Story:", "", f"![story]({artes['story.jpg']})", ""]
+        linhas += ["**Legenda:**", "", cap, ""]
     for tipo, erros in problemas.items():
         linhas += [f"### ⚠️ {tipo.capitalize()} NÃO vai sair (não passou nas travas)", ""] + [f"- {e}" for e in erros] + [""]
     if resumo.get("observacoes"):
