@@ -2,16 +2,9 @@
  "id": "2026-09-24-noite-2",
  "edicao": "noite",
  "issue": 4,
- "run_id": "36060182793",
- "artefato": "edicao-2026-09-24-noite-2",
+ "run_id": "36067637700",
+ "artefato": "edicao-2026-09-24-noite-2-c36067637700",
  "itens": [
-  {
-   "tipo": "reels",
-   "quando": "2026-09-24T18:30",
-   "estado": "cancelado",
-   "tentativas": 0,
-   "issue": 4
-  },
   {
    "tipo": "carrossel",
    "quando": "2026-09-24T19:30",
@@ -22,10 +15,16 @@
     "https://www.instagram.com/p/Ddr8nWhmDMv/",
     "https://www.threads.com/@pisca.news/post/Ddr9RYYEQsu"
    ]
+  },
+  {
+   "tipo": "reels",
+   "quando": "2026-09-24T18:30",
+   "estado": "pendente",
+   "tentativas": 0,
+   "issue": 6
   }
  ],
  "problemas": {},
- "minutos_agente": 0,
- "custo_referencia_usd": 0.374243,
- "fechada": true
+ "minutos_agente": 2,
+ "custo_referencia_usd": 0.18016200000000002
 }

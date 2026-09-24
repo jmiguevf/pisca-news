@@ -1,3 +1,28 @@
+[2026-09-24T22:22] FEED
+Piscada da noite (qui, 24/09) — piscou? O mundo já mudou:
+
+1️⃣ Aliados de Trump miram o chefe da Anthropic
+2️⃣ Brent vai a US$ 107 com plano de paz em etapas
+3️⃣ Ataque russo mata 8 e atinge maternidade em Kiev
+4️⃣ Meta aposta tudo na IA Muse e ação sobe 4,5%
+5️⃣ Galípolo quer frear crédito “predatório”
+6️⃣ PF faz busca em gabinete de desembargador
+7️⃣ Alerta vermelho de onda de calor em 8 estados
+8️⃣ Hormônio em comprimido eleva risco de trombose
+9️⃣ Microsoft põe US$ 10 bi em IA no Oriente Médio
+
+👉 Arraste para ver o resumo de cada uma.
+
+📲 Manda o card 7 pra quem mora em SP, RJ, MG, PR, SC ou no Centro-Oeste: o calor forte começa no sábado ao meio-dia.
+
+O Pisca é feito com o Claude, da Anthropic — a empresa do card 1.
+
+💬 Big techs gastando bilhões em IA: isso vai chegar no seu dia a dia ou é bolha?
+
+Fontes: Axios, Yahoo Finance, Reuters, Bloomberg, CNN Brasil, Correio Braziliense, CNN,
+
+=====
+
 [2026-09-24T16:27] FEED
 Piscada do meio-dia (qui, 24/09) — piscou? O mundo já mudou:
 
@@ -828,24 +853,3 @@ Fontes: Poder360, CNN Brasil, Agência Brasil, Euronews, AFP, Exame e InfoMoney.
 Apuração e arte feitas por IA. As regras são de gente: @pisca.news
 
 #noticias #brasil #piscanews
-
-=====
-
-[2026-09-17T14:24] FEED
-Piscou? O mundo já mudou. Piscada da manhã (quinta, 17/09):
-
-1⃣ Operação mira infiltração do PCC em ônibus de SP
-2⃣ Sauditas e húthis trocam ataques no Iêmen
-3⃣ Produção agrícola soma R$ 927,2 bi em 2025
-4⃣ PF cumpre 24 mandados na 10ª fase da Overclean
-5⃣ EUA negam visto a Abbas para Assembleia da ONU
-6⃣ Huawei lança chip Ascend 960 para rivalizar com Nvidia
-7⃣ UE quer proibir redes sociais para menores de 13
-8⃣ Estudiantes vence por 1 a 0 e elimina o Corinthians
-9⃣ Palmeiras elimina LDU nos pênaltis e vai à semi
-
-Arraste para ver o resumo de cada uma. Salve para ler depois e mande para quem precisa ficar por dentro.
-
-Fontes: CNN Brasil, Agência Brasil, Canal Rural, Al Jazeera, Euronews, Reuters, South China Morning Post, Olhar Digital, Exame, Metrópoles, Poder360, O Tempo e Lance. Fotos: Wikimedia Commons (créditos nas artes).
-
-Apuração e arte feitas por IA. As regras são de gente: @pi
