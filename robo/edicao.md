@@ -67,7 +67,9 @@ Regras (todas valem para o carrossel e para o Reels):
 ## 5. Reels (matéria única, 30–70 s)
 1. Escreva `$PASTA/materia.json` no formato de `exemplos/reels_materia.json` (gancho → fato → número → mecanismo →
    o que muda pra você → ressalva). Cartões de 5,5–8 s.
-2. `python3 reels_materia.py $PASTA/materia.json $PASTA/reels.mp4` (NUNCA dois ao mesmo tempo: pasta de quadros compartilhada).
+2. Trilha: DRAMÁTICA (pedido dele, 24/09: "música diferente e dramática no reels"). O padrão do motor já é "DRAMA"
+   (tensão com pancadas nos cortes). Não use trilha alegre. Para um Reels mais de ação, "trilha": "IMPACTO" no materia.json.
+   2. `python3 reels_materia.py $PASTA/materia.json $PASTA/reels.mp4` (NUNCA dois ao mesmo tempo: pasta de quadros compartilhada).
 3. Folha de quadros: `python3 robo/folha_video.py $PASTA/reels.mp4 $PASTA/reels_folha.jpg $PASTA/materia.json` e abra a folha (Read).
    Texto só entre 250 px do topo e 1520 px (área segura do Reels), rosto inteiro, foto certa.
 4. Legenda em `$PASTA/legenda.txt` no estilo de `exemplos/reels_legenda.txt`: curta (até 1.200 caracteres), emoji

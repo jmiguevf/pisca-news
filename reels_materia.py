@@ -1101,10 +1101,12 @@ def main():
     # 23/09: padrao IMPACTO — trilha gerada sob medida, com pancada em cada corte (trilha_impacto.py).
     # O José Miguel pediu "músicas mais impactantes"; a biblioteca do Instagram só existe no app.
     # TRILHA_NOME=PULSO|CORRIDA|NOTURNO|TENSAO (ou TRILHA=arquivo) volta para as trilhas fixas.
-    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "IMPACTO")).upper()
-    impacto = escolha == "IMPACTO"
+    # 24/09 (ele): "música diferente e dramática no reels" -> padrão DRAMA (tensão: drone, cordas, coração, pancadas
+    # nos cortes; trilha_tensao.py). IMPACTO continua disponível com "trilha": "IMPACTO" no json.
+    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "DRAMA")).upper()
+    impacto = escolha in ("IMPACTO", "DRAMA")
     if impacto:
-        print("trilha: IMPACTO (batida nos cortes; gerada depois de montar o plano)")
+        print(f"trilha: {escolha} (batida nos cortes; gerada depois de montar o plano)")
     else:
         nome = R._escolhe_trilha(when)
         R.TRILHA = Path(os.environ.get("TRILHA", str(BASE / f"Pisca_trilha_{nome}.mp3")))
@@ -1165,14 +1167,18 @@ def main():
         final = round(t_de(inicios[-1][0]), 3)
         import trilha_impacto as TI
         wav = OUTMP4.with_suffix(".impacto.wav")
-        TI.grava(TI.arranjo(total, cortes, grandes, final), str(wav))
+        if escolha == "DRAMA":
+            import trilha_tensao as TT
+            TI.grava(TT.arranjo(total, cortes, grandes, final), str(wav))
+        else:
+            TI.grava(TI.arranjo(total, cortes, grandes, final), str(wav))
         R.TRILHA = wav
         R.FADE_IN = 0.01                  # a pancada do gancho tem que soar no quadro zero
-        print(f"trilha IMPACTO: {total:.1f}s, cortes {cortes}, grandes {grandes}")
+        print(f"trilha {escolha}: {total:.1f}s, cortes {cortes}, grandes {grandes}")
     dur = montar_video(pecas, OUTMP4)
     print(f"OK {OUTMP4}  {dur:.1f}s  {OUTMP4.stat().st_size / 1e6:.1f} MB")
     BP.grava_ficha(OUTMP4, "reels_materia.py", MATERIA, cartoes,
-                   {"fecho_centralizado": True, "trilha": "IMPACTO" if impacto else str(R.TRILHA), "duracao": round(dur, 2)})
+                   {"fecho_centralizado": True, "trilha": escolha if impacto else str(R.TRILHA), "duracao": round(dur, 2)})
 
 
 if __name__ == "__main__":
