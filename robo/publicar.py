@@ -29,7 +29,8 @@ def baixa_artefato(ag):
     if r.returncode != 0:
         print("não baixei o artefato:", r.stderr[-300:])
         return False
-    shutil.copytree(tmp, RAIZ, dirs_exist_ok=True, symlinks=True)
+    # nunca deixa a agenda antiga que veio dentro do artefato sobrescrever a agenda atual
+    shutil.copytree(tmp, RAIZ, dirs_exist_ok=True, symlinks=True, ignore=shutil.ignore_patterns("agenda.json"))
     return True
 
 

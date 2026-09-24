@@ -105,7 +105,7 @@ def main():
     # a edição já saiu (pedido feito à mão, antes do horário)? então não produz de novo
     recentes = legendas_recentes()
     marca = f"{E['piscada']} ({data_br})"
-    if any(marca in (m.get("caption") or "") for m in recentes):
+    if not corrigir and any(marca in (m.get("caption") or "") for m in recentes):
         print("já publicada à mão:", marca)
         return 0
     ESTADO.mkdir(exist_ok=True)

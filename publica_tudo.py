@@ -105,6 +105,14 @@ def threads(legenda, ig, video=None):
     if ig["media_type"] == "CAROUSEL_ALBUM":
         filhos = [cria(media_type="IMAGE", image_url=c["media_url"], is_carousel_item="true")
                   for c in ig["children"]["data"][:20]]
+        for f in filhos:                                 # 24/09: cada filho precisa terminar antes do carrossel
+            for _ in range(30):
+                st = requests.get(f"{TH}/{f}", params={"fields": "status", "access_token": T}, timeout=60).json()
+                if st.get("status") in ("FINISHED", None):
+                    break
+                if st.get("status") == "ERROR":
+                    raise RuntimeError(st)
+                time.sleep(3)
         cid = cria(media_type="CAROUSEL", children=",".join(filhos), text=texto)
     else:
         # 24/09: vídeo pela URL do Instagram/Facebook deu status ERROR no Threads (não baixa do CDN deles).

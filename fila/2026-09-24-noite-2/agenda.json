@@ -3,12 +3,12 @@
  "edicao": "noite",
  "issue": 4,
  "run_id": "36060182793",
- "artefato": "edicao-2026-09-24-noite-2-c36060182793",
+ "artefato": "edicao-2026-09-24-noite-2",
  "itens": [
   {
    "tipo": "reels",
    "quando": "2026-09-24T18:30",
-   "estado": "pendente",
+   "estado": "cancelado",
    "tentativas": 0,
    "issue": 4
   },
@@ -19,7 +19,8 @@
    "tentativas": 0,
    "issue": 5,
    "links": [
-    "https://www.instagram.com/p/Ddr8nWhmDMv/"
+    "https://www.instagram.com/p/Ddr8nWhmDMv/",
+    "https://www.threads.com/@pisca.news/post/Ddr9RYYEQsu"
    ]
   }
  ],
