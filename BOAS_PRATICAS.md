@@ -25,6 +25,9 @@ aqui foi cancelado. Ler antes de produzir qualquer coisa. 🔒 = a máquina conf
   E-mail pessoal nunca em público.
 
 ## 3. Pauta
+- O QUE ATRAI (24/09, ele): "as pessoas gostam de coisas dramáticas, medo, guerra, mistério, ciência, tecnologia e
+  principalmente riscos da IA". Prioridade da pauta e do Reels nessa ordem de interesse, com RISCOS DA IA em primeiro.
+  Sempre com fato real e duas fontes: drama no tema e no gancho, nunca no número (nada de exagerar ou inventar).
 - Abrir com rosto conhecido e fato forte: Trump quando houver fato novo dele, guerra/geopolítica, empresas de IA,
   dinheiro, saúde com descoberta, golpe e direito que protegem alguém. Formato "É verdade?" (checagem) funciona.
 - Um "cartão para mandar" por post, com destinatário ("pro seu amigo que investe", "pra quem tem pai que escuta mal").

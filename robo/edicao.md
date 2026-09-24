@@ -33,6 +33,11 @@ Regras (todas valem para o carrossel e para o Reels):
 - Abrir com rosto conhecido e fato forte (Trump quando houver fato novo dele, guerra/geopolítica, empresas de IA,
   dinheiro, saúde com descoberta, golpe e direito que protegem alguém).
 - Separe uma lista de reserva: se a foto de uma notícia não sair em 3 tentativas, TROQUE a notícia. A edição tem 9.
+- O QUE ATRAI (ordem dele, 24/09): coisas dramáticas, medo, guerra, mistério, ciência, tecnologia e, PRINCIPALMENTE,
+  RISCOS DA IA (IA que engana, foge do controle, invade, substitui, é usada em golpe, alerta de cientista...). O recorde da
+  página é o Reels dos arquivos de OVNI (262 contas, 13,8 s assistidos): mistério + documento oficial novo.
+  Escolha o Reels por aí: um tema desses com fato forte e novo. O drama vai no tema e no gancho; o número e o fato são
+  exatamente os da fonte — nada de exagerar, distorcer ou prometer o que a notícia não diz.
 - O Reels é UMA história que NÃO está no carrossel (a mais forte que sobrou, de preferência com rosto conhecido ou
   formato "É verdade?" de checagem).
 

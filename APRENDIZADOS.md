@@ -6,6 +6,7 @@ Página). Com números deste tamanho, uma pessoa muda o resultado: ler a tendên
 ## Os campeões
 | Post | Formato | Instagram | Facebook | Por que funcionou |
 |---|---|---|---|---|
+| Arquivos de OVNI: 6º lote (24/09 05h16) | Reels de matéria, mistério/curiosidade | 305 visualizações, 262 contas, 13,8 s assistidos em média | — | RECORDE: tema que todo mundo quer saber (OVNI/ET) + documento oficial novo + cedo |
 | Trump na ONU: checamos 4 frases (23/09 12h21) | Reels de matéria, "É verdade?" | 205 visualizações, 163 contas | 255 | rosto mais conhecido do mundo + fato do dia + checagem |
 | Resumo de segunda (15/09 07h12) | Reels de resumo | 157 visualizações, 114 contas | — | cedo, com notícias fortes (Trump x Canadá, juros, drone russo) |
 | Resumo da tarde (23/09 14h57) | Reels de resumo | 45 visualizações, 27 contas | 252 | trilha IMPACTO + publicado também no Facebook |
@@ -14,7 +15,8 @@ Página). Com números deste tamanho, uma pessoa muda o resultado: ler a tendên
 
 ## O que isso manda fazer
 1. Reels é o que explode no alcance; carrossel é o que gera compartilhamento. Os dois, todo dia.
-2. Abrir com rosto conhecido e fato forte (Trump sempre que houver fato novo dele; guerra, dinheiro, IA).
+2. Abrir com rosto conhecido e fato forte (Trump sempre que houver fato novo dele; guerra, dinheiro, IA) OU com mistério
+   de curiosidade com documento/fonte oficial (OVNI/ET, espaço, descoberta) — o Reels dos arquivos de OVNI é o recorde.
 3. Resumo cedo (7h) e no meio-dia/começo da tarde; os das 21h renderam pouco (7 a 16 contas).
 4. Facebook em tudo: lá o Reels do Trump e o resumo da tarde passaram de 250 visualizações.
 5. Um cartão feito para MANDAR, dizendo para quem ("pro seu amigo que investe").
