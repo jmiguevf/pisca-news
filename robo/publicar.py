@@ -120,6 +120,7 @@ def main():
             else:
                 recentes = legendas_recentes()      # a próxima rodada confere se saiu antes de tentar de novo
                 print(f"falhou ({it['tentativas']}ª tentativa), tento de novo na próxima rodada:\n{saida[-1500:]}")
+                comentar(iss, f"⚠️ {it['tipo'].capitalize()}: a {it['tentativas']}ª tentativa falhou; tento de novo.\n\n```\n{saida[-1800:]}\n```")
         if mudou:
             gravar(arq, ag)
         if ag["itens"] and all(i["estado"] != "pendente" for i in ag["itens"]) and not ag.get("fechada"):
