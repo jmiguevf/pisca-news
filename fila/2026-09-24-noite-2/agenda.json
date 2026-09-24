@@ -2,23 +2,25 @@
  "id": "2026-09-24-noite-2",
  "edicao": "noite",
  "issue": 4,
- "run_id": "36056831904",
- "artefato": "edicao-2026-09-24-noite-2",
+ "run_id": "36060182793",
+ "artefato": "edicao-2026-09-24-noite-2-c36060182793",
  "itens": [
   {
    "tipo": "reels",
    "quando": "2026-09-24T18:30",
    "estado": "pendente",
-   "tentativas": 0
+   "tentativas": 0,
+   "issue": 4
   },
   {
    "tipo": "carrossel",
    "quando": "2026-09-24T19:30",
    "estado": "pendente",
-   "tentativas": 0
+   "tentativas": 0,
+   "issue": 5
   }
  ],
  "problemas": {},
- "minutos_agente": 19,
- "custo_referencia_usd": 2.722302000000001
+ "minutos_agente": 0,
+ "custo_referencia_usd": 0.374243
 }
