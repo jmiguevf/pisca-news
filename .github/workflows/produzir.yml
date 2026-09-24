@@ -64,7 +64,8 @@ jobs:
         run: |
           RUN=$(python3 -c "import json;print(json.load(open('fila/${{ inputs.corrigir_id }}/agenda.json'))['run_id'])")
           ART=$(python3 -c "import json;print(json.load(open('fila/${{ inputs.corrigir_id }}/agenda.json'))['artefato'])")
-          gh run download "$RUN" -n "$ART" -D .
+          gh run download "$RUN" -n "$ART" -D /tmp/art
+          cp -a /tmp/art/. .
           ls fila/${{ inputs.corrigir_id }}
       - name: Produzir
         id: produzir

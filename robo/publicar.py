@@ -21,11 +21,15 @@ def baixa_artefato(ag):
     precisa = (pasta / "reels.mp4") if any(i["tipo"] == "reels" for i in ag["itens"]) else (pasta / "carrossel")
     if precisa.exists():
         return True
-    r = subprocess.run(["gh", "run", "download", str(ag["run_id"]), "-n", ag["artefato"], "-D", str(RAIZ)],
+    # baixa numa pasta à parte e copia por cima (o gh não sobrescreve os textos da fila que já estão no repositório)
+    import shutil, tempfile
+    tmp = Path(tempfile.mkdtemp(prefix="art-"))
+    r = subprocess.run(["gh", "run", "download", str(ag["run_id"]), "-n", ag["artefato"], "-D", str(tmp)],
                        capture_output=True, text=True)
     if r.returncode != 0:
         print("não baixei o artefato:", r.stderr[-300:])
         return False
+    shutil.copytree(tmp, RAIZ, dirs_exist_ok=True, symlinks=True)
     return True
 
 
