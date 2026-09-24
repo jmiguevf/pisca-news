@@ -1,0 +1,89 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "QUI · 24 SET",
+ "tag": "SEGREDOS DA LUA",
+ "gancho": {
+  "linha": "Algo do tamanho de um prédio bateu na Lua",
+  "promessa": "e deixou a maior cratera nova já vista",
+  "dur": 4.8,
+  "credito": "Foto: Gregory H. Revera / CC BY-SA 3.0",
+  "foto_cheia": "photos/c_lua.jpg",
+  "posicao": "50% 50%",
+  "zoom_y": 900,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "A cratera nova tem",
+   "valor": "222 m",
+   "legenda": "de largura e 43 m de fundo. É a maior cratera nova já achada no Sistema Solar.",
+   "credito": "Foto: NASA, domínio público · cratera Linné, na Lua (ilustrativa)",
+   "dur": 6.4,
+   "foto_cheia": "photos/c_linne.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "ANTES E DEPOIS",
+   "titulo": "Apareceu em 2024",
+   "texto": "A sonda LRO, da NASA, fotografa a Lua há 17 anos. Comparando fotos de abril e maio de 2024, um especialista achou o buraco novo. Batizaram de McGetchin.",
+   "credito": "Ilustração: NASA, domínio público · a sonda LRO",
+   "dur": 7.4,
+   "foto_cheia": "photos/c_lro.jpg",
+   "posicao": "45% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "numero",
+   "kicker": "Uma pancada desse tamanho acontece",
+   "valor": "1 vez por século",
+   "legenda": "segundo os cientistas. Os estudos saíram na revista Science Advances.",
+   "credito": "Foto: Neil Armstrong / NASA, domínio público · Apollo 11",
+   "dur": 6.0,
+   "foto_cheia": "photos/c_armstrong.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "TECNOLOGIA DE ET?",
+   "titulo": "Procurar na poeira",
+   "texto": "Cientistas do Instituto SETI propõem examinar 1 metro cúbico do solo da Lua atrás de peças microscópicas fabricadas, vindas de fora do Sistema Solar.",
+   "credito": "Foto: Charlie Duke / NASA, domínio público · Apollo 16",
+   "dur": 7.6,
+   "foto_cheia": "photos/c_young.jpg",
+   "posicao": "55% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "POR QUE A LUA?",
+   "titulo": "Um arquivo de bilhões de anos",
+   "texto": "Sem ar, sem água e sem vulcões ativos, a Lua guarda o que cai nela. As amostras viriam das missões Artemis, dos EUA, e Chang'e, da China.",
+   "credito": "Foto: Wknight94 / CC BY-SA 3.0 · rocha trazida pela Apollo 15",
+   "dur": 7.6,
+   "foto_cheia": "photos/c_rocha.jpg",
+   "posicao": "50% 40%",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "texto",
+   "chip": "É VERDADE?",
+   "ressalva": true,
+   "titulo": "Achou algo? Ainda não",
+   "texto": "O próprio estudo diz que nenhuma tecnologia extraterrestre foi encontrada. Ele só mostra que dá para procurar.",
+   "credito": "Foto: Gregory H. Revera / CC BY-SA 3.0",
+   "dur": 6.4,
+   "foto_cheia": "photos/c_lua.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 1000
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque vive olhando\npra Lua:",
+  "cta": "Ela ainda guarda segredos."
+ }
+}

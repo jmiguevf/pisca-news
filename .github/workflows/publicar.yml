@@ -1,0 +1,71 @@
+name: Publicar (robô)
+# Solta no horário o que a prévia não cancelou: Instagram + Facebook (feed e story) + Threads.
+on:
+  schedule:
+    - cron: "56 9 * * *"     # 06h56 de Brasília  (Reels da manhã, 7h)
+    - cron: "56 10 * * *"    # 07h56              (carrossel da manhã, 8h)
+    - cron: "56 14 * * *"    # 11h56              (Reels do meio-dia, 12h)
+    - cron: "56 15 * * *"    # 12h56              (carrossel do meio-dia, 13h)
+    - cron: "26 21 * * *"    # 18h26              (Reels da noite, 18h30)
+    - cron: "26 22 * * *"    # 19h26              (carrossel da noite, 19h30)
+    - cron: "56 23 * * *"    # 20h56              (repescagem)
+  workflow_dispatch:
+    inputs:
+      agora:
+        description: "Publicar já esta edição (ex.: 2026-09-25-manha). Vazio = o que venceu."
+        required: false
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+  actions: read
+jobs:
+  publicar:
+    if: github.event_name == 'workflow_dispatch' || vars.PISCA_LIGADO != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ github.token }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ vars.IG_USER_ID }}
+      FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+      COLLAB: ${{ vars.COLLAB }}
+      THREADS_USER_ID: ${{ vars.THREADS_USER_ID }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      MIDIA_TOKEN: ${{ secrets.MIDIA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tem algo para publicar agora?
+        id: fila
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, glob, datetime as d
+          agora = d.datetime.utcnow() - d.timedelta(hours=3)
+          tem = False
+          for a in glob.glob("fila/*/agenda.json"):
+              for i in json.load(open(a, encoding="utf-8")).get("itens", []):
+                  q = d.datetime.fromisoformat(i["quando"])
+                  if i["estado"] == "pendente" and q - d.timedelta(minutes=10) <= agora:
+                      tem = True
+          print("tem=" + ("sim" if tem or "${{ inputs.agora }}" else "nao"))
+          PY
+      - uses: actions/setup-python@v5
+        if: steps.fila.outputs.tem == 'sim'
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Instalar
+        if: steps.fila.outputs.tem == 'sim'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Publicar
+        if: steps.fila.outputs.tem == 'sim'
+        run: |
+          if [ -n "${{ inputs.agora }}" ]; then python robo/publicar.py --agora "${{ inputs.agora }}"; else python robo/publicar.py; fi
+      - name: Guardar o registro
+        if: always() && steps.fila.outputs.tem == 'sim'
+        run: bash .github/salvar-estado.sh "Publicação"

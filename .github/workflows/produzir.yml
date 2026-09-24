@@ -1,0 +1,61 @@
+name: Produzir edição (agente)
+# O agente (Claude Code, pelo plano do José Miguel) apura, escreve e faz a arte de 1 carrossel + 1 Reels
+# e abre a PRÉVIA. Não publica: quem publica é o fluxo "Publicar", no horário.
+on:
+  schedule:
+    - cron: "3 8 * * *"      # 05h03 de Brasília -> manhã (Reels 7h, carrossel 8h)
+    - cron: "3 13 * * *"     # 10h03 -> meio-dia (Reels 12h, carrossel 13h)
+    - cron: "33 19 * * *"    # 16h33 -> noite (Reels 18h30, carrossel 19h30)
+  workflow_dispatch:
+    inputs:
+      edicao:
+        description: "manha, meio ou noite (vazio = pela hora)"
+        required: false
+concurrency:
+  group: produzir
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+  actions: read
+jobs:
+  produzir:
+    if: github.event_name == 'workflow_dispatch' || vars.PISCA_LIGADO != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ github.token }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ vars.IG_USER_ID }}
+      MODELO: ${{ vars.MODELO || 'claude-opus-5-5' }}
+      MODELO_RAPIDO: ${{ vars.MODELO_RAPIDO || 'claude-sonnet-5' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Instalar
+        run: |
+          npm install -g @anthropic-ai/claude-code@2 --no-audit --no-fund
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -r requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Produzir
+        id: produzir
+        run: |
+          python robo/produzir.py "${{ inputs.edicao }}"
+          if [ -f artefato.txt ]; then { echo 'lista<<FIM'; cat artefato.txt; echo; echo 'FIM'; } >> "$GITHUB_OUTPUT"; fi
+          ID=$(head -1 artefato.txt 2>/dev/null | sed 's#fila/##'); echo "id=$ID" >> "$GITHUB_OUTPUT"
+      - name: Guardar os arquivos da edição (3 dias)
+        if: always() && steps.produzir.outputs.id != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: edicao-${{ steps.produzir.outputs.id }}
+          path: ${{ steps.produzir.outputs.lista }}
+          retention-days: 3
+          include-hidden-files: false
+      - name: Guardar o registro
+        if: always()
+        run: bash .github/salvar-estado.sh "Produção"

@@ -1,0 +1,6 @@
+requests>=2.32
+pillow>=11
+numpy>=2
+playwright>=1.55
+opencv-python-headless>=4.10
+scipy>=1.13

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+photos/
+artefato.txt
+# da fila só vão para o repositório os textos, a agenda e as miniaturas da prévia
+fila/*/*
+!fila/*/agenda.json
+!fila/*/resumo.json
+!fila/*/content.json
+!fila/*/materia.json
+!fila/*/legenda.txt
+!fila/*/previa_*.jpg
+*.mp4
+*.wav
+.env
+*.chaves.txt

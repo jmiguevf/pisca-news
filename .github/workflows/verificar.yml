@@ -1,0 +1,28 @@
+name: Verificar ligações
+# Confere Claude, Instagram, Página, Threads e pisca-midia sem publicar nada.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 11 * * 1"    # segunda, 8h17 de Brasília
+permissions:
+  contents: read
+  issues: write
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      IG_USER_ID: ${{ vars.IG_USER_ID }}
+      FB_PAGE_ID: ${{ vars.FB_PAGE_ID }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      MIDIA_TOKEN: ${{ secrets.MIDIA_TOKEN }}
+      MODELO_RAPIDO: ${{ vars.MODELO_RAPIDO || 'claude-sonnet-5' }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install -g @anthropic-ai/claude-code@2 --no-audit --no-fund
+      - run: pip install -q requests
+      - name: Verificar
+        run: python3 robo/verificar.py
