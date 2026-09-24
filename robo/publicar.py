@@ -81,13 +81,13 @@ def main():
                     it["estado"] = "expirado"; mudou = True
                     comentar(ag.get("issue"), f"⌛ {it['tipo'].capitalize()} não foi aprovado a tempo e não foi publicado.")
                 continue
-            if fora is None:
-                fora = cancelamentos(ag.get("issue"))
+            iss = it.get("issue") or ag.get("issue")          # item corrigido tem prévia própria
+            fora = cancelamentos(iss)
             if it["tipo"] in fora:
                 it["estado"] = "cancelado"; mudou = True
                 comentar(ag.get("issue"), f"🚫 {it['tipo'].capitalize()} cancelado, como pedido. Não publiquei.")
                 continue
-            if it["tipo"] not in aprovacoes(ag.get("issue")):      # regra dele: só sai com aprovação
+            if it["tipo"] not in aprovacoes(iss):      # regra dele: só sai com aprovação
                 print(f"aguardando aprovação: {it['tipo']} de {ag['id']}")
                 continue
             if not baixa_artefato(ag):

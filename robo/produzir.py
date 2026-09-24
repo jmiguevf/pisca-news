@@ -85,9 +85,13 @@ def main():
     E = EDICOES[ed]
     hoje = agora()
     ident = f"{hoje:%Y-%m-%d}-{ed}" + (f"-{os.environ['REFAZER']}" if os.environ.get("REFAZER") else "")
+    corrigir, corr_tipo = os.environ.get("CORRIGIR", "").strip(), os.environ.get("CORRIGIR_TIPO", "carrossel")
+    if corrigir:
+        ident = os.environ["CORRIGIR_ID"]
     pasta = FILA / ident
     ag = ler(pasta / "agenda.json")
-    if ag and ag.get("itens"):
+    ag_velha = ag if corrigir else None
+    if ag and ag.get("itens") and not corrigir:
         print("edição já produzida:", ident)
         return 0
     if not os.environ.get("CLAUDE_CODE_OAUTH_TOKEN") and not os.environ.get("ANTHROPIC_API_KEY"):
@@ -120,6 +124,17 @@ DATE_LABEL={date_label}
 PASTA=fila/{ident}
 Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel às {E['carrossel']}.
 """
+    if corrigir:
+        prompt += f"""
+## ESTA EXECUÇÃO É UMA CORREÇÃO (pedido do José Miguel / revisão)
+A edição JÁ ESTÁ PRONTA em fila/{ident} (content.json, carrossel/, materia.json, reels.mp4, legenda.txt, resumo.json).
+NÃO refaça a edição. Faça SOMENTE esta correção no {corr_tipo}:
+
+{corrigir}
+
+Depois re-renderize só o que mudou, abra a folha (Read) e confira, rode `python3 robo/checar_edicao.py fila/{ident} --so {corr_tipo}`
+até passar, e acrescente em resumo.json "observacoes" uma linha dizendo o que foi corrigido.
+"""
     codigo, j, seg = rodar_claude(prompt, pasta / "agente.log")
     print(f"agente terminou: código {codigo}, {seg // 60} min, custo de referência US$ {j.get('total_cost_usd', 0):.2f}")
     if codigo != 0 and not (pasta / "content.json").exists():
@@ -131,7 +146,7 @@ Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel
 
     # confere cada parte do jeito que o publicador vai conferir
     itens, problemas = [], {}
-    for tipo in ("reels", "carrossel"):
+    for tipo in ((corr_tipo,) if corrigir else ("reels", "carrossel")):
         r = subprocess.run([sys.executable, str(RAIZ / "robo" / "checar_edicao.py"), str(pasta), "--so", tipo],
                            capture_output=True, text=True, cwd=RAIZ)
         if r.returncode == 0:
@@ -177,13 +192,29 @@ Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel
                "- `aprovar reels` ou `aprovar carrossel` → sai só aquele",
                "- `cancelar reels`, `cancelar carrossel` ou `cancelar tudo` → não sai",
                "", "Sai no Instagram (feed + story), Facebook (feed + story) e Threads. Sem aprovação, não sai."]
-    titulo = f"Prévia: {E['nome']} de {hoje:%d/%m} (" + ", ".join(
+    if corrigir:
+        linhas.insert(0, f"**Correção:** {corrigir}\n")
+    titulo = ("Correção — " if corrigir else "") + f"Prévia: {E['nome']} de {hoje:%d/%m} (" + ", ".join(
         f"{i['tipo']} {E[i['tipo']]}" for i in itens) + ")" if itens else f"Edição {E['nome']} de {hoje:%d/%m} sem post"
     numero = abrir_issue(titulo, "\n".join(linhas), "previa" if itens else "alerta")
 
-    gravar(pasta / "agenda.json", {"id": ident, "edicao": ed, "issue": numero, "run_id": os.environ.get("GITHUB_RUN_ID"),
-                                   "artefato": f"edicao-{ident}", "itens": itens, "problemas": problemas,
-                                   "minutos_agente": seg // 60, "custo_referencia_usd": j.get("total_cost_usd")})
+    art = f"edicao-{ident}" + (f"-c{os.environ.get('GITHUB_RUN_ID', '')}" if corrigir else "")
+    if corrigir and ag_velha:
+        # mantém os outros itens como estavam (e a prévia antiga deles); o corrigido passa a valer pela prévia nova
+        velhos = [dict(i, issue=i.get("issue", ag_velha.get("issue"))) for i in ag_velha["itens"] if i["tipo"] != corr_tipo]
+        for i in itens:
+            i["issue"] = numero
+        antigo = [i for i in ag_velha["itens"] if i["tipo"] == corr_tipo]
+        if antigo and antigo[0].get("estado") in ("publicado",):
+            print("o item já tinha sido publicado; a correção fica só registrada")
+        itens = velhos + itens
+        from comum import comentar
+        comentar(ag_velha.get("issue"), f"✏️ O {corr_tipo} foi corrigido: veja e aprove na prévia nova #{numero}. "
+                                         f"A aprovação do {corr_tipo} daqui não vale mais.")
+    gravar(pasta / "agenda.json", {"id": ident, "edicao": ed, "issue": (ag_velha or {}).get("issue", numero),
+                                   "run_id": os.environ.get("GITHUB_RUN_ID"), "artefato": art, "itens": itens,
+                                   "problemas": problemas, "minutos_agente": seg // 60,
+                                   "custo_referencia_usd": j.get("total_cost_usd")})
     # lista do que vai no artefato (a edição inteira + as fotos que ela usa)
     import foto_repete as FR
     fotos = set()

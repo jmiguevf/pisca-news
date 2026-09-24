@@ -14,6 +14,15 @@ on:
       refazer:
         description: "Refazer a edição do dia (ex.: 2) — cria uma nova prévia"
         required: false
+      corrigir_id:
+        description: "Corrigir uma edição pronta (id, ex.: 2026-09-24-noite-2)"
+        required: false
+      corrigir_tipo:
+        description: "carrossel ou reels"
+        required: false
+      corrigir:
+        description: "O que corrigir (texto)"
+        required: false
 concurrency:
   group: produzir
   cancel-in-progress: false
@@ -33,6 +42,9 @@ jobs:
       MIDIA_TOKEN: ${{ secrets.MIDIA_TOKEN }}
       IG_USER_ID: ${{ vars.IG_USER_ID }}
       REFAZER: ${{ inputs.refazer }}
+      CORRIGIR: ${{ inputs.corrigir }}
+      CORRIGIR_ID: ${{ inputs.corrigir_id }}
+      CORRIGIR_TIPO: ${{ inputs.corrigir_tipo || 'carrossel' }}
       MODELO: ${{ vars.MODELO || 'claude-opus-5-5' }}
       MODELO_RAPIDO: ${{ vars.MODELO_RAPIDO || 'claude-sonnet-5' }}
     steps:
@@ -47,6 +59,13 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
           pip install -q -r requirements.txt
           python -m playwright install --with-deps chromium
+      - name: Baixar a edição a corrigir
+        if: inputs.corrigir_id != ''
+        run: |
+          RUN=$(python3 -c "import json;print(json.load(open('fila/${{ inputs.corrigir_id }}/agenda.json'))['run_id'])")
+          ART=$(python3 -c "import json;print(json.load(open('fila/${{ inputs.corrigir_id }}/agenda.json'))['artefato'])")
+          gh run download "$RUN" -n "$ART" -D .
+          ls fila/${{ inputs.corrigir_id }}
       - name: Produzir
         id: produzir
         run: |
