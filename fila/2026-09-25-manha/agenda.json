@@ -2,29 +2,25 @@
  "id": "2026-09-25-manha",
  "edicao": "manha",
  "issue": 7,
- "run_id": "36132901059",
- "artefato": "edicao-2026-09-25-manha",
+ "run_id": "36135081168",
+ "artefato": "edicao-2026-09-25-manha-c36135081168",
  "itens": [
   {
    "tipo": "carrossel",
    "quando": "2026-09-25T08:00",
-   "estado": "publicado",
-   "tentativas": 1,
-   "links": [
-    "https://www.facebook.com/122115896169469462/posts/122117068263469462",
-    "https://www.instagram.com/p/DdtevtNDCwO/",
-    "https://www.threads.com/@pisca.news/post/Ddte6Tplcu5"
-   ],
-   "publicado_em": "2026-09-25T09:41"
+   "estado": "pendente",
+   "tentativas": 0,
+   "issue": 7
+  },
+  {
+   "tipo": "reels",
+   "quando": "2026-09-25T07:00",
+   "estado": "pendente",
+   "tentativas": 0,
+   "issue": 8
   }
  ],
- "problemas": {
-  "reels": [
-   "reels: sem trilha de vídeo",
-   "reels: vídeo sem som (o padrão é a trilha IMPACTO)"
-  ]
- },
- "minutos_agente": 21,
- "custo_referencia_usd": 9.5986356,
- "fechada": true
+ "problemas": {},
+ "minutos_agente": 12,
+ "custo_referencia_usd": 0.592818
 }
