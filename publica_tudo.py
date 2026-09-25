@@ -165,7 +165,10 @@ def youtube(video, legenda):
         "refresh_token": E("YT_REFRESH_TOKEN"), "grant_type": "refresh_token"}, timeout=60).json()["access_token"]
     linhas = [l for l in legenda.splitlines() if l.strip()]
     base = re.sub(r"[<>]", "", linhas[0]).strip() if linhas else "Pisca"
-    titulo = (base[:88].rstrip() + " #Shorts")   # YouTube: até 100 caracteres, sem < >
+    base = re.sub(r"^[^\wÀ-ÿ\"“]+", "", base)          # tira o emoji do começo
+    if len(base) > 88:                                   # YouTube: até 100 caracteres; corta na palavra
+        base = base[:88].rsplit(" ", 1)[0].rstrip(" —-:,;") + "…"
+    titulo = base + " #Shorts"
     meta = {"snippet": {"title": titulo, "description": legenda[:4900], "categoryId": "25"},   # 25 = Notícias
             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
     ini = requests.post("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
