@@ -38,6 +38,14 @@ Regras (todas valem para o carrossel e para o Reels):
   página é o Reels dos arquivos de OVNI (262 contas, 13,8 s assistidos): mistério + documento oficial novo.
   Escolha o Reels por aí: um tema desses com fato forte e novo. O drama vai no tema e no gancho; o número e o fato são
   exatamente os da fonte — nada de exagerar, distorcer ou prometer o que a notícia não diz.
+- MODELO DE REELS QUE EXPLODE (25/09, ele: "quero algo bem impactante como o do alien"): o Reels dos arquivos de OVNI
+  chegou a 785 contas e 934 visualizações (13,9 s assistidos em média), 3x mais que qualquer outro. A receita dele:
+  1) tema de MISTÉRIO/MEDO que todo mundo quer saber (OVNI/ET, IA fora de controle ou enganando, ameaça nuclear,
+     descoberta científica assustadora, espionagem, catástrofe) com FATO NOVO de hoje e DOCUMENTO/FONTE OFICIAL;
+  2) gancho que abre uma pergunta ("Os EUA abriram mais arquivos de OVNI — e o 6º lote tem..."), sem responder no 1º cartão;
+  3) cartões curtos com números e revelações em escada, cada um puxando o próximo;
+  4) ressalva honesta no fim ("ninguém achou prova de ET") — o drama é real, nunca inventado;
+  5) trilha DRAMA. Na dúvida entre um Reels "importante" e um "impressionante", escolha o impressionante (com fato).
 - O Reels é UMA história que NÃO está no carrossel (a mais forte que sobrou, de preferência com rosto conhecido ou
   formato "É verdade?" de checagem).
 
