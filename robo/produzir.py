@@ -202,7 +202,7 @@ até passar, e acrescente em resumo.json "observacoes" uma linha dizendo o que f
                "- `aprovar` → sai tudo no horário (se já passou do horário, sai na hora)",
                "- `aprovar reels` ou `aprovar carrossel` → sai só aquele",
                "- `cancelar reels`, `cancelar carrossel` ou `cancelar tudo` → não sai",
-               "", "Sai no Instagram (feed + story), Facebook (feed + story) e Threads. Sem aprovação, não sai."]
+               "", "Reels: Instagram (reel + story), Facebook (reel + story), Threads e YouTube Shorts. Carrossel: Instagram (post + story), Facebook (post + story) e Threads. Sem aprovação, não sai."]
     if corrigir:
         linhas.insert(0, f"**Correção:** {corrigir}\n")
     titulo = ("Correção — " if corrigir else "") + f"Prévia: {E['nome']} de {hoje:%d/%m} (" + ", ".join(
