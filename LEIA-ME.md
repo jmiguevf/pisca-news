@@ -14,6 +14,9 @@ publica no horário, depois da prévia.
 
 Cada Reels vai para Instagram (com convite de collab), Facebook e story nos dois; cada carrossel vai para Instagram,
 Facebook e story nos dois; os dois vão também para o Threads (o vídeo, hospedado no **pisca-midia**, que é público).
+O Reels vai também para o **YouTube Shorts** (canal Pisca News, @PiscaNews).
+
+Trilha dos Reels: revezamento entre as músicas da pasta `musicas/` e a IMPACTO ("a do ET"), com pancada nos cortes.
 
 ## A prévia (chega por e-mail, como issue) — SÓ PUBLICA COM APROVAÇÃO
 
@@ -36,12 +39,14 @@ linha da Anthropic), vídeo fora do padrão (1080x1920, 30 qps, som, sem borda).
 - **Desligar o automático:** Settings → Secrets and variables → Actions → Variables → `PISCA_LIGADO` = `0` (volta com `1`). Desligado, só roda o que for disparado à mão.
 - **Produzir edição** → "Run workflow" (pode escolher manha, meio ou noite).
 - **Publicar (robô)** → "Run workflow" publica o que venceu; com o id (ex.: `2026-09-25-manha`) publica já.
-- **Verificar ligações** → confere Claude, Instagram, Página, Threads e pisca-midia (roda sozinho toda segunda).
+- **Verificar ligações** → confere Claude, Instagram, Página, Threads, pisca-midia e YouTube (roda sozinho toda segunda).
 
 ## Chaves (Settings → Secrets and variables → Actions)
 
 Secrets: `CLAUDE_CODE_OAUTH_TOKEN` (no PC: `claude setup-token`; vale 1 ano), `META_PAGE_TOKEN`, `THREADS_TOKEN`
 (vale 60 dias: renovar antes de ~23/11/2026), `MIDIA_TOKEN` (acesso ao pisca-midia).
+YouTube: `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (app "Pisca News" no Google Cloud, externo/em produção;
+página e privacidade em https://jmiguevf.github.io/pisca-news/).
 Variables: `IG_USER_ID`, `FB_PAGE_ID`, `THREADS_USER_ID`, `COLLAB`, `PISCA_LIGADO`.
 
 ## Custo
