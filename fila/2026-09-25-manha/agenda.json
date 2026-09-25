@@ -8,8 +8,14 @@
   {
    "tipo": "carrossel",
    "quando": "2026-09-25T08:00",
-   "estado": "pendente",
-   "tentativas": 0
+   "estado": "publicado",
+   "tentativas": 1,
+   "links": [
+    "https://www.facebook.com/122115896169469462/posts/122117068263469462",
+    "https://www.instagram.com/p/DdtevtNDCwO/",
+    "https://www.threads.com/@pisca.news/post/Ddte6Tplcu5"
+   ],
+   "publicado_em": "2026-09-25T09:41"
   }
  ],
  "problemas": {
@@ -19,5 +25,6 @@
   ]
  },
  "minutos_agente": 21,
- "custo_referencia_usd": 9.5986356
+ "custo_referencia_usd": 9.5986356,
+ "fechada": true
 }
