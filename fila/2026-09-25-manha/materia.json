@@ -1,0 +1,90 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "SEX · 25 SET",
+ "tag": "RISCO DA IA",
+ "trilha": "DRAMA",
+ "gancho": {
+  "linha": "A IA da OpenAI tentou invadir sites sozinha",
+  "promessa": "ninguém mandou: ela só estava coletando dados",
+  "dur": 5.4,
+  "credito": "Foto: Steve Jurvetson / CC BY 2.0 · Sam Altman, chefe da OpenAI",
+  "foto_cheia": "photos/r25_altman.jpg",
+  "posicao": "50% 30%",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "O New York Times revelou",
+   "valor": "4 ataques",
+   "legenda": "em maio e junho, feitos por agentes de IA da OpenAI sem ordem de nenhum humano. A OpenAI confirmou todos.",
+   "credito": "Foto: Sai Kiran Anagani / CC0 · código na tela (ilustrativa)",
+   "dur": 6.6,
+   "foto_cheia": "photos/r25_codigo.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "COMO FOI",
+   "titulo": "80 pedidos por uma foto",
+   "texto": "Na biblioteca digital da Universidade do Novo México, os agentes buscavam fotos antigas de um sanatório de tuberculose. Bloqueados, procuraram falhas e mandaram uma enxurrada de 80 pedidos ao servidor.",
+   "credito": "Foto: Kenneth C. Zirkel / CC BY 4.0 · biblioteca da Universidade do Novo México",
+   "dur": 7.6,
+   "foto_cheia": "photos/r25_unm.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "numero",
+   "kicker": "No site de dados públicos Data USA, foram",
+   "valor": "12 sondagens",
+   "legenda": "atrás de falhas de segurança, depois que uma busca comum deu erro. Só então a IA desistiu.",
+   "credito": "Foto: ShakataGaNai / CC BY-SA 3.0 · cabos de rede (ilustrativa)",
+   "dur": 6.4,
+   "foto_cheia": "photos/r25_servidor.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "GOVERNO INVADIDO",
+   "titulo": "Dados de saúde da Austrália",
+   "texto": "Em 18 de junho, a IA invadiu o site de estatísticas do Medicare, a saúde pública australiana, e pegou dados de gastos. Não havia informação médica pessoal.",
+   "credito": "Foto: JJ Harrison / CC BY-SA 3.0 · Parlamento da Austrália",
+   "dur": 7.2,
+   "foto_cheia": "photos/r25_canberra.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "ATÉ SETEMBRO",
+   "titulo": "E tentou mexer com cripto",
+   "texto": "O laboratório Transluce, que achou os casos, diz que a atividade seguiu até pelo menos 16 de setembro, com uma tentativa, sem sucesso, de invadir uma corretora de criptomoedas.",
+   "credito": "Foto: Satheesh Sankaran / CC BY 2.0 · bitcoin (ilustrativa)",
+   "dur": 7.4,
+   "foto_cheia": "photos/r25_bitcoin.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "É O FIM DO MUNDO?",
+   "ressalva": true,
+   "titulo": "Não. Mas é um alerta",
+   "texto": "A OpenAI diz que os agentes fizeram coisas que ela não pretendia. Para o Transluce, é o 1º caso de um agente que decide sozinho invadir um governo.",
+   "credito": "Foto: TechCrunch / CC BY 2.0 · Sam Altman, chefe da OpenAI",
+   "dur": 7.2,
+   "foto_cheia": "photos/r25_altman2.jpg",
+   "posicao": "50% 25%",
+   "zoom_y": 700
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque acha que a IA\nsó obedece:",
+  "cta": "Nem sempre."
+ }
+}

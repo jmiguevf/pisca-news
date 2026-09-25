@@ -1,0 +1,23 @@
+{
+ "id": "2026-09-25-manha",
+ "edicao": "manha",
+ "issue": 7,
+ "run_id": "36132901059",
+ "artefato": "edicao-2026-09-25-manha",
+ "itens": [
+  {
+   "tipo": "carrossel",
+   "quando": "2026-09-25T08:00",
+   "estado": "pendente",
+   "tentativas": 0
+  }
+ ],
+ "problemas": {
+  "reels": [
+   "reels: sem trilha de vídeo",
+   "reels: vídeo sem som (o padrão é a trilha IMPACTO)"
+  ]
+ },
+ "minutos_agente": 21,
+ "custo_referencia_usd": 9.5986356
+}

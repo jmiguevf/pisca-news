@@ -1,0 +1,100 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "layout": "capa9",
+ "edition": "manha",
+ "date_label": "SEX · 25 SET · MANHÃ",
+ "cta": "Mandou pra alguém? É assim que cresce.",
+ "cartao_para_mandar": {
+  "cartao": 5,
+  "destinatario": "quem paga a conta de luz da casa"
+ },
+ "cover": {
+  "headline_before": "O que aconteceu no",
+  "headline_accent": "mundo",
+  "headline_after": "\nenquanto você\ndormia?",
+  "subtitle": "9 notícias em 1 minuto.",
+  "photos": [
+   "photos/s25_macron2.jpg",
+   "photos/s25_netanyahu3.jpg",
+   "photos/s25_amodei4.jpg"
+  ],
+  "credits": "Fotos: Comissão Europeia (CC BY 4.0), Avi Ohayon (CC BY-SA 3.0), TechCrunch (CC BY 2.0)",
+  "story_photo": "photos/s25_netanyahu3.jpg"
+ },
+ "news": [
+  {
+   "tag": "GUERRA",
+   "headline": "Houthis miram Meca e Riad; França manda tropas",
+   "body": "A coalizão liderada pela Arábia Saudita diz ter interceptado seis mísseis balísticos disparados pelos Houthis, do Iêmen, na quinta. Entre os alvos, segundo a France 24, estavam Meca, Jeddah e Riad, atacada pela 1ª vez em anos. Macron anunciou que a França vai mandar soldados, radares e sistemas de defesa para proteger o terminal de petróleo de Yanbu.",
+   "source": "France 24 e Al Jazeera",
+   "photo": "photos/s25_riad.jpg",
+   "photo_credit": "Foto: Riad, capital saudita · B.alotaby / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "IA",
+   "headline": "Casa Branca segura IAs da Anthropic e OpenAI",
+   "body": "O governo dos EUA pediu à OpenAI e à Anthropic que não entreguem novos modelos de IA ao instituto de segurança de IA do Reino Unido antes de uma revisão americana. O pedido partiu do escritório do diretor nacional de cibersegurança e ameaça o acordo pelo qual os britânicos testam os modelos antes do lançamento. As empresas não comentaram de imediato.",
+   "source": "Politico e Reuters",
+   "photo": "photos/s25_amodei3.jpg",
+   "photo_credit": "Foto: Dario Amodei, chefe da Anthropic · TechCrunch / CC BY 2.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "DINHEIRO",
+   "headline": "Anthropic fecha acordo de US$ 11,6 bi com Akamai",
+   "body": "A dona do Claude vai gastar US$ 11,6 bilhões em nuvem da Akamai ao longo de sete anos, e o contrato pode crescer mais US$ 9 bilhões. A Anthropic ganha o direito de comprar até 5% da Akamai: cerca de 7,7 milhões de ações a US$ 111,33 cada. A ação da Akamai subiu 22% fora do horário normal, segundo a Reuters.",
+   "source": "Reuters e Bloomberg",
+   "photo": "photos/s25_akamai.jpg",
+   "photo_credit": "Foto: sede da Akamai em Cambridge (EUA) · Daderot / CC0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "MUNDO",
+   "headline": "Diplomatas deixam a ONU no discurso de Netanyahu",
+   "body": "Diplomatas saíram em massa do plenário quando Netanyahu começou a falar na Assembleia Geral, na quinta. Ele reagiu: “se ainda há covardes morais que não saíram, por favor, saiam agora”. Chamou a acusação de genocídio em Gaza de “a maior mentira do século” e mostrou um pager do Hezbollah. Israel vota em 27 de outubro.",
+   "source": "Al Jazeera e NBC News",
+   "photo": "photos/s25_netanyahu2.jpg",
+   "photo_credit": "Foto: Itzhak Harari / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "BOLSO",
+   "headline": "Conta de luz puxa prévia da inflação: 0,70%",
+   "body": "O IPCA-15 de setembro, divulgado pelo IBGE nesta sexta, subiu 0,70%, acima dos 0,53% esperados pelo mercado. Em 12 meses, a alta é de 4,47%. O que mais pesou foi a conta de luz: subiu 7,42% em setembro, com o fim do Bônus de Itaipu, depois de cair 6,25% em agosto.",
+   "source": "InfoMoney, Poder360 e CNN Brasil",
+   "photo": "photos/s25_medidor.jpg",
+   "photo_credit": "Foto: medidores de energia (ilustrativa) · Marc-Lautenbacher / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "CLIMA",
+   "headline": "Tempestade rara atinge 40 milhões nos EUA",
+   "body": "Mais de 40 milhões de pessoas vão sentir um nor'easter, tempestade de costa leste rara em setembro, segundo a CNN. A previsão é de 2 a 4 polegadas de chuva (5 a 10 cm) no sudeste da Nova Inglaterra e rajadas de 60 mph (cerca de 97 km/h). Na Carolina do Norte, o mar rompeu as dunas e fechou a Highway 12. O pico em Boston e Nova York é entre sexta e sábado.",
+   "source": "CNN e NBC News",
+   "photo": "photos/s25_outerbanks.jpg",
+   "photo_credit": "Imagem de arquivo: cheia nos Outer Banks (Carolina do Norte), 2015 · NCDOT / CC BY 2.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "TECNOLOGIA",
+   "headline": "Gemini agora telefona por você",
+   "body": "O Google começou a testar o “Call for Me”: o Gemini liga para lojas e serviços em nome do usuário, espera na linha, marca horário e confere estoque. A IA se apresenta como assistente e avisa que a ligação é gravada; dá para ler a conversa ao vivo e assumir. Por ora, só nos EUA, em celulares Pixel 11 e com assinatura paga.",
+   "source": "TechCrunch e Engadget",
+   "photo": "photos/s25_pixel.jpg",
+   "photo_credit": "Foto: celular Pixel (ilustrativa) · D.328 / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "SAÚDE",
+   "headline": "SP chega a 37 casos de sarampo em 2026",
+   "body": "O estado de São Paulo confirmou o 37º caso de sarampo do ano: um homem de 42 anos, sem histórico de vacinação, morador da capital. São 33 casos na capital, 2 em São Bernardo, 1 em Guarulhos e 1 em Santo André. Em 27 dos 37, a pessoa não tinha vacina registrada ou tinha esquema incompleto. A tríplice viral é de graça nas UBSs.",
+   "source": "CNN Brasil e Metrópoles",
+   "photo": "photos/s25_vacina.jpg",
+   "photo_credit": "Foto: vacina contra sarampo (ilustrativa) · Exército dos EUA / domínio público (Wikimedia Commons)"
+  },
+  {
+   "tag": "BOLSO",
+   "headline": "Confiança do consumidor é a menor em 4 anos",
+   "body": "O índice de confiança do consumidor da FGV caiu 0,5 ponto em setembro, para 84,2 pontos: o menor nível desde novembro de 2022 e a 5ª queda seguida. A expectativa para os próximos meses também caiu, para 85,2 pontos. Segundo a FGV, o endividamento e a inadimplência altos dificultam uma melhora no curto prazo.",
+   "source": "InfoMoney e CNN Brasil",
+   "photo": "photos/s25_carrinho.jpg",
+   "photo_credit": "Foto: carrinho de supermercado (ilustrativa) · safaritravelplus / CC0 (Wikimedia Commons)"
+  }
+ ],
+ "caption": "Piscada da manhã (sex, 25/09) — piscou? O mundo já mudou:\n\n1️⃣ Houthis miram Meca e Riad; França manda tropas\n2️⃣ Casa Branca segura IAs da Anthropic e OpenAI\n3️⃣ Anthropic fecha acordo de US$ 11,6 bi com Akamai\n4️⃣ Diplomatas deixam a ONU no discurso de Netanyahu\n5️⃣ Conta de luz puxa prévia da inflação: 0,70%\n6️⃣ Tempestade rara atinge 40 milhões nos EUA\n7️⃣ Gemini agora telefona por você\n8️⃣ SP chega a 37 casos de sarampo em 2026\n9️⃣ Confiança do consumidor é a menor em 4 anos\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 5 pra quem paga a conta de luz da casa: ela subiu 7,42% em setembro.\n\nO Pisca é feito com o Claude, da Anthropic — a IA dos cards 2 e 3.\n\n💬 Você deixaria uma IA fazer ligações no seu nome?\n\nFontes: France 24, Al Jazeera, Politico, Reuters, Bloomberg, NBC News, InfoMoney, Poder360, CNN Brasil, CNN, TechCrunch, Engadget e Metrópoles.\n\n#noticias #atualidades #mundo #ia #inflacao"
+}

@@ -1,3 +1,26 @@
+[2026-09-24T22:46] REELS
+🐼 Xi chegou à Casa Branca com presentes para Trump. O que saiu do encontro — e o que ainda não saiu.
+
+🐼 2 pandas, Ping Ping e Fu Shuang, chegam ao Zoo Atlanta "nos próximos dias"
+🎓 100 mil estudantes americanos convidados a estudar na China em 5 anos
+🤝 Trégua das tarifas estendida até 10 de janeiro
+🤖 Na IA, Trump: "bem-vindos ao novo mundo da superinteligência"
+
+❓ Acabou a briga? Ainda não: a trégua só ganha tempo para negociar, e Taiwan e Irã ficaram sem resposta clara.
+
+📲 Manda pro amigo que acompanha a briga EUA × China.
+
+💬 Pandas e estudantes: gesto de paz ou jogada de marketing?
+
+O Pisca é feito com o Claude, da Anthropic.
+
+Fontes: AP (US News), The Hill, ABC News, CNBC e Deseret News.
+📷 Fotos (Wikimedia Commons): Casa Branca (domínio público), Rob e Carl Lender (CC BY 2.0), Ken Lund (CC BY-SA 2.0), N509FZ (CC BY-SA 4.0).
+
+#trump #china #xijinping #noticias #mundo
+
+=====
+
 [2026-09-24T22:22] FEED
 Piscada da noite (qui, 24/09) — piscou? O mundo já mudou:
 
@@ -826,30 +849,3 @@ Fontes: CNN Brasil, Poder360, InfoMoney, Reuters, Al Jazeera, Euronews, AP e Gaz
 Apuração e arte feitas por IA. As regras são de gente: @pisca.news
 
 #noticias #brasil 
-
-=====
-
-[2026-09-17T23:14] FEED
-Piscada da noite (quinta, 17/09) — piscou? O mundo já mudou:
-
-1. Ibovespa sobe 0,24% e dólar cai a R$ 5,139
-2. Lula assina decreto e Bolsa Família vai a R$ 691
-3. Fachin cancela sessão do STF e adia caso Mendonça
-4. Brasil rebate EUA e nega falha contra PCC e CV
-5. Banco da Inglaterra mantém juro em 3,75%
-6. Rússia ataca Kiev e deixa 18 feridos
-7. Trump ameaça UE com tarifas por causa do Canadá
-8. OpenAI revela 6 casos de falha em modelos de IA
-9. Especialistas pedem trava nuclear para IA militar
-
-Arraste para ver o resumo de cada uma.
-
-Manda o card 2 pra quem recebe Bolsa Família e ainda não viu o valor novo.
-
-Amanhã cedo tem mais.
-
-Fontes: Poder360, CNN Brasil, Agência Brasil, Euronews, AFP, Exame e InfoMoney. Fotos: Wikimedia Commons (créditos nas artes).
-
-Apuração e arte feitas por IA. As regras são de gente: @pisca.news
-
-#noticias #brasil #piscanews
