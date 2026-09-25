@@ -2,23 +2,25 @@
  "id": "2026-09-25-meio",
  "edicao": "meio",
  "issue": 9,
- "run_id": "36150574523",
- "artefato": "edicao-2026-09-25-meio",
+ "run_id": "36158039963",
+ "artefato": "edicao-2026-09-25-meio-c36158039963",
  "itens": [
-  {
-   "tipo": "reels",
-   "quando": "2026-09-25T12:00",
-   "estado": "pendente",
-   "tentativas": 0
-  },
   {
    "tipo": "carrossel",
    "quando": "2026-09-25T13:00",
    "estado": "pendente",
-   "tentativas": 0
+   "tentativas": 0,
+   "issue": 9
+  },
+  {
+   "tipo": "reels",
+   "quando": "2026-09-25T12:00",
+   "estado": "pendente",
+   "tentativas": 0,
+   "issue": 10
   }
  ],
  "problemas": {},
- "minutos_agente": 30,
- "custo_referencia_usd": 7.932409599999998
+ "minutos_agente": 1,
+ "custo_referencia_usd": 0.8827631999999997
 }
