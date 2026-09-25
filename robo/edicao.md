@@ -45,7 +45,7 @@ Regras (todas valem para o carrossel e para o Reels):
   2) gancho que abre uma pergunta ("Os EUA abriram mais arquivos de OVNI — e o 6º lote tem..."), sem responder no 1º cartão;
   3) cartões curtos com números e revelações em escada, cada um puxando o próximo;
   4) ressalva honesta no fim ("ninguém achou prova de ET") — o drama é real, nunca inventado;
-  5) trilha DRAMA. Na dúvida entre um Reels "importante" e um "impressionante", escolha o impressionante (com fato).
+  5) trilha de suspense (o padrão do motor). Na dúvida entre um Reels "importante" e um "impressionante", escolha o impressionante (com fato).
 - O Reels é UMA história que NÃO está no carrossel (a mais forte que sobrou, de preferência com rosto conhecido ou
   formato "É verdade?" de checagem).
 
@@ -75,8 +75,9 @@ Regras (todas valem para o carrossel e para o Reels):
 ## 5. Reels (matéria única, 30–70 s)
 1. Escreva `$PASTA/materia.json` no formato de `exemplos/reels_materia.json` (gancho → fato → número → mecanismo →
    o que muda pra você → ressalva). Cartões de 5,5–8 s.
-2. Trilha: a do Reels do OVNI, IMPACTO (25/09, ele: "use a do et") — é o padrão do motor; não precisa pôr nada no json.
-   Só use "trilha": "DRAMA" (tensão lenta) se ele pedir.
+2. Trilha: NÃO ponha "trilha" no json. O motor reveza sozinho as músicas de suspense que o José Miguel escolheu
+   (pasta musicas/) e a IMPACTO ("a do ET"), com pancada em cada corte — cada edição sai com uma diferente.
+   Só fixe uma ("trilha": "IMPACTO" ou "trilha": "<arquivo>.mp3" de musicas/) se ele pedir.
    2. `python3 reels_materia.py $PASTA/materia.json $PASTA/reels.mp4` (NUNCA dois ao mesmo tempo: pasta de quadros compartilhada).
 3. Folha de quadros: `python3 robo/folha_video.py $PASTA/reels.mp4 $PASTA/reels_folha.jpg $PASTA/materia.json` e abra a folha (Read).
    Texto só entre 250 px do topo e 1520 px (área segura do Reels), rosto inteiro, foto certa.

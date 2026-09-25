@@ -1103,8 +1103,20 @@ def main():
     # TRILHA_NOME=PULSO|CORRIDA|NOTURNO|TENSAO (ou TRILHA=arquivo) volta para as trilhas fixas.
     # 24/09 (ele): "música diferente e dramática no reels" -> padrão DRAMA (tensão: drone, cordas, coração, pancadas
     # nos cortes; trilha_tensao.py). IMPACTO continua disponível com "trilha": "IMPACTO" no json.
-    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "IMPACTO")).upper()
-    impacto = escolha in ("IMPACTO", "DRAMA")
+    # 25/09 (ele): "use as músicas novas que coloquei na pasta" -> padrão BIBLIOTECA: revezamento entre as músicas
+    # de musicas/ e a IMPACTO ("a do ET"), com as pancadas nos cortes (trilha_biblioteca.py).
+    # "trilha": "IMPACTO" | "DRAMA" | "<arquivo>.mp3" no json fixa uma escolha.
+    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "BIBLIOTECA"))
+    if not escolha.lower().endswith(".mp3"):
+        escolha = escolha.upper()
+    import trilha_biblioteca as TB
+    musica = None
+    if escolha == "BIBLIOTECA":
+        e = TB.escolhe()
+        escolha, musica = ("IMPACTO", None) if e == "IMPACTO" else ("BIBLIOTECA", e)
+    elif escolha.lower().endswith(".mp3"):
+        escolha, musica = "BIBLIOTECA", escolha
+    impacto = escolha in ("IMPACTO", "DRAMA", "BIBLIOTECA")
     if impacto:
         print(f"trilha: {escolha} (batida nos cortes; gerada depois de montar o plano)")
     else:
@@ -1167,7 +1179,11 @@ def main():
         final = round(t_de(inicios[-1][0]), 3)
         import trilha_impacto as TI
         wav = OUTMP4.with_suffix(".impacto.wav")
-        if escolha == "DRAMA":
+        if escolha == "BIBLIOTECA":
+            mix, nome_m = TB.arranjo(total, cortes, grandes, musica)
+            TI.grava(mix, str(wav))
+            escolha = f"BIBLIOTECA:{nome_m}"
+        elif escolha == "DRAMA":
             import trilha_tensao as TT
             TI.grava(TT.arranjo(total, cortes, grandes, final), str(wav))
         else:

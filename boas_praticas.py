@@ -95,7 +95,7 @@ def confere_reels(video, legenda=None, trava=True):
         if fps < 29.5:
             erros.append(f"{fps:.1f} quadros por segundo; o padrão é 30")
     if not aus:
-        erros.append("vídeo sem som (o padrão é a trilha IMPACTO)")
+        erros.append("vídeo sem som (o padrão é a trilha de suspense da pasta musicas/)")
     if dur >= 180:
         erros.append(f"{dur:.0f} s: acima de 3 min o Instagram não recomenda para público novo")
     elif dur > 90:
