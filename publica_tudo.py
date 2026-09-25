@@ -13,7 +13,7 @@ Chaves esperadas no /home/claude/.pisca_env (nunca escrever na resposta):
   TIKTOK_TOKEN                                           (TikTok Content Posting API; privado até a auditoria do app)
 Rede: graph.threads.net, oauth2.googleapis.com, www.googleapis.com, open.tiktokapis.com liberados no allowlist.
 """
-import os, sys, json, time, subprocess, requests
+import os, re, sys, json, time, subprocess, requests
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
@@ -164,7 +164,8 @@ def youtube(video, legenda):
         "client_id": E("YT_CLIENT_ID"), "client_secret": E("YT_CLIENT_SECRET"),
         "refresh_token": E("YT_REFRESH_TOKEN"), "grant_type": "refresh_token"}, timeout=60).json()["access_token"]
     linhas = [l for l in legenda.splitlines() if l.strip()]
-    titulo = (linhas[0][:90] + " #Shorts") if linhas else "Pisca #Shorts"
+    base = re.sub(r"[<>]", "", linhas[0]).strip() if linhas else "Pisca"
+    titulo = (base[:88].rstrip() + " #Shorts")   # YouTube: até 100 caracteres, sem < >
     meta = {"snippet": {"title": titulo, "description": legenda[:4900], "categoryId": "25"},   # 25 = Notícias
             "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
     ini = requests.post("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",

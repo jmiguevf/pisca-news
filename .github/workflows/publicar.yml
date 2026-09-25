@@ -32,6 +32,9 @@ jobs:
       THREADS_USER_ID: ${{ vars.THREADS_USER_ID }}
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
       MIDIA_TOKEN: ${{ secrets.MIDIA_TOKEN }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - name: Tem algo para publicar agora?

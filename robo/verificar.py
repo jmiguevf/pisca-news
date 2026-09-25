@@ -47,10 +47,24 @@ def midia():
     return "ok" if (j.get("permissions") or {}).get("push") else f"sem permissão de escrita: {j.get('message')}"
 
 
+def youtube():
+    if not (E("YT_CLIENT_ID") and E("YT_REFRESH_TOKEN")):
+        return "sem chave (Shorts não saem)"
+    tok = requests.post("https://oauth2.googleapis.com/token", data={
+        "client_id": E("YT_CLIENT_ID"), "client_secret": E("YT_CLIENT_SECRET"),
+        "refresh_token": E("YT_REFRESH_TOKEN"), "grant_type": "refresh_token"}, timeout=60).json()
+    if "access_token" not in tok:
+        return f"recusou: {tok.get('error_description') or tok.get('error')}"
+    j = requests.get("https://www.googleapis.com/youtube/v3/channels", params={"part": "snippet", "mine": "true"},
+                     headers={"Authorization": f"Bearer {tok['access_token']}"}, timeout=60).json()
+    it = j.get("items") or []
+    return f"ok ({it[0]['snippet']['title']})" if it else f"recusou: {j.get('error', {}).get('message', 'sem canal')}"
+
+
 def main():
     linhas, ruim = [], False
     for nome, f in (("Claude", claude), ("Instagram", instagram), ("Página do Facebook", pagina),
-                    ("Threads", threads), ("pisca-midia (vídeo do Threads)", midia)):
+                    ("Threads", threads), ("pisca-midia (vídeo do Threads)", midia), ("YouTube", youtube)):
         try:
             r = f()
         except Exception as e:
