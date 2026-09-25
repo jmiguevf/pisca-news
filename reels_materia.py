@@ -1103,7 +1103,7 @@ def main():
     # TRILHA_NOME=PULSO|CORRIDA|NOTURNO|TENSAO (ou TRILHA=arquivo) volta para as trilhas fixas.
     # 24/09 (ele): "música diferente e dramática no reels" -> padrão DRAMA (tensão: drone, cordas, coração, pancadas
     # nos cortes; trilha_tensao.py). IMPACTO continua disponível com "trilha": "IMPACTO" no json.
-    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "DRAMA")).upper()
+    escolha = (os.environ.get("TRILHA_NOME") or d.get("trilha") or ("" if os.environ.get("TRILHA") else "IMPACTO")).upper()
     impacto = escolha in ("IMPACTO", "DRAMA")
     if impacto:
         print(f"trilha: {escolha} (batida nos cortes; gerada depois de montar o plano)")
