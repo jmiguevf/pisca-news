@@ -8,9 +8,15 @@
   {
    "tipo": "carrossel",
    "quando": "2026-09-25T19:30",
-   "estado": "pendente",
-   "tentativas": 0,
-   "issue": 11
+   "estado": "publicado",
+   "tentativas": 1,
+   "issue": 11,
+   "links": [
+    "https://www.facebook.com/122115896169469462/posts/122117422071469462",
+    "https://www.instagram.com/p/DduhhqjmJNo/",
+    "https://www.threads.com/@pisca.news/post/DduhqUYgbbc"
+   ],
+   "publicado_em": "2026-09-25T19:24"
   },
   {
    "tipo": "reels",
