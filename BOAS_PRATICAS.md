@@ -3,6 +3,14 @@
 Pedido dele (24/09): "Cancele e apague regras antigas e registre apenas o que é bom e dá retorno." Tudo o que não está
 aqui foi cancelado. Ler antes de produzir qualquer coisa. 🔒 = a máquina confere sozinha e trava.
 
+## 0. O dia (regra fixa, 25/09 — ele: "registre isso")
+- 6 posts por dia, em 3 edições. Cada edição tem 1 Reels e 1 carrossel:
+  manhã (Reels 7h, carrossel 8h) · meio-dia (Reels 12h, carrossel 13h) · noite (Reels 18h30, carrossel 19h30).
+- Nada sai sem a aprovação dele (a prévia vai por e-mail). Cada post, quando sai, vai para todas as redes ao mesmo tempo:
+  - Reels: Instagram (reel + story), Facebook (reel + story), Threads e YouTube Shorts.
+  - Carrossel: Instagram (post + story), Facebook (post + story) e Threads.
+- Threads não tem story. YouTube recebe só os 3 Reels do dia.
+
 ## 1. O que dá retorno (números da página em 24/09 — detalhes em APRENDIZADOS.md)
 - O REELS é o formato que explode: "Trump na ONU: checamos 4 frases" (163 contas, 205 visualizações) e o resumo de
   15/09 às 7h (114 contas, 157). O carrossel nunca passou de 16 contas no Instagram.
