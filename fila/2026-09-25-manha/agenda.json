@@ -8,19 +8,23 @@
   {
    "tipo": "carrossel",
    "quando": "2026-09-25T08:00",
-   "estado": "pendente",
+   "estado": "publicado",
    "tentativas": 0,
-   "issue": 7
+   "issue": 7,
+   "links": [
+    "https://www.instagram.com/p/DdtevtNDCwO/"
+   ]
   },
   {
    "tipo": "reels",
    "quando": "2026-09-25T07:00",
-   "estado": "pendente",
+   "estado": "expirado",
    "tentativas": 0,
    "issue": 8
   }
  ],
  "problemas": {},
  "minutos_agente": 12,
- "custo_referencia_usd": 0.592818
+ "custo_referencia_usd": 0.592818,
+ "fechada": true
 }
