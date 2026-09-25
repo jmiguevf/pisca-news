@@ -177,6 +177,14 @@ def youtube(video, legenda):
     up.raise_for_status()
     vid = up.json()["id"]
     print("YOUTUBE:", f"https://www.youtube.com/shorts/{vid}")
+    try:   # app do Google sem auditoria: o YouTube pode travar o vídeo como privado
+        st = requests.get("https://www.googleapis.com/youtube/v3/videos", params={"part": "status", "id": vid},
+                          headers={"Authorization": f"Bearer {tok}"}, timeout=60).json()["items"][0]["status"]
+        if st.get("privacyStatus") != "public":
+            pendente("YouTube", f"o vídeo subiu como {st.get('privacyStatus')} (o YouTube trava apps sem auditoria); "
+                                "dá para deixar público no YouTube Studio")
+    except Exception:
+        pass
     return vid
 
 
