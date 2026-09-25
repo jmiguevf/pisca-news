@@ -1,19 +1,21 @@
-🤖 Bill Gates fez um alerta sobre a IA — e o número que ele usou assusta.
+🤖 Elon Musk descreveu como vai ser o mundo em 2036 — e, para ele, os humanos não estarão no comando.
 
-☠️ À NBC, o fundador da Microsoft disse que a IA “certamente é poderosa o bastante” para provocar eventos que causem 1 bilhão de mortes
-🔫 “Nunca houve uma arma tão poderosa” quanto pessoas mal-intencionadas com as ferramentas de IA mais novas
-🏥 Em agosto, ele escreveu que a IA pode ser usada em ataques hackers, fraudes e desinformação contra hospitais, bancos, redes de energia e governos
-⚖️ Para ele, não basta as empresas se vigiarem: polícia e políticos precisam discutir as proteções
+🎙️ Foi numa entrevista à The Economist, em julho
+🧠 A IA pode superar a soma da inteligência humana em uns 5 anos (~2031)
+🐒 Humanos no comando em 10 anos? “Acho improvável”
+💸 “O dinheiro não vai importar em 2036”
+🌱 Trabalhar vai ser opcional: “uma boa comparação seria a jardinagem”
+☠️ Ele confirmou que já estimou em 10% a 20% a chance de robôs assassinos acabarem com a humanidade
 
-❓ Vai acontecer? Ele não disse isso: falou do poder da IA nas mãos erradas, não fez uma previsão. A entrevista completa vai ao ar no fim de semana.
+❓ Vai acontecer? É previsão, não fato. Musk já errou prazos (prometeu carro 100% autônomo para uns 3 anos depois de 2015), e a Forbes lembra que energia, terra e minerais seguem escassos.
 
-📲 Manda pro amigo que acha que a IA é só um chatbot.
+📲 Manda pro amigo que acha que a IA nunca vai mandar em nada.
 
-💬 Quem deve colocar freio na IA: governos ou as próprias empresas?
+💬 Você acredita na previsão do Musk para 2036?
 
 O Pisca é feito com o Claude, da Anthropic.
 
-Fontes: NBC News (Meet the Press), Axios e Bloomberg.
-📷 Fotos (Wikimedia Commons): Mueller e Kuhlmann/MSC (CC BY 3.0 DE), DFID (CC BY 2.0), Dennis G. Jarvis (CC BY-SA 2.0) e Jackson Lanier (CC BY-SA 4.0).
+Fontes: The Economist, Gizmodo, Forbes e Yahoo Finance.
+📷 Fotos (Wikimedia Commons): Debbie Rowe (CC BY-SA 3.0), UK Gov. e Steve Jurvetson (CC BY 2.0), WEF (CC BY-SA 2.0), Sikander (CC BY-SA 4.0), Syced (CC0), NORAD (dom. público), David Shankbone (CC BY 3.0).
 
-#billgates #inteligenciaartificial #ia #tecnologia #noticias
+#elonmusk #inteligenciaartificial #ia #tecnologia #futuro
