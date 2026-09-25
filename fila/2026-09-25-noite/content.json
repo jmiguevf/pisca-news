@@ -1,0 +1,100 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "layout": "capa9",
+ "edition": "noite",
+ "date_label": "SEX · 25 SET · NOITE",
+ "cta": "Mandou pra alguém? É assim que cresce.",
+ "cartao_para_mandar": {
+  "cartao": 3,
+  "destinatario": "amigo que joga no Tigrinho ou aposta em bet"
+ },
+ "cover": {
+  "headline_before": "O que rolou na",
+  "headline_accent": "noite",
+  "headline_after": "\nde sexta?",
+  "subtitle": "9 notícias em 1 minuto.",
+  "photos": [
+   "photos/n25_kim1.jpg",
+   "photos/n25_lula2.jpg",
+   "photos/n25_amodei2.jpg"
+  ],
+  "credits": "Fotos: Gabinete do Presidente da Rússia (CC BY 4.0), Lula Oficial (CC BY-SA 4.0), TechCrunch (CC BY 2.0)",
+  "story_photo": "photos/n25_kim1.jpg"
+ },
+ "news": [
+  {
+   "tag": "GUERRA",
+   "headline": "Irã propõe plano de 7 dias para fim da guerra",
+   "body": "O chanceler Abbas Araghchi disse que o Irã entregou aos EUA um plano de sete dias para encerrar a guerra: “o Estreito de Ormuz estaria aberto ao fim do sétimo dia”. Em troca, quer cessar-fogo total, inclusive no Líbano, a liberação de mais de US$ 12 bilhões congelados e o fim do bloqueio naval americano. Rubio disse que seria incorreto falar em “grande avanço”.",
+   "source": "Al Jazeera e CNBC",
+   "photo": "photos/n25_ormuz.jpg",
+   "photo_credit": "Foto: Marinha dos EUA / domínio público (Wikimedia Commons) · navios no Estreito de Ormuz"
+  },
+  {
+   "tag": "IA",
+   "headline": "Tribunal deixa Pentágono pôr Anthropic na lista negra",
+   "body": "Por 2 a 1, um tribunal federal de apelações de Washington decidiu nesta sexta que o Departamento de Defesa pode tratar a Anthropic como “risco para a cadeia de suprimentos”. A empresa se recusou a liberar o Claude para armas totalmente autônomas e vigilância doméstica em massa. Ela diz ter perdido bilhões de dólares em negócios e pode recorrer. Um tribunal da Califórnia decidiu o contrário no mês passado.",
+   "source": "CNBC, Washington Post e Al Jazeera",
+   "photo": "photos/n25_pentagono.jpg",
+   "photo_credit": "Foto: Ken Hammond / Força Aérea dos EUA / domínio público (Wikimedia Commons)"
+  },
+  {
+   "tag": "BRASIL",
+   "headline": "Lula lança medida para proibir as bets",
+   "body": "O governo levou nesta sexta, em São Paulo, a proposta que proíbe as apostas on-line no país: as esportivas e os cassinos virtuais, como o “Tigrinho”. O texto prevê de 4 a 6 anos de prisão para quem explorar ou operar bets e também pune quem fizer publicidade delas. Segundo o Poder360, a medida tira cerca de R$ 12 bilhões da arrecadação. O Congresso ainda precisa aprovar.",
+   "source": "Poder360, InfoMoney e Metrópoles",
+   "photo": "photos/n25_slots.jpg",
+   "photo_credit": "Foto: Tristan Surtel / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "GOLPE",
+   "headline": "Coreia do Norte é suspeita de roubo de US$ 351 mi",
+   "body": "A corretora de cripto Bitget perdeu cerca de US$ 351,6 milhões de suas carteiras on-line em 19 transferências, depois que o invasor entrou num sistema interno. A empresa suspeita de hackers da Coreia do Norte. É o maior roubo de cripto de 2026. Segundo a Bloomberg, com ele os roubos norte-coreanos passam de US$ 1 bilhão no ano. O fundo de proteção da Bitget cobre a perda.",
+   "source": "CNBC, Bloomberg e TechCrunch",
+   "photo": "photos/n25_kim2.jpg",
+   "photo_credit": "Foto: Gabinete do Presidente da Rússia / CC BY 4.0 (Wikimedia Commons) · Kim Jong-un"
+  },
+  {
+   "tag": "GUERRA",
+   "headline": "Sauditas, turcos e paquistaneses contra os Houthis",
+   "body": "Os chefes militares da Arábia Saudita, da Turquia e do Paquistão fizeram em Riad uma reunião urgente pelo Pacto de Defesa de Meca, assinado em 7 de agosto: um ataque a um dos três vale como ataque a todos. Os Houthis dispararam dezenas de mísseis e drones contra Riad e instalações da Aramco. O chanceler turco, Hakan Fidan, disse: “cumprimos nossa palavra”.",
+   "source": "Al Jazeera e The National",
+   "photo": "photos/n25_erdogan.jpg",
+   "photo_credit": "Foto: Ministério das Relações Exteriores da Holanda / CC BY-SA 4.0 (Wikimedia Commons) · Erdoğan, presidente da Turquia"
+  },
+  {
+   "tag": "GUERRA",
+   "headline": "Drones da Ucrânia param refinaria a 1.500 km",
+   "body": "Na madrugada, drones ucranianos atingiram a refinaria da Lukoil em Perm, a mais de 1.500 km da fronteira. É a 7ª maior da Rússia e processa mais de 13 milhões de toneladas por ano. Segundo a Reuters, ela parou de operar. Também foi atingida a fábrica Iskra, que faz componentes de mísseis. A Ucrânia diz ter derrubado 267 de 295 drones russos.",
+   "source": "Reuters e Kyiv Independent",
+   "photo": "photos/n25_perm.jpg",
+   "photo_credit": "Foto: CyrusVB6 / CC BY 3.0 (Wikimedia Commons) · refinaria da Lukoil em Perm"
+  },
+  {
+   "tag": "IA",
+   "headline": "Microsoft cria IA que trabalha enquanto você sai",
+   "body": "O novo aplicativo Copilot junta chat, programação e agentes. A aba Autopilot roda na nuvem, com identidade e memória próprias, e continua trabalhando quando o usuário se ausenta. A CNBC descreve o lançamento como uma forma de perseguir a Anthropic. O Autopilot entra em teste fechado no fim de setembro.",
+   "source": "CNBC, Fortune e The Verge",
+   "photo": "photos/n25_nadella.jpg",
+   "photo_credit": "Foto: Brian Smale e Microsoft / CC BY-SA 4.0 (Wikimedia Commons) · Satya Nadella, chefe da Microsoft"
+  },
+  {
+   "tag": "IA",
+   "headline": "Fundadores da Anthropic querem 50,1% dos votos",
+   "body": "Antes de abrir o capital na Bolsa, a Anthropic pede aos acionistas que aprovem ações especiais que dariam aos 7 cofundadores, entre eles Dario Amodei, 50,1% dos votos na maioria das decisões, enquanto pelo menos 3 deles mantiverem uma participação mínima. Cada um tem cerca de 2% da empresa, avaliada em US$ 965 bilhões em maio. A informação é do The Information.",
+   "source": "Reuters e TechCrunch",
+   "photo": "photos/n25_nyse.jpg",
+   "photo_credit": "Foto: Thomas J. O'Halloran / domínio público (Wikimedia Commons) · Bolsa de Nova York"
+  },
+  {
+   "tag": "SAÚDE",
+   "headline": "Mercado Livre começa a vender remédio com receita",
+   "body": "Desde esta sexta, o Mercado Livre vende em São Paulo remédios com receita, incluindo antibióticos e canetas como o Ozempic, com entrega em até 1 hora em algumas regiões. Um farmacêutico valida cada receita. A Abrafarma, das grandes farmácias, diz que a venda “fere a legislação” e vai questionar a Anvisa, que já disse que a venda por marketplaces depende de regra que ainda não saiu.",
+   "source": "InfoMoney e Exame",
+   "photo": "photos/n25_farmacia2.jpg",
+   "photo_credit": "Foto: Félix An / CC BY 4.0 (Wikimedia Commons) · farmácia (ilustrativa)"
+  }
+ ],
+ "caption": "Piscada da noite (sex, 25/09) — piscou? O mundo já mudou:\n\n1️⃣ Irã propõe plano de 7 dias para fim da guerra\n2️⃣ Tribunal deixa Pentágono pôr Anthropic na lista negra\n3️⃣ Lula lança medida para proibir as bets\n4️⃣ Coreia do Norte é suspeita de roubo de US$ 351 mi\n5️⃣ Sauditas, turcos e paquistaneses contra os Houthis\n6️⃣ Drones da Ucrânia param refinaria a 1.500 km\n7️⃣ Microsoft cria IA que trabalha enquanto você sai\n8️⃣ Fundadores da Anthropic querem 50,1% dos votos\n9️⃣ Mercado Livre começa a vender remédio com receita\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 3 pro amigo que joga no Tigrinho: a proposta prevê até 6 anos de prisão para quem operar bets.\n\nO Pisca é feito com o Claude, da Anthropic — a IA dos cards 2 e 8.\n\n💬 Proibir as bets resolve o problema ou só empurra as apostas para sites clandestinos?\n\nFontes: Al Jazeera, CNBC, Washington Post, Poder360, InfoMoney, Metrópoles, Bloomberg, TechCrunch, The National, Reuters, Kyiv Independent, Fortune, The Verge e Exame.\n\n#noticias #atualidades #mundo #ia #bets"
+}
