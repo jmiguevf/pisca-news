@@ -63,6 +63,24 @@ def publica(tipo, ag):
     return r.returncode == 0, saida[-3500:], False
 
 
+
+def stories_recentes(minutos=20):
+    """Confere na API se os stories do Instagram e do Facebook saíram agora (para o relatório)."""
+    import requests, time
+    tk, ig, fb = os.environ.get("META_PAGE_TOKEN"), os.environ.get("IG_USER_ID"), os.environ.get("FB_PAGE_ID")
+    G = "https://graph.facebook.com/v23.0"
+    out, lim = [], time.time() - minutos * 60
+    try:
+        for s in requests.get(f"{G}/{ig}/stories", params={"fields": "timestamp,permalink", "access_token": tk}, timeout=60).json().get("data", []):
+            if datetime.strptime(s["timestamp"], "%Y-%m-%dT%H:%M:%S%z").timestamp() >= lim:
+                out.append(f"Story Instagram: {s['permalink']}")
+        for s in requests.get(f"{G}/{fb}/stories", params={"access_token": tk}, timeout=60).json().get("data", []):
+            if int(s.get("creation_time", 0)) >= lim:
+                out.append(f"Story Facebook: {s.get('url')}")
+    except Exception as e:
+        out.append(f"(não consegui conferir os stories: {str(e)[:80]})")
+    return out or ["⚠️ Nenhum story novo encontrado no Instagram/Facebook"]
+
 def links(saida):
     return sorted(set(re.findall(r"https://(?:www\.)?(?:instagram\.com|facebook\.com|threads\.(?:net|com)|youtube\.com/shorts)/[^\s\"')]+", saida)))
 
@@ -112,7 +130,7 @@ def main():
                 it["estado"] = "publicado"; it["links"] = links(saida)
                 it["publicado_em"] = agora().strftime("%Y-%m-%dT%H:%M")
                 pend = [l for l in saida.splitlines() if l.startswith(("PENDENTE", "FALHOU"))]
-                comentar(iss, f"✅ {it['tipo'].capitalize()} publicado.\n\n" + "\n".join(f"- {l}" for l in it["links"])
+                comentar(iss, f"✅ {it['tipo'].capitalize()} publicado.\n\n" + "\n".join(f"- {l}" for l in it["links"] + stories_recentes())
                          + ("\n\nFicou de fora:\n" + "\n".join(f"- {p}" for p in pend) if pend else ""))
             elif travado or it["tentativas"] >= 3:
                 it["estado"] = "falhou"
