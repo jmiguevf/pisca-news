@@ -17,9 +17,17 @@ RAPIDO = os.environ.get("MODELO_RAPIDO", "claude-sonnet-5")
 TEMPO = int(os.environ.get("TEMPO_PRODUCAO_MIN", "95")) * 60
 
 
+# 25/09: o agendamento do GitHub atrasa horas ou nem dispara. O fluxo agora roda a cada 15 min e só produz a
+# edição cuja JANELA está aberta e que ainda não foi feita (idempotente).
+JANELAS = {"manha": (4.5, 8.5), "meio": (9.5, 12.5), "noite": (15.5, 19.0)}
+
+
 def escolhe_edicao():
-    h = agora().hour
-    return "manha" if h < 9 else ("meio" if h < 14 else "noite")
+    t = agora().hour + agora().minute / 60
+    for ed, (a, b) in JANELAS.items():
+        if a <= t < b:
+            return ed
+    return None
 
 
 def rodar_claude(prompt, log):
@@ -82,6 +90,9 @@ def sobe_previa(ident, arquivos):
 
 def main():
     ed = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in EDICOES else escolhe_edicao()
+    if not ed:
+        print("fora da janela de produção; nada a fazer")
+        return 0
     E = EDICOES[ed]
     hoje = agora()
     ident = f"{hoje:%Y-%m-%d}-{ed}" + (f"-{os.environ['REFAZER']}" if os.environ.get("REFAZER") else "")

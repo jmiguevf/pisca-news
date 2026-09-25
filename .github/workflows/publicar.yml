@@ -2,13 +2,8 @@ name: Publicar (robô)
 # Solta no horário o que a prévia não cancelou: Instagram + Facebook (feed e story) + Threads.
 on:
   schedule:
-    - cron: "56 9 * * *"     # 06h56 de Brasília  (Reels da manhã, 7h)
-    - cron: "56 10 * * *"    # 07h56              (carrossel da manhã, 8h)
-    - cron: "56 14 * * *"    # 11h56              (Reels do meio-dia, 12h)
-    - cron: "56 15 * * *"    # 12h56              (carrossel do meio-dia, 13h)
-    - cron: "26 21 * * *"    # 18h26              (Reels da noite, 18h30)
-    - cron: "26 22 * * *"    # 19h26              (carrossel da noite, 19h30)
-    - cron: "56 23 * * *"    # 20h56              (repescagem)
+    - cron: "*/10 9-23 * * *"   # a cada 10 min (o agendamento do GitHub atrasa); só publica o que venceu e foi aprovado
+    - cron: "*/10 0-3 * * *"    # até meia-noite de Brasília (aprovação tardia da noite)
   issue_comment:              # aprovou na prévia: já confere e publica o que estiver no horário
     types: [created]
   workflow_dispatch:

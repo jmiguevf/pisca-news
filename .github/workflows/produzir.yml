@@ -3,9 +3,7 @@ name: Produzir edição (agente)
 # e abre a PRÉVIA. Não publica: quem publica é o fluxo "Publicar", no horário.
 on:
   schedule:
-    - cron: "3 8 * * *"      # 05h03 de Brasília -> manhã (Reels 7h, carrossel 8h)
-    - cron: "3 13 * * *"     # 10h03 -> meio-dia (Reels 12h, carrossel 13h)
-    - cron: "33 19 * * *"    # 16h33 -> noite (Reels 18h30, carrossel 19h30)
+    - cron: "*/15 7-22 * * *"   # a cada 15 min; o robô só produz a edição cuja janela está aberta e ainda não saiu
   workflow_dispatch:
     inputs:
       edicao:
@@ -49,11 +47,26 @@ jobs:
       MODELO_RAPIDO: ${{ vars.MODELO_RAPIDO || 'claude-sonnet-5' }}
     steps:
       - uses: actions/checkout@v4
+      - name: Tem edição para produzir agora?
+        id: janela
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os, datetime as d
+          if "${{ github.event_name }}" == "workflow_dispatch":
+              print("sim=1"); raise SystemExit
+          a = d.datetime.utcnow() - d.timedelta(hours=3); t = a.hour + a.minute / 60
+          J = {"manha": (4.5, 8.5), "meio": (9.5, 12.5), "noite": (15.5, 19.0)}
+          ed = next((e for e, (x, y) in J.items() if x <= t < y), None)
+          feito = ed and os.path.exists(f"fila/{a:%Y-%m-%d}-{ed}/agenda.json")
+          print("sim=" + ("1" if ed and not feito else "0"))
+          PY
       - uses: actions/setup-python@v5
+        if: steps.janela.outputs.sim == '1'
         with:
           python-version: "3.11"
           cache: pip
       - name: Instalar
+        if: steps.janela.outputs.sim == '1'
         run: |
           npm install -g @anthropic-ai/claude-code@2 --no-audit --no-fund
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
@@ -70,6 +83,7 @@ jobs:
           ls fila/${{ inputs.corrigir_id }}
       - name: Produzir
         id: produzir
+        if: steps.janela.outputs.sim == '1'
         run: |
           python robo/produzir.py "${{ inputs.edicao }}"
           if [ -f artefato.txt ]; then { echo 'lista<<FIM'; cat artefato.txt; echo; echo 'FIM'; } >> "$GITHUB_OUTPUT"; fi
@@ -84,5 +98,5 @@ jobs:
           retention-days: 3
           include-hidden-files: false
       - name: Guardar o registro
-        if: always()
+        if: always() && steps.janela.outputs.sim == '1'
         run: bash .github/salvar-estado.sh "Produção"
