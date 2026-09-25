@@ -90,6 +90,9 @@ def sobe_previa(ident, arquivos):
 
 def main():
     ed = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in EDICOES else escolhe_edicao()
+    cid = os.environ.get("CORRIGIR_ID", "").strip()
+    if os.environ.get("CORRIGIR", "").strip() and cid:     # correção: a edição vem do id, a qualquer hora
+        ed = next((e for e in EDICOES if f"-{e}" in cid), ed)
     if not ed:
         print("fora da janela de produção; nada a fazer")
         return 0
