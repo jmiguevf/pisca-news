@@ -138,6 +138,9 @@ DATE_LABEL={date_label}
 PASTA=fila/{ident}
 Hora agora (Brasília): {hoje:%H:%M}. O Reels sai às {E['reels']} e o carrossel às {E['carrossel']}.
 """
+    pauta = RAIZ / "pautas" / f"{hoje:%Y-%m-%d}-{ed}.md"
+    if pauta.exists() and not corrigir:      # pauta pedida pelo José Miguel para esta edição
+        prompt += "\n\n## PAUTA DO JOSÉ MIGUEL PARA ESTA EDIÇÃO (tem prioridade sobre a escolha do Reels)\n" + pauta.read_text(encoding="utf-8")
     if corrigir:
         prompt += f"""
 ## ESTA EXECUÇÃO É UMA CORREÇÃO (pedido do José Miguel / revisão)
