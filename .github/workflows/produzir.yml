@@ -3,7 +3,7 @@ name: Produzir edição (agente)
 # e abre a PRÉVIA. Não publica: quem publica é o fluxo "Publicar", no horário.
 on:
   schedule:
-    - cron: "*/15 7-22 * * *"   # a cada 15 min; o robô só produz a edição cuja janela está aberta e ainda não saiu
+    - cron: "7,22,37,52 7-22 * * *"   # a cada 15 min; o robô só produz a edição cuja janela está aberta e ainda não saiu
   workflow_dispatch:
     inputs:
       edicao:
