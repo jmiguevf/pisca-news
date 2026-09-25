@@ -131,5 +131,32 @@ def main():
     return 0
 
 
+def proximo_aprovado():
+    """minutos até o próximo item APROVADO e ainda pendente (None se não houver nas próximas 4 h)"""
+    agora_, melhor = agora(), None
+    for arq in FILA.glob("*/agenda.json"):
+        ag = ler(arq) or {}
+        for it in ag.get("itens", []):
+            if it.get("estado") != "pendente":
+                continue
+            q = datetime.fromisoformat(it["quando"])
+            falta = (q - ANTES - agora_).total_seconds() / 60
+            if 0 < falta <= 240 and it["tipo"] in aprovacoes(it.get("issue") or ag.get("issue")):
+                melhor = falta if melhor is None else min(melhor, falta)
+    return melhor
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    # 25/09: o agendamento do GitHub é instável. Com --esperar (rodada disparada pela aprovação), o robô fica de pé
+    # até o horário do que foi aprovado e publica na hora certa, sem depender do agendamento.
+    codigo = main()
+    if "--esperar" in sys.argv:
+        import time
+        while (m := proximo_aprovado()) is not None:
+            print(f"aguardando: {m:.0f} min até o próximo post aprovado")
+            time.sleep(120)                        # acorda a cada 2 min: pega também aprovações novas
+            subprocess.run(["git", "stash", "-q"], cwd=RAIZ)
+            subprocess.run(["git", "pull", "-q", "--rebase"], cwd=RAIZ)
+            subprocess.run(["git", "stash", "pop", "-q"], cwd=RAIZ)
+            codigo = main()
+    sys.exit(codigo)

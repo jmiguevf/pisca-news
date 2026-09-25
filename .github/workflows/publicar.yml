@@ -22,7 +22,7 @@ jobs:
   publicar:
     if: (github.event_name == 'workflow_dispatch' || vars.PISCA_LIGADO != '0') && (github.event_name != 'issue_comment' || github.event.comment.user.login == github.repository_owner)
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 300
     env:
       GH_TOKEN: ${{ github.token }}
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
@@ -46,7 +46,7 @@ jobs:
                   q = d.datetime.fromisoformat(i["quando"])
                   if i["estado"] == "pendente" and q - d.timedelta(minutes=10) <= agora:
                       tem = True
-          print("tem=" + ("sim" if tem or "${{ inputs.agora }}" else "nao"))
+          print("tem=" + ("sim" if tem or "${{ inputs.agora }}" or "${{ github.event_name }}" == "issue_comment" else "nao"))
           PY
       - uses: actions/setup-python@v5
         if: steps.fila.outputs.tem == 'sim'
@@ -62,7 +62,9 @@ jobs:
       - name: Publicar
         if: steps.fila.outputs.tem == 'sim'
         run: |
-          if [ -n "${{ inputs.agora }}" ]; then python robo/publicar.py --agora "${{ inputs.agora }}"; else python robo/publicar.py; fi
+          if [ -n "${{ inputs.agora }}" ]; then python robo/publicar.py --agora "${{ inputs.agora }}";
+          elif [ "${{ github.event_name }}" = "issue_comment" ]; then python robo/publicar.py --esperar;
+          else python robo/publicar.py; fi
       - name: Guardar o registro
         if: always() && steps.fila.outputs.tem == 'sim'
         run: bash .github/salvar-estado.sh "Publicação"
