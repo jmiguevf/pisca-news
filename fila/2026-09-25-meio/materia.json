@@ -1,0 +1,89 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "SEX · 25 SET",
+ "tag": "RISCO DA IA",
+ "gancho": {
+  "linha": "O líder da China foi à Casa Branca e pediu: a IA tem que ficar sob controle humano",
+  "promessa": "e a resposta dos EUA não foi um freio",
+  "dur": 5.6,
+  "credito": "Foto: Gabinete do Primeiro-Ministro do Japão / CC BY 4.0 · Xi Jinping (à dir.)",
+  "foto_cheia": "photos/r25m_xi.jpg",
+  "posicao": "72% 30%",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "texto",
+   "chip": "NA CASA BRANCA",
+   "titulo": "“Sempre sob controle humano”",
+   "texto": "Xi Jinping, na quinta, ao lado de Trump: EUA e China têm “a capacidade e a responsabilidade” de garantir que o desenvolvimento da IA esteja sempre sob controle humano.",
+   "credito": "Foto: Casa Branca / domínio público · Xi Jinping",
+   "dur": 7.0,
+   "foto_cheia": "photos/r25m_xi2.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "texto",
+   "chip": "A RESPOSTA DE TRUMP",
+   "titulo": "“Deixar exatamente onde está”",
+   "texto": "Antes da cúpula, Trump escreveu que quer deixar a IA como está: “Nossa proteção é o Departamento de Justiça!”. Ele já chamou de farsa os alertas sobre a IA.",
+   "credito": "Foto: Casa Branca / domínio público · Donald Trump",
+   "dur": 7.0,
+   "foto_cheia": "photos/r25m_trump.jpg",
+   "posicao": "24% 30%",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "numero",
+   "kicker": "O chefe da Anthropic propôs um plano de",
+   "valor": "3 passos",
+   "legenda": "para as empresas de IA desacelerarem juntas. Sam Altman, da OpenAI, e Elon Musk apoiaram.",
+   "credito": "Foto: Gabinete do Primeiro-Ministro do Japão / CC BY 4.0 · Sam Altman, que apoiou o plano",
+   "dur": 6.6,
+   "foto_cheia": "photos/r25m_altman.jpg",
+   "posicao": "17% 25%",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "A META DIZ NÃO",
+   "titulo": "Zuckerberg não quer freio combinado",
+   "texto": "Para ele, cada laboratório tem “a responsabilidade e o incentivo” de ir no ritmo necessário para treinar seus modelos com segurança. A Meta atrasou o próprio agente Muse, sem pedir o mesmo aos rivais.",
+   "credito": "Foto: Jeff Sainlar / Meta / CC BY-SA 4.0 · Mark Zuckerberg",
+   "dur": 7.6,
+   "foto_cheia": "photos/r25m_zuck.jpg",
+   "posicao": "50% 25%",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "texto",
+   "chip": "O QUE SAIU DA CÚPULA",
+   "titulo": "Só uma nova conversa",
+   "texto": "O secretário do Tesouro, Scott Bessent, disse que EUA e China vão ter um diálogo sobre IA, com um “mecanismo de notificação”: “Combinamos de nos reunir de novo”.",
+   "credito": "Foto: Departamento do Tesouro dos EUA / domínio público · Scott Bessent",
+   "dur": 6.8,
+   "foto_cheia": "photos/r25m_bessent.jpg",
+   "posicao": "50% 30%",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "texto",
+   "chip": "VAI TER FREIO?",
+   "ressalva": true,
+   "titulo": "Por enquanto, não",
+   "texto": "Nenhuma regra nova saiu da cúpula. Hoje, cada empresa decide sozinha o ritmo da própria IA.",
+   "credito": "Foto: Diliff / CC BY 2.5 · cúpula do Capitólio dos EUA",
+   "dur": 6.2,
+   "foto_cheia": "photos/r25m_capitolio.jpg",
+   "posicao": "50% 50%",
+   "zoom_y": 800
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque acha que a IA\nestá sob controle:",
+  "cta": "Ninguém combinou o freio ainda."
+ }
+}

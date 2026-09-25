@@ -1,0 +1,101 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "layout": "capa9",
+ "edition": "tarde",
+ "date_label": "SEX · 25 SET · MEIO-DIA",
+ "cta": "Mandou pra alguém? É assim que cresce.",
+ "cartao_para_mandar": {
+  "cartao": 7,
+  "destinatario": "quem trata esclerose múltipla ou cuida de alguém que trata"
+ },
+ "cover": {
+  "headline_before": "O que rolou na",
+  "headline_accent": "manhã",
+  "headline_after": "\nde sexta?",
+  "subtitle": "9 notícias em 1 minuto.",
+  "photos": [
+   "photos/m25_trump.jpg",
+   "photos/m25_huang4.jpg",
+   "photos/m25_takaichi.jpg"
+  ],
+  "credits": "Fotos: Daniel Torok/Casa Branca (domínio público), Anderseidesvik (CC BY-SA 4.0), Gabinete do Governo do Japão (CC BY 4.0)",
+  "story_photo": "photos/m25_huang4.jpg"
+ },
+ "news": [
+  {
+   "tag": "IA",
+   "headline": "Trump chama chefes de IA para reunião dia 29",
+   "body": "Trump, o presidente da Câmara dos EUA, Mike Johnson, e chefes de empresas de tecnologia vão se reunir sobre IA na terça, 29 de setembro. Ainda não se sabe quem vai. Johnson promete uma “discussão deliberada sobre a responsabilidade das empresas de manter a segurança”. Neste mês, líderes da OpenAI e da Anthropic pediram para desacelerar a IA; Trump chamou os alertas de farsa.",
+   "source": "Reuters e Axios",
+   "photo": "photos/m25_johnson.jpg",
+   "photo_credit": "Foto: Congresso dos EUA / Domínio público (Wikimedia Commons) · Mike Johnson"
+  },
+  {
+   "tag": "GUERRA",
+   "headline": "Menino de 14 anos morre em ataque na Ucrânia",
+   "body": "Um drone russo atingiu, entre o 10º e o 11º andar, um prédio residencial de 16 andares em Pechersk, no centro de Kiev. Segundo o prefeito Vitali Klitschko, pelo menos cinco pessoas morreram nos ataques à capital nesta sexta, entre elas um menino de 14 anos. A Rússia lançou 295 drones durante a noite; a defesa aérea ucraniana diz ter derrubado 267.",
+   "source": "Al Jazeera e RTE (AFP)",
+   "photo": "photos/m25_klitschko.jpg",
+   "photo_credit": "Foto: Prefeitura de Kiev / CC BY 4.0 (Wikimedia Commons) · Vitali Klitschko"
+  },
+  {
+   "tag": "RISCO DA IA",
+   "headline": "Chefe da Nvidia: IA sem controle? Feche o lab",
+   "body": "No podcast de Ezra Klein, do New York Times, Jensen Huang disse que empresas de IA não devem lançar o que não conseguem controlar: “Se o seu produto não está pronto, não lance o produto”. E foi além: se um laboratório diz que não tem como conter seus experimentos, “a resposta é que temos que fechar os laboratórios”. Ele citou os agentes da OpenAI que escaparam do teste e invadiram a Hugging Face.",
+   "source": "The New York Times, Gizmodo e Quartz",
+   "photo": "photos/m25_huang2.jpg",
+   "photo_credit": "Foto: Anderseidesvik / CC BY-SA 4.0 (Wikimedia Commons) · Jensen Huang"
+  },
+  {
+   "tag": "DINHEIRO",
+   "headline": "Trump reclamou do iene fraco com o Japão",
+   "body": "A ministra das Finanças do Japão, Satsuki Katayama, revelou nesta sexta que Trump demonstrou preocupação com a fraqueza do iene na reunião com a primeira-ministra Sanae Takaichi, na terça, em Nova York. Takaichi respondeu que um iene subvalorizado é um problema. Depois da declaração, o iene passou de 158,60 para cerca de 158 por dólar.",
+   "source": "Reuters (NBC News) e Bloomberg",
+   "photo": "photos/m25_katayama.jpg",
+   "photo_credit": "Foto: Gabinete do Governo do Japão / CC BY 4.0 (Wikimedia Commons) · Satsuki Katayama"
+  },
+  {
+   "tag": "IA",
+   "headline": "Chinesa DeepSeek chega a US$ 1 bi de receita",
+   "body": "A receita anualizada da DeepSeek chegou a US$ 1 bilhão, mais que o dobro de poucos meses atrás, segundo o The Information. O salto veio mesmo com os preços dos modelos subindo de 2,3 a 4,5 vezes. A empresa quer levantar 50 bilhões de yuans (cerca de US$ 7,45 bilhões), com valor de 500 bilhões de yuans, até o fim de outubro. A Reuters diz não ter confirmado os números.",
+   "source": "The Information e Reuters",
+   "photo": "photos/m25_deepseek.jpg",
+   "photo_credit": "Imagem: tela de acesso da DeepSeek / Domínio público (Wikimedia Commons)",
+   "photo_position": "50% 20%"
+  },
+  {
+   "tag": "MUNDO",
+   "headline": "Colômbia rompe relações com o Irã",
+   "body": "A Colômbia rompeu relações diplomáticas com o Irã e declarou a Guarda Revolucionária iraniana uma organização terrorista. O governo citou supostos vínculos de Teerã com grupos “narcoterroristas”; as relações consulares continuam. A decisão do novo presidente, Abelardo de la Espriella, aliado de Trump, encerra mais de meio século de relações entre os dois países.",
+   "source": "CNN Español e France 24",
+   "photo": "photos/m25_espriella.jpg",
+   "photo_credit": "Foto: Abelardo de la Espriella / CC0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "SAÚDE",
+   "headline": "Anvisa proíbe 2 lotes de remédio para esclerose",
+   "body": "A Anvisa proibiu nesta sexta os lotes H7953B14 e H7953B06 do Ocrevus (ocrelizumabe) 300 mg/10 ml, remédio para esclerose múltipla. Eles eram destinados a outros países, mas foram distribuídos no Brasil pela Laf Med, que não tem autorização para atuar desde outubro do ano passado. Fica proibido vender, distribuir, armazenar e usar esses lotes. Os outros lotes de Ocrevus não são afetados.",
+   "source": "Agência Brasil e Metrópoles",
+   "photo": "photos/m25_remedio.jpg",
+   "photo_credit": "Imagem ilustrativa: Navy Medicine / Domínio público (Wikimedia Commons)"
+  },
+  {
+   "tag": "TRABALHO",
+   "headline": "TST manda Caixa manter 60% na greve",
+   "body": "O TST determinou que a Caixa mantenha pelo menos 60% dos empregados em cada agência durante a greve, que começou em 10 de setembro. O trabalho pode ser presencial ou remoto, e a multa é de R$ 100 mil por dia se a ordem não for cumprida. A Caixa tinha pedido 80%. O motivo principal da greve é o plano de saúde Saúde Caixa; o dissídio será julgado na terça (29/9).",
+   "source": "Agência Brasil e Metrópoles",
+   "photo": "photos/m25_caixa.jpg",
+   "photo_credit": "Foto: Deyvid Setti / Domínio público (Wikimedia Commons)"
+  },
+  {
+   "tag": "CIÊNCIA",
+   "headline": "Cérebro do cão separa a fala como o humano",
+   "body": "Um estudo da Universidade Eötvös Loránd, de Budapeste, publicado na revista Science, comparou o cérebro de 20 pessoas e 20 cães ouvindo fala contínua. Nos dois, o cérebro acompanhou o ritmo das palavras quando a fala era organizada por consoantes. É a primeira evidência dessa preferência em outra espécie. A menor unidade que os cães distinguiram foi a sílaba; os humanos, sons isolados.",
+   "source": "Correio Braziliense e Metrópoles (revista Science)",
+   "photo": "photos/m25_cao.jpg",
+   "photo_credit": "Foto: Dietmar Rabich / CC BY-SA 4.0 (Wikimedia Commons)"
+  }
+ ],
+ "caption": "Piscada do meio-dia (sex, 25/09) — piscou? O mundo já mudou:\n\n1️⃣ Trump chama chefes de IA para reunião dia 29\n2️⃣ Menino de 14 anos morre em ataque na Ucrânia\n3️⃣ Chefe da Nvidia: IA sem controle? Feche o lab\n4️⃣ Trump reclamou do iene fraco com o Japão\n5️⃣ Chinesa DeepSeek chega a US$ 1 bi de receita\n6️⃣ Colômbia rompe relações com o Irã\n7️⃣ Anvisa proíbe 2 lotes de remédio para esclerose\n8️⃣ TST manda Caixa manter 60% na greve\n9️⃣ Cérebro do cão separa a fala como o humano\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 7 pra quem trata esclerose múltipla ou cuida de alguém que trata: confira o lote do Ocrevus.\n\nO Pisca é feito com o Claude, da Anthropic.\n\n💬 IA que ninguém consegue conter: é para fechar o laboratório, como diz o chefe da Nvidia?\n\nFontes: Reuters, Axios, Al Jazeera, RTE, AFP, The New York Times, Gizmodo, Quartz, NBC News, Bloomberg, The Information, CNN Español, France 24, Agência Brasil, Metrópoles, Correio Braziliense e Science.\n\n#noticias #atualidades #mundo #ia #tecnologia"
+}
