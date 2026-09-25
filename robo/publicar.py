@@ -64,7 +64,7 @@ def publica(tipo, ag):
 
 
 def links(saida):
-    return sorted(set(re.findall(r"https://(?:www\.)?(?:instagram\.com|facebook\.com|threads\.(?:net|com))/[^\s\"')]+", saida)))
+    return sorted(set(re.findall(r"https://(?:www\.)?(?:instagram\.com|facebook\.com|threads\.(?:net|com)|youtube\.com/shorts)/[^\s\"')]+", saida)))
 
 
 def main():
