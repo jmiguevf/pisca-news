@@ -1,0 +1,30 @@
+name: Vídeo da prévia (para o José Miguel ver)
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "id da edição (ex.: 2026-09-25-noite)"
+        required: true
+permissions:
+  contents: write
+  actions: read
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixar o vídeo e guardar num ramo separado
+        run: |
+          ID="${{ inputs.id }}"
+          RUN=$(python3 -c "import json;print(json.load(open('fila/$ID/agenda.json'))['run_id'])")
+          ART=$(python3 -c "import json;print(json.load(open('fila/$ID/agenda.json'))['artefato'])")
+          gh run download "$RUN" -n "$ART" -D /tmp/art
+          V=$(find /tmp/art -path "*$ID*" -name reels.mp4 | head -1)
+          git config user.name "robo-pisca"; git config user.email "robo@pisca.news"
+          git checkout --orphan previa-video
+          git rm -rq --cached .
+          mkdir -p video && cp "$V" "video/$ID.mp4"
+          git add "video/$ID.mp4" && git commit -qm "vídeo da prévia $ID"
+          git push -f origin previa-video
