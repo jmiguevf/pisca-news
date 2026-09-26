@@ -2,23 +2,25 @@
  "id": "2026-09-26-manha",
  "edicao": "manha",
  "issue": 14,
- "run_id": "36231053998",
- "artefato": "edicao-2026-09-26-manha",
+ "run_id": "36233344978",
+ "artefato": "edicao-2026-09-26-manha-c36233344978",
  "itens": [
-  {
-   "tipo": "reels",
-   "quando": "2026-09-26T07:00",
-   "estado": "pendente",
-   "tentativas": 0
-  },
   {
    "tipo": "carrossel",
    "quando": "2026-09-26T08:00",
    "estado": "pendente",
-   "tentativas": 0
+   "tentativas": 0,
+   "issue": 14
+  },
+  {
+   "tipo": "reels",
+   "quando": "2026-09-26T07:00",
+   "estado": "pendente",
+   "tentativas": 0,
+   "issue": 15
   }
  ],
  "problemas": {},
- "minutos_agente": 23,
- "custo_referencia_usd": 8.852307599999998
+ "minutos_agente": 0,
+ "custo_referencia_usd": 0.1633804
 }
