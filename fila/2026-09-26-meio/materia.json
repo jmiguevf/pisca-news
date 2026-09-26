@@ -1,0 +1,82 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "SÁB · 26 SET",
+ "tag": "FIM DAS BETS",
+ "gancho": {
+  "linha": "Você tem dinheiro em bet?",
+  "promessa": "Tem até 5 de outubro para sacar",
+  "dur": 5.0,
+  "credito": "Foto: Lula Oficial / CC BY-SA 2.0 · Lula",
+  "foto_cheia": "photos/b26_lula4.jpg",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "O prazo para sacar o saldo da bet termina às",
+   "valor": "23h59 de 5/10",
+   "legenda": "Depósitos novos já estão proibidos desde a publicação da medida.",
+   "credito": "Foto: autor desconhecido / CC0 · celular (ilustrativa)",
+   "dur": 6.6,
+   "foto_cheia": "photos/b26_celular.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "JÁ VALE",
+   "titulo": "É medida provisória",
+   "texto": "Lula assinou na sexta (25/09) uma MP que proíbe as bets em todo o país. MP vale na hora; o Congresso tem 120 dias para aprovar, senão ela cai.",
+   "credito": "Foto: Jonas Richter / CC BY-SA 4.0 · Palácio do Planalto",
+   "dur": 7.4,
+   "foto_cheia": "photos/b26_planalto.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "E O TIGRINHO?",
+   "titulo": "Cassino online também cai",
+   "texto": "A proibição vale para apostas esportivas e jogos virtuais. Sites e aplicativos saem do ar a partir de 6 de outubro.",
+   "credito": "Foto: Lchung9779 / CC BY 4.0 · caça-níqueis (ilustrativa)",
+   "dur": 7.0,
+   "foto_cheia": "photos/b26_slots.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "numero",
+   "kicker": "Não sacou? O banco ligado à bet devolve o saldo, pelo CPF, entre",
+   "valor": "9 e 14/10",
+   "legenda": "A partir de 14/10, a Caixa pode fazer a devolução se o banco não conseguir pagar.",
+   "credito": "Foto: Moacir Ximenes / domínio público · agência da Caixa",
+   "dur": 7.2,
+   "foto_cheia": "photos/b26_caixa.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "numero",
+   "kicker": "Para quem explorar ou operar bets, o projeto de lei prevê",
+   "valor": "4 a 6 anos",
+   "legenda": "de prisão e multa. No tigrinho e nos cassinos online, a pena sobe 1/3.",
+   "credito": "Foto: NikiSublime / CC BY 2.0 · cela (ilustrativa)",
+   "dur": 6.8,
+   "foto_cheia": "photos/b26_cela.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "É VERDADE?",
+   "ressalva": true,
+   "titulo": "A prisão ainda não vale",
+   "texto": "As penas estão num projeto de lei, que depende do Congresso. E o governo abre mão de dinheiro: as bets já pagaram R$ 2,5 bilhões em outorgas.",
+   "credito": "Foto: Senado Federal / CC BY 2.0 · Congresso Nacional",
+   "dur": 7.4,
+   "foto_cheia": "photos/b26_congresso2.jpg",
+   "zoom_y": 700
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque joga no\nTigrinho:",
+  "cta": "O prazo acaba dia 5."
+ }
+}

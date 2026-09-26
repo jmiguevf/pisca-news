@@ -1,0 +1,24 @@
+{
+ "id": "2026-09-26-meio",
+ "edicao": "meio",
+ "issue": 16,
+ "run_id": "36250965970",
+ "artefato": "edicao-2026-09-26-meio",
+ "itens": [
+  {
+   "tipo": "reels",
+   "quando": "2026-09-26T12:00",
+   "estado": "pendente",
+   "tentativas": 0
+  },
+  {
+   "tipo": "carrossel",
+   "quando": "2026-09-26T13:00",
+   "estado": "pendente",
+   "tentativas": 0
+  }
+ ],
+ "problemas": {},
+ "minutos_agente": 18,
+ "custo_referencia_usd": 6.771182999999993
+}
