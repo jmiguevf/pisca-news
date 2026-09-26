@@ -12,7 +12,7 @@ publica no horário, depois da prévia.
 | Meio-dia | 10h | ~11h30 | 12h | 13h |
 | Noite | 16h30 | ~18h | 18h30 | 19h30 |
 
-Cada Reels vai para Instagram (com convite de collab), Facebook e story nos dois; cada carrossel vai para Instagram,
+Cada Reels vai para Instagram (sem collab com o perfil pessoal — pedido de 26/09), Facebook e story nos dois; cada carrossel vai para Instagram,
 Facebook e story nos dois; os dois vão também para o Threads (o vídeo, hospedado no **pisca-midia**, que é público).
 O Reels vai também para o **YouTube Shorts** (canal Pisca News, @PiscaNews).
 
@@ -47,7 +47,7 @@ Secrets: `CLAUDE_CODE_OAUTH_TOKEN` (no PC: `claude setup-token`; vale 1 ano), `M
 (vale 60 dias: renovar antes de ~23/11/2026), `MIDIA_TOKEN` (acesso ao pisca-midia).
 YouTube: `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` (app "Pisca News" no Google Cloud, externo/em produção;
 página e privacidade em https://jmiguevf.github.io/pisca-news/).
-Variables: `IG_USER_ID`, `FB_PAGE_ID`, `THREADS_USER_ID`, `COLLAB`, `PISCA_LIGADO`.
+Variables: `IG_USER_ID`, `FB_PAGE_ID`, `THREADS_USER_ID`, `PISCA_LIGADO` (sem `COLLAB`: ele pediu em 26/09 para não convidar o perfil pessoal).
 
 ## Custo
 
