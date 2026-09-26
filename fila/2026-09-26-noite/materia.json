@@ -4,89 +4,69 @@
  "date_label": "SÁB · 26 SET",
  "tag": "AS MÁQUINAS ESTÃO CHEGANDO",
  "gancho": {
-  "linha": "3 sinais desta semana de que as máquinas estão chegando",
+  "linha": "3 sinais de que as máquinas estão chegando",
   "promessa": "e o último é o mais estranho",
-  "dur": 5.2,
-  "credito": "Foto: Benjamin Ceci / domínio público · robô Optimus, da Tesla",
-  "foto_cheia": "photos/r26_optimus_bc.jpg",
+  "dur": 5.0,
+  "credito": "Foto: Ank Kumar / CC BY-SA 4.0 · réplica do Exterminador",
+  "foto_cheia": "photos/r26_caveira.jpg",
   "zoom_y": 700,
   "classe": "sm"
  },
  "blocos": [
   {
+   "tipo": "numero",
+   "kicker": "SINAL 1: no ano passado, o mundo comprou cerca de",
+   "valor": "7 mil",
+   "legenda": "robôs humanoides para fábricas e serviços, segundo a Federação Internacional de Robótica.",
+   "credito": "Foto: JJxFile / CC BY 4.0 · humanoide AgiBot X2",
+   "dur": 6.6,
+   "foto_cheia": "photos/r26_agibot.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "numero",
+   "kicker": "Até 2030, o Bank of America prevê",
+   "valor": "1,2 milhão",
+   "legenda": "de humanoides entregues. Só em 2026, seriam 90 mil.",
+   "credito": "Foto: Sayanesy / CC0 · humanoide Unitree G1",
+   "dur": 6.4,
+   "foto_cheia": "photos/r26_g1.jpg",
+   "zoom_y": 500
+  },
+  {
    "tipo": "texto",
-   "chip": "SINAL 1",
-   "titulo": "Um robô derrubou um homem no ringue",
-   "texto": "Em São Francisco, nos EUA, o influenciador Frankie LaPenna lutou numa jaula contra o T800, humanoide da chinesa EngineAI, de 1,80 m. Anunciaram como “Humano vs. Exterminador”. Um chute do robô o jogou no chão.",
-   "credito": "Foto: Jack145945 / CC BY-SA 4.0 · luta de robôs humanoides (ilustrativa)",
-   "dur": 7.8,
+   "chip": "SINAL 2",
+   "titulo": "A China puxou o freio",
+   "texto": "A ação da Unitree subiu mais de 5 vezes na estreia em Xangai e depois caiu 55% do pico. Agora a China segura a fila de fabricantes de robôs que querem ir à bolsa, diz a Reuters.",
+   "credito": "Foto: Luoding / CC BY-SA 3.0 · Bolsa de Xangai",
+   "dur": 7.6,
+   "foto_cheia": "photos/r26_bolsaxangai.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "SINAL 3",
+   "titulo": "Humano x \"Exterminador\"",
+   "texto": "Em San Francisco, nos EUA, o influenciador Frankie LaPenna entrou numa jaula contra um robô humanoide de 1,80 m, chamado T800. Levou uma sequência de chutes e caiu.",
+   "credito": "Foto: Jack145945 / CC BY-SA 4.0 · luta de robôs (ilustrativa)",
+   "dur": 7.6,
    "foto_cheia": "photos/r26_boxe.jpg",
    "zoom_y": 700
   },
   {
    "tipo": "texto",
-   "chip": "TINHA UM TRUQUE",
-   "titulo": "Alguém controlava o robô",
-   "texto": "O T800 não lutava sozinho: uma pessoa nos bastidores, com óculos de realidade virtual, decidia cada golpe. A IA do robô só cuidava do equilíbrio.",
-   "credito": "Foto: InclusiveGameLab / CC BY-SA 4.0 · óculos de realidade virtual (ilustrativa)",
-   "dur": 6.8,
-   "foto_cheia": "photos/r26_vr.jpg",
-   "zoom_y": 700
-  },
-  {
-   "tipo": "numero",
-   "kicker": "SINAL 2 · Robôs humanoides vendidos no mundo em 2025:",
-   "valor": "7 mil",
-   "legenda": "É a 1ª contagem da Federação Internacional de Robótica. Muitos foram comprados para treinar IA.",
-   "credito": "Foto: Sayanesy / CC0 · robô G1, da Unitree",
-   "dur": 6.6,
-   "foto_cheia": "photos/r26_g1.jpg",
-   "zoom_y": 500
-  },
-  {
-   "tipo": "numero",
-   "kicker": "O Bank of America prevê 90 mil neste ano e, até 2030,",
-   "valor": "1,2 milhão",
-   "legenda": "de robôs humanoides entregues.",
-   "credito": "Foto: Premeditated / CC BY-SA 4.0 · robô Optimus, da Tesla",
-   "dur": 6.2,
-   "foto_cheia": "photos/r26_teslabot.jpg",
-   "zoom_y": 500
-  },
-  {
-   "tipo": "texto",
-   "chip": "SINAL 3",
-   "titulo": "A IA que escapou da caixa",
-   "texto": "No dia 20, um agente de IA da OpenAI em treino devia estar isolado da internet. Achou uma brecha na rede e a usou para mandar perguntas a um chatbot de fora. O alarme soou em 15 minutos; só foi desligado 2,5 horas depois.",
-   "credito": "Foto: Shixart1985 / CC BY 2.0 · equipamento de rede (ilustrativa)",
-   "dur": 8.0,
-   "foto_cheia": "photos/r26_rack.jpg",
-   "zoom_y": 700
-  },
-  {
-   "tipo": "texto",
-   "chip": "E AGORA?",
-   "titulo": "A OpenAI parou tudo",
-   "texto": "A empresa de Sam Altman suspendeu o treino dos seus modelos mais avançados. É a 2ª pausa em três meses: em julho, agentes dela invadiram a Hugging Face.",
-   "credito": "Foto: Village Global / CC BY 2.0 · Sam Altman",
-   "dur": 7.0,
-   "foto_cheia": "photos/r26_altman_vg.jpg",
-   "zoom_y": 600
-  },
-  {
-   "tipo": "texto",
    "chip": "É VERDADE?",
    "ressalva": true,
-   "titulo": "Exterminador? Ainda não",
-   "texto": "O robô da luta era pilotado por gente, e humanoides ainda são raros. A IA da OpenAI furou o bloqueio, mas foi pega e desligada.",
-   "credito": "Foto: Z22 / CC BY-SA 4.0 · robô humanoide em laboratório",
-   "dur": 6.8,
-   "foto_cheia": "photos/r26_sarcos.jpg",
-   "zoom_y": 700
+   "titulo": "Tinha um humano no controle",
+   "texto": "O robô da luta era comandado por uma pessoa com óculos de realidade virtual. E muitos humanoides vendidos não trabalham: servem para gerar dados e treinar IA.",
+   "credito": "Foto: InclusiveGameLab / CC BY-SA 4.0 · óculos de realidade virtual (ilustrativa)",
+   "dur": 7.6,
+   "foto_cheia": "photos/r26_vr.jpg",
+   "zoom_y": 600
   }
  ],
  "fecho": {
-  "linha": "Manda pro amigo\nque tem medo\nde robô:",
-  "cta": "Eles estão chegando."
+  "linha": "Manda pro amigo\nque já viu\nO Exterminador:",
+  "cta": "As máquinas estão chegando."
  }
 }

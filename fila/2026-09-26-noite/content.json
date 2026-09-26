@@ -6,95 +6,101 @@
  "date_label": "SÁB · 26 SET · NOITE",
  "cta": "Mandou pra alguém? É assim que cresce.",
  "cartao_para_mandar": {
-  "cartao": 3,
-  "destinatario": "amigo que vive no Facebook"
+  "cartao": 4,
+  "destinatario": "amigo que ainda usa o Facebook pra tudo"
  },
  "cover": {
-  "headline_before": "O que rolou na noite",
-  "headline_accent": "",
+  "headline_before": "O que rolou na",
+  "headline_accent": "noite",
   "headline_after": "\nde sábado?",
   "subtitle": "9 notícias em 1 minuto.",
   "photos": [
-   "photos/n26_trump_26.jpg",
-   "photos/n26_papa4.jpg",
-   "photos/n26_zuck25.jpg"
+   "photos/n26_trump3.jpg",
+   "photos/n26_leao.jpg",
+   "photos/n26_zel2.jpg"
   ],
-  "credits": "Fotos: Casa Branca (domínio público), Edgar Beltrán/The Pillar (CC BY-SA 4.0), Jeff Sainlar/Meta (CC BY-SA 4.0)",
-  "story_photo": "photos/n26_trump_26.jpg"
+  "photo_positions": [
+   "78% 20%",
+   "50% 25%",
+   "50% 25%"
+  ],
+  "credits": "Fotos: Casa Branca (domínio público), Edgar Beltrán/The Pillar (CC BY-SA 4.0), Presidência da Ucrânia (CC BY 4.0)",
+  "story_photo": "photos/n26_leao.jpg"
  },
  "news": [
   {
    "tag": "MUNDO",
-   "headline": "Trump: “Cuba e nós vamos fazer um acordo”",
-   "body": "Neste sábado, na Casa Branca, Trump disse: “Cuba e nós vamos fazer um acordo. Não acho que vamos precisar dos militares.” Ao mesmo tempo, a CBS revelou uma mensagem interna da Reserva do Exército pedindo unidades de polícia militar, médicas e de engenharia disponíveis em 90 a 120 dias, planejamento que, segundo autoridades, mira Cuba.",
-   "source": "CBS News e Reuters (NBC Miami)",
-   "photo": "photos/n26_trump_decl.jpg",
-   "photo_credit": "Foto: Casa Branca / Domínio público (Wikimedia Commons)"
+   "headline": "Trump posta mapa com “Estreito de Trump”",
+   "body": "Na manhã deste sábado, Trump publicou um mapa do Estreito de Ormuz com o nome “Trump Strait”. É o 1º sinal dele depois da proposta do Irã de reabrir a passagem em 7 dias. Em troca, Teerã quer o fim do bloqueio naval, a liberação de bens congelados e o fim das sanções ao petróleo. Trump diz que não tem pressa.",
+   "source": "AP e Fortune",
+   "photo": "photos/n26_trump2.jpg",
+   "photo_credit": "Foto: Casa Branca / Domínio público (Wikimedia Commons) · Trump e o mapa do “Golfo da América”, 2025"
   },
   {
    "tag": "IA",
-   "headline": "EUA e China criam linha direta para crises de IA",
-   "body": "No fim da cúpula de Trump e Xi Jinping em Washington, a Casa Branca anunciou um canal de comunicação entre os dois países para incidentes com inteligência artificial e um diálogo sobre “superinteligência”, com nova rodada até novembro. A trégua comercial foi estendida até janeiro de 2027, e dois pandas vão para um zoológico dos EUA.",
+   "headline": "EUA e China terão canal para incidentes de IA",
+   "body": "A Casa Branca anunciou na sexta, depois da visita de 3 dias de Xi Jinping a Washington, que os dois países vão criar um “canal de comunicação bilateral” para incidentes com inteligência artificial. Xi disse que, como “nações líderes em IA”, EUA e China têm de “desenvolver e administrar a IA para o bem”.",
    "source": "Al Jazeera e Axios",
-   "photo": "photos/n26_casabranca.jpg",
-   "photo_credit": "Foto: Harrison Keely / CC BY 4.0 (Wikimedia Commons)"
+   "photo": "photos/n26_xi3.jpg",
+   "photo_credit": "Foto: Presidência do Azerbaijão / CC BY 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "GUERRA",
+   "headline": "Trump a Zelensky: “Faça um acordo” com Putin",
+   "body": "“Sabe o que eu quero que ele faça? Um acordo”, disse Trump neste sábado sobre Zelensky. “Quero que ele se acerte com Putin, e que Putin se acerte com ele.” Trump diz esperar uma solução “antes do inverno pesado”. No mesmo dia, ataques russos mataram 4 pessoas na Ucrânia, segundo a AP.",
+   "source": "AP e Fox News",
+   "photo": "photos/n26_putin.jpg",
+   "photo_credit": "Foto: Kremlin.ru / CC BY 4.0 (Wikimedia Commons)"
   },
   {
    "tag": "TECNOLOGIA",
-   "headline": "Júri: Facebook enganou usuários sobre privacidade",
-   "body": "Um júri do Novo México, nos EUA, concluiu na sexta que o Facebook fez declarações enganosas sobre a proteção dos dados dos usuários, no caso ligado ao escândalo Cambridge Analytica. Foram mais de 43 milhões de violações da lei do consumidor. O estado pede a multa máxima de US$ 5 mil por violação; o valor será decidido por um juiz. A Meta discorda do veredito.",
-   "source": "AP (NBC) e Fortune",
-   "photo": "photos/n26_zuckf8.jpg",
-   "photo_credit": "Foto: Anthony Quintano / CC BY 2.0 (Wikimedia Commons)"
+   "headline": "Júri conclui que a Meta enganou usuários",
+   "body": "Um júri do Novo México (EUA) decidiu na sexta que o Facebook enganou usuários sobre privacidade, no caso Cambridge Analytica: foram mais de 43 milhões de violações. O Estado pede US$ 5.000 por violação, o que pode passar de US$ 200 bilhões. O juiz decide a multa em 1º de outubro. A Meta discorda do veredito.",
+   "source": "Reuters e Fortune",
+   "photo": "photos/n26_meta.jpg",
+   "photo_credit": "Foto: LPS.1 / CC0 (Wikimedia Commons) · sede da Meta"
   },
   {
-   "tag": "IA",
-   "headline": "Papa alerta para um “paraíso de máquinas”",
-   "body": "Na França, o papa Leão XIV disse que, para não perdermos a humanidade num “paraíso de máquinas” que invade e condiciona a vida diária, é urgente educar para o discernimento ético. Neste sábado, sua missa na Praça da Concórdia, em Paris, reuniu 700 mil pessoas, segundo o Vaticano, mais que as 600 mil inscritas.",
-   "source": "CNBC, NPR e Al Jazeera",
-   "photo": "photos/n26_papa1.jpg",
-   "photo_credit": "Foto: Edgar Beltrán / The Pillar / CC BY-SA 4.0 (Wikimedia Commons)"
+   "tag": "MUNDO",
+   "headline": "Papa Leão XIV reúne 800 mil em Paris",
+   "body": "O papa celebrou missa ao ar livre na Praça da Concórdia neste sábado: cerca de 800 mil pessoas, segundo o Vaticano, com gente até depois do Arco do Triunfo. Antes, ele desfilou de papamóvel pela Champs-Élysées. É a 1ª visita oficial de um papa à França em quase duas décadas.",
+   "source": "AFP (France 24) e Euronews",
+   "photo": "photos/n26_concorde.jpg",
+   "photo_credit": "Foto: Jorge Royan / CC BY-SA 3.0 (Wikimedia Commons) · Praça da Concórdia"
   },
   {
-   "tag": "EUA",
-   "headline": "Trump corta quase US$ 1 bi aprovado pelo Congresso",
-   "body": "Na noite de sexta, Trump avisou o Congresso que não vai gastar quase US$ 1 bilhão já aprovado, numa manobra no fim do ano fiscal (a “rescisão de bolso”). Saem US$ 567 milhões de serviços para refugiados e migrantes. A senadora republicana Susan Collins disse que cortar verba sem aval do Congresso é “uma clara violação da lei”.",
-   "source": "CBS News e The Hill",
-   "photo": "photos/n26_capitolio.jpg",
-   "photo_credit": "Foto: Martin Falbisoner / CC BY-SA 3.0 (Wikimedia Commons)"
+   "tag": "DIPLOMACIA",
+   "headline": "Alemanha e Rússia voltam a conversar",
+   "body": "Os chanceleres Johann Wadephul (Alemanha) e Serguei Lavrov (Rússia) se reuniram por cerca de 20 minutos na ONU neste sábado: é o 1º encontro do tipo desde a invasão da Ucrânia, em 2022. Wadephul pediu que a Rússia abandone o “perigoso caminho de escalada” contra a Alemanha, a Europa e a Otan.",
+   "source": "AP e Bloomberg",
+   "photo": "photos/n26_lavrov.jpg",
+   "photo_credit": "Foto: Viatcheslav Prokofiev / Presidência da Rússia (TASS) / CC BY 4.0 (Wikimedia Commons)"
   },
   {
-   "tag": "IRÃ",
-   "headline": "Irã diz que líder sumido está “completamente saudável”",
-   "body": "O líder supremo Mojtaba Khamenei não aparece em público desde fevereiro. À CBS, o presidente do Irã, Masoud Pezeshkian, disse que se reuniu com ele por mais de sete horas e que, “do ponto de vista médico, ele está completamente saudável”. Pezeshkian também disse que o Irã aceitaria inspetores nucleares da ONU.",
-   "source": "CBS News e AP (PBS)",
-   "photo": "photos/n26_pez2.jpg",
-   "photo_credit": "Foto: Mohsen Ranginkaman / CC BY 4.0 (Wikimedia Commons)"
+   "tag": "MUNDO",
+   "headline": "Trump prevê acordo com Cuba sem militares",
+   "body": "“Cuba e nós vamos fazer um acordo. Não acho que vamos precisar dos militares”, disse Trump neste sábado. Na ONU, o chanceler cubano Bruno Rodríguez disse que Havana está aberta ao diálogo e a negócios com empresas dos EUA, mas chamou o bloqueio de petróleo americano de “punição coletiva”.",
+   "source": "Reuters e Al Jazeera",
+   "photo": "photos/n26_havana.jpg",
+   "photo_credit": "Foto: Ezarate / CC BY-SA 4.0 (Wikimedia Commons) · Malecón, Havana"
+  },
+  {
+   "tag": "TECNOLOGIA",
+   "headline": "Meta volta atrás e libera anúncio sobre Musk",
+   "body": "TikTok, Meta, YouTube e X recusaram anúncios pagos de “Musk”, documentário de Alex Gibney sobre o bilionário; a Meta alegou “conteúdo político”. Neste sábado, a Meta disse que “foi um erro” e que os anúncios estão sendo restaurados. O filme estreia nos EUA em 9 de outubro.",
+   "source": "TechCrunch e The Hollywood Reporter",
+   "photo": "photos/n26_musk.jpg",
+   "photo_credit": "Foto: Gage Skidmore / CC BY-SA 2.0 (Wikimedia Commons)",
+   "photo_position": "50% 62%"
   },
   {
    "tag": "BRASIL",
-   "headline": "Buraco na pista fecha o aeroporto de Confins",
-   "body": "Um buraco na pista parou pousos e decolagens no aeroporto de Confins, na Grande BH, neste sábado. A pista foi liberada às 15h08. A Gol cancelou 45 voos e a Azul, 41, com longas filas e atrasos que chegaram a outros estados, como o DF. As empresas dizem que dão assistência pela Resolução 400 da Anac.",
+   "headline": "Buraco na pista fecha Confins e cancela voos",
+   "body": "Um problema na pista fechou o Aeroporto de Confins (MG) na manhã deste sábado. A operação voltou aos poucos a partir das 15h08. Só a Azul teve 41 voos cancelados e 36 atrasados; passageiros relataram longas filas. A BH Airport pede que quem vai voar confira o voo com a companhia aérea.",
    "source": "CNN Brasil e Poder360",
    "photo": "photos/n26_confins.jpg",
-   "photo_credit": "Foto: Eugenio Hansen, OFS / CC BY-SA 4.0 (Wikimedia Commons)"
-  },
-  {
-   "tag": "CRIME",
-   "headline": "10ª mulher achada morta assusta Joanesburgo",
-   "body": "O corpo de mais uma mulher foi encontrado na manhã deste sábado em Tembisa, a leste de Joanesburgo, na África do Sul. É o 10º desde julho na mesma região: seis apareceram em dez dias de setembro. A polícia diz não ter prova de que seja o mesmo autor, mas a unidade de psicologia investigativa entrou no caso.",
-   "source": "AP (ABC News) e CBS News",
-   "photo": "photos/n26_tembisa.jpg",
-   "photo_credit": "Foto de arquivo: Tembisa, África do Sul (Joperd / CC BY 2.0, Wikimedia Commons)"
-  },
-  {
-   "tag": "SAÚDE",
-   "headline": "Ebola no Congo passa de 7.800 casos",
-   "body": "A República Democrática do Congo registrou 7.890 casos confirmados de ebola e 3.799 mortes, segundo dados até 23 de setembro divulgados pela OMS: quase metade dos infectados morreu. O vírus chegou a mais duas zonas de saúde e já está em 63, em sete províncias. O número de casos novos por dia continua alto.",
-   "source": "Al Jazeera e ONU News",
-   "photo": "photos/n26_congo.jpg",
-   "photo_credit": "Foto de arquivo: equipe contra o ebola no Congo, 2019 (MONUSCO / CC BY-SA 2.0, Wikimedia Commons)"
+   "photo_credit": "Foto: enioprado / CC BY-SA 3.0 (Wikimedia Commons) · Aeroporto de Confins"
   }
  ],
- "caption": "Piscada da noite (sáb, 26/09) — piscou? O mundo já mudou:\n\n1️⃣ Trump: “Cuba e nós vamos fazer um acordo”\n2️⃣ EUA e China criam linha direta para crises de IA\n3️⃣ Júri: Facebook enganou usuários sobre privacidade\n4️⃣ Papa alerta para um “paraíso de máquinas”\n5️⃣ Trump corta quase US$ 1 bi aprovado pelo Congresso\n6️⃣ Irã diz que líder sumido está “completamente saudável”\n7️⃣ Buraco na pista fecha o aeroporto de Confins\n8️⃣ 10ª mulher achada morta assusta Joanesburgo\n9️⃣ Ebola no Congo passa de 7.800 casos\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 3 pro amigo que vive no Facebook: um júri concluiu que a rede enganou os usuários sobre privacidade.\n\nO Pisca é feito com o Claude, da Anthropic.\n\n💬 O papa diz que a IA pode nos levar a um “paraíso de máquinas”. Você concorda com ele?\n\nFontes: CBS News, Reuters, Al Jazeera, Axios, AP, Fortune, CNBC, NPR, The Hill, PBS, CNN Brasil, Poder360, ABC News e ONU News.\n\n#noticias #atualidades #mundo #ia #papa"
+ "caption": "Piscada da noite (sáb, 26/09) — piscou? O mundo já mudou:\n\n1️⃣ Trump posta mapa com “Estreito de Trump”\n2️⃣ EUA e China terão canal para incidentes de IA\n3️⃣ Trump a Zelensky: “Faça um acordo” com Putin\n4️⃣ Júri conclui que a Meta enganou usuários\n5️⃣ Papa Leão XIV reúne 800 mil em Paris\n6️⃣ Alemanha e Rússia voltam a conversar\n7️⃣ Trump prevê acordo com Cuba sem militares\n8️⃣ Meta volta atrás e libera anúncio sobre Musk\n9️⃣ Buraco na pista fecha Confins e cancela voos\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 4 pro amigo que ainda usa o Facebook pra tudo: um júri concluiu que a Meta enganou usuários sobre privacidade.\n\nO Pisca é feito com o Claude, da Anthropic.\n\n💬 Um “telefone vermelho” da IA entre EUA e China, como no card 2: te deixa mais tranquilo ou mais preocupado?\n\nFontes: AP, Fortune, Al Jazeera, Axios, Fox News, Reuters, AFP (France 24), Euronews, Bloomberg, TechCrunch, The Hollywood Reporter, CNN Brasil e Poder360.\n\n#noticias #atualidades #mundo #ia #trump"
 }

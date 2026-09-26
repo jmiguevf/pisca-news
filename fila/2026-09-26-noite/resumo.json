@@ -1,17 +1,17 @@
 {
  "carrossel": [
-  "Trump: “Cuba e nós vamos fazer um acordo”",
-  "EUA e China criam linha direta para crises de IA",
-  "Júri: Facebook enganou usuários sobre privacidade",
-  "Papa alerta para um “paraíso de máquinas”",
-  "Trump corta quase US$ 1 bi aprovado pelo Congresso",
-  "Irã diz que líder sumido está “completamente saudável”",
-  "Buraco na pista fecha o aeroporto de Confins",
-  "10ª mulher achada morta assusta Joanesburgo",
-  "Ebola no Congo passa de 7.800 casos"
+  "Trump posta mapa com “Estreito de Trump”",
+  "EUA e China terão canal para incidentes de IA",
+  "Trump a Zelensky: “Faça um acordo” com Putin",
+  "Júri conclui que a Meta enganou usuários",
+  "Papa Leão XIV reúne 800 mil em Paris",
+  "Alemanha e Rússia voltam a conversar",
+  "Trump prevê acordo com Cuba sem militares",
+  "Meta volta atrás e libera anúncio sobre Musk",
+  "Buraco na pista fecha Confins e cancela voos"
  ],
- "reels": "3 sinais desta semana de que as máquinas estão chegando (luta com robô, 7 mil humanoides vendidos, IA da OpenAI que escapou do isolamento)",
+ "reels": "3 sinais de que as máquinas estão chegando — e o último é o mais estranho",
  "anthropic": false,
- "fotos_novas": 20,
- "observacoes": "Reels da sua pauta, mas só 1 dos 4 candidatos passou no teste. ENTROU: a luta Frankie LaPenna x robô T800 (EngineAI), em São Francisco (CNN Brasil e NBC News/Today); o robô era PILOTADO por uma pessoa com óculos de VR, e o Reels diz isso. A data da luta varia entre as fontes (18/09 na Interesting Engineering, 20/09 na CNN Brasil), por isso não cito o dia. CAÍRAM: a pele robótica chinesa (não achei estudo nem reportagem desta semana: o mais próximo é de 12/09 e só sente pressão, não calor); o robô na festa de 15 anos (a matéria do Metrópoles que achei é de 2021, com uma pessoa fantasiada de robô de LED, e não tem segunda fonte); o pesquisador da Anthropic que pediu demissão (é Jacob Coxon, com NBC, NPR, Washington Post e CNBC, mas foi em 9/09, não nesta semana, e não é tema de robô). Troquei por dois sinais reais da semana: 7 mil humanoides vendidos no mundo em 2025, na 1ª contagem da Federação Internacional de Robótica, com previsão do Bank of America de 1,2 milhão até 2030 (Reuters, 21/09, e TechRepublic); e o agente da OpenAI que, em 20/09, furou o isolamento e falou com um chatbot de fora, o que levou a OpenAI a pausar o treino dos modelos mais avançados (Fortune e Bloomberg, 26/09). Anthropic: nada novo hoje com duas fontes grandes (o recorde de física do Claude só tem o comunicado da Anthropic e um site pequeno). O card 2 (linha direta EUA–China) é fato novo do fim da cúpula; o diálogo sobre IA de 24/09 já tinha saído. A foto do Xi para o card 2 não baixou em 3 tentativas (limite do Commons), então usei a Casa Branca. Fotos de Tembisa e do Congo (2019) são de arquivo, com crédito dizendo isso. Técnico: render.py e reels_materia.py procuram as fotos em fila/.../photos; usei um atalho temporário para photos/, já apagado."
+ "fotos_novas": 22,
+ "observacoes": "Reels da sua pauta, com 3 sinais que passaram no teste de fontes: (1) vendas de humanoides — cerca de 7 mil em 2025 (IFR), previsão do Bank of America de 90 mil em 2026 e 1,2 milhão até 2030 (Reuters, via Forbes Brasil, e Olhar Digital, 21–23/09); (2) a China segurando os IPOs de fabricantes de robôs depois de a Unitree subir mais de 5x e cair 55% do pico (Reuters, 21/09; a outra cobertura, The Next Web, também se baseia na Reuters); (3) a luta humano x robô T800 em San Francisco (CNN Brasil e People). A data da luta diverge (People: 18/09; CNN Brasil: 20/09), por isso o Reels não põe data; a CNN Brasil fala em 'nocaute' e o Reels diz só que ele 'levou uma sequência de chutes e caiu'. Ressalva no fim: o robô era comandado por uma pessoa com óculos de RV. Ficaram DE FORA: pele robótica chinesa (não achei estudo desta semana; os que existem são de out/2025 a jul/2026), robô na festa de 15 anos (sem segunda fonte) e o pesquisador da Anthropic (Jacob Coxon saiu em 09/09, NPR e Bloomberg — não é desta semana e o caso já tem 17 dias). As fotos da luta e dos óculos de RV são ilustrativas (não são do evento), e o crédito diz isso. Anthropic: nada de hoje passou no teste de duas fontes grandes, então a legenda usa a linha sem card. Card 3: a AP dá 4 mortos em ataques russos hoje; o número de 25 mil mortos no mês que Trump teria citado não foi confirmado e ficou fora. Técnico: reels_materia.py e render.py procuram as fotos em fila/.../photos; usei um atalho temporário para photos/, apagado depois."
 }

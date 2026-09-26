@@ -1,8 +1,8 @@
 {
  "id": "2026-09-26-noite",
  "edicao": "noite",
- "issue": 17,
- "run_id": "36265072842",
+ "issue": 18,
+ "run_id": "36265767232",
  "artefato": "edicao-2026-09-26-noite",
  "itens": [
   {
@@ -19,6 +19,6 @@
   }
  ],
  "problemas": {},
- "minutos_agente": 30,
- "custo_referencia_usd": 8.312177199999992
+ "minutos_agente": 18,
+ "custo_referencia_usd": 9.270707199999995
 }
