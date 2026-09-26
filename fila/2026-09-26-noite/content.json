@@ -1,0 +1,100 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "layout": "capa9",
+ "edition": "noite",
+ "date_label": "SÁB · 26 SET · NOITE",
+ "cta": "Mandou pra alguém? É assim que cresce.",
+ "cartao_para_mandar": {
+  "cartao": 3,
+  "destinatario": "amigo que vive no Facebook"
+ },
+ "cover": {
+  "headline_before": "O que rolou na noite",
+  "headline_accent": "",
+  "headline_after": "\nde sábado?",
+  "subtitle": "9 notícias em 1 minuto.",
+  "photos": [
+   "photos/n26_trump_26.jpg",
+   "photos/n26_papa4.jpg",
+   "photos/n26_zuck25.jpg"
+  ],
+  "credits": "Fotos: Casa Branca (domínio público), Edgar Beltrán/The Pillar (CC BY-SA 4.0), Jeff Sainlar/Meta (CC BY-SA 4.0)",
+  "story_photo": "photos/n26_trump_26.jpg"
+ },
+ "news": [
+  {
+   "tag": "MUNDO",
+   "headline": "Trump: “Cuba e nós vamos fazer um acordo”",
+   "body": "Neste sábado, na Casa Branca, Trump disse: “Cuba e nós vamos fazer um acordo. Não acho que vamos precisar dos militares.” Ao mesmo tempo, a CBS revelou uma mensagem interna da Reserva do Exército pedindo unidades de polícia militar, médicas e de engenharia disponíveis em 90 a 120 dias, planejamento que, segundo autoridades, mira Cuba.",
+   "source": "CBS News e Reuters (NBC Miami)",
+   "photo": "photos/n26_trump_decl.jpg",
+   "photo_credit": "Foto: Casa Branca / Domínio público (Wikimedia Commons)"
+  },
+  {
+   "tag": "IA",
+   "headline": "EUA e China criam linha direta para crises de IA",
+   "body": "No fim da cúpula de Trump e Xi Jinping em Washington, a Casa Branca anunciou um canal de comunicação entre os dois países para incidentes com inteligência artificial e um diálogo sobre “superinteligência”, com nova rodada até novembro. A trégua comercial foi estendida até janeiro de 2027, e dois pandas vão para um zoológico dos EUA.",
+   "source": "Al Jazeera e Axios",
+   "photo": "photos/n26_casabranca.jpg",
+   "photo_credit": "Foto: Harrison Keely / CC BY 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "TECNOLOGIA",
+   "headline": "Júri: Facebook enganou usuários sobre privacidade",
+   "body": "Um júri do Novo México, nos EUA, concluiu na sexta que o Facebook fez declarações enganosas sobre a proteção dos dados dos usuários, no caso ligado ao escândalo Cambridge Analytica. Foram mais de 43 milhões de violações da lei do consumidor. O estado pede a multa máxima de US$ 5 mil por violação; o valor será decidido por um juiz. A Meta discorda do veredito.",
+   "source": "AP (NBC) e Fortune",
+   "photo": "photos/n26_zuckf8.jpg",
+   "photo_credit": "Foto: Anthony Quintano / CC BY 2.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "IA",
+   "headline": "Papa alerta para um “paraíso de máquinas”",
+   "body": "Na França, o papa Leão XIV disse que, para não perdermos a humanidade num “paraíso de máquinas” que invade e condiciona a vida diária, é urgente educar para o discernimento ético. Neste sábado, sua missa na Praça da Concórdia, em Paris, reuniu 700 mil pessoas, segundo o Vaticano, mais que as 600 mil inscritas.",
+   "source": "CNBC, NPR e Al Jazeera",
+   "photo": "photos/n26_papa1.jpg",
+   "photo_credit": "Foto: Edgar Beltrán / The Pillar / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "EUA",
+   "headline": "Trump corta quase US$ 1 bi aprovado pelo Congresso",
+   "body": "Na noite de sexta, Trump avisou o Congresso que não vai gastar quase US$ 1 bilhão já aprovado, numa manobra no fim do ano fiscal (a “rescisão de bolso”). Saem US$ 567 milhões de serviços para refugiados e migrantes. A senadora republicana Susan Collins disse que cortar verba sem aval do Congresso é “uma clara violação da lei”.",
+   "source": "CBS News e The Hill",
+   "photo": "photos/n26_capitolio.jpg",
+   "photo_credit": "Foto: Martin Falbisoner / CC BY-SA 3.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "IRÃ",
+   "headline": "Irã diz que líder sumido está “completamente saudável”",
+   "body": "O líder supremo Mojtaba Khamenei não aparece em público desde fevereiro. À CBS, o presidente do Irã, Masoud Pezeshkian, disse que se reuniu com ele por mais de sete horas e que, “do ponto de vista médico, ele está completamente saudável”. Pezeshkian também disse que o Irã aceitaria inspetores nucleares da ONU.",
+   "source": "CBS News e AP (PBS)",
+   "photo": "photos/n26_pez2.jpg",
+   "photo_credit": "Foto: Mohsen Ranginkaman / CC BY 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "BRASIL",
+   "headline": "Buraco na pista fecha o aeroporto de Confins",
+   "body": "Um buraco na pista parou pousos e decolagens no aeroporto de Confins, na Grande BH, neste sábado. A pista foi liberada às 15h08. A Gol cancelou 45 voos e a Azul, 41, com longas filas e atrasos que chegaram a outros estados, como o DF. As empresas dizem que dão assistência pela Resolução 400 da Anac.",
+   "source": "CNN Brasil e Poder360",
+   "photo": "photos/n26_confins.jpg",
+   "photo_credit": "Foto: Eugenio Hansen, OFS / CC BY-SA 4.0 (Wikimedia Commons)"
+  },
+  {
+   "tag": "CRIME",
+   "headline": "10ª mulher achada morta assusta Joanesburgo",
+   "body": "O corpo de mais uma mulher foi encontrado na manhã deste sábado em Tembisa, a leste de Joanesburgo, na África do Sul. É o 10º desde julho na mesma região: seis apareceram em dez dias de setembro. A polícia diz não ter prova de que seja o mesmo autor, mas a unidade de psicologia investigativa entrou no caso.",
+   "source": "AP (ABC News) e CBS News",
+   "photo": "photos/n26_tembisa.jpg",
+   "photo_credit": "Foto de arquivo: Tembisa, África do Sul (Joperd / CC BY 2.0, Wikimedia Commons)"
+  },
+  {
+   "tag": "SAÚDE",
+   "headline": "Ebola no Congo passa de 7.800 casos",
+   "body": "A República Democrática do Congo registrou 7.890 casos confirmados de ebola e 3.799 mortes, segundo dados até 23 de setembro divulgados pela OMS: quase metade dos infectados morreu. O vírus chegou a mais duas zonas de saúde e já está em 63, em sete províncias. O número de casos novos por dia continua alto.",
+   "source": "Al Jazeera e ONU News",
+   "photo": "photos/n26_congo.jpg",
+   "photo_credit": "Foto de arquivo: equipe contra o ebola no Congo, 2019 (MONUSCO / CC BY-SA 2.0, Wikimedia Commons)"
+  }
+ ],
+ "caption": "Piscada da noite (sáb, 26/09) — piscou? O mundo já mudou:\n\n1️⃣ Trump: “Cuba e nós vamos fazer um acordo”\n2️⃣ EUA e China criam linha direta para crises de IA\n3️⃣ Júri: Facebook enganou usuários sobre privacidade\n4️⃣ Papa alerta para um “paraíso de máquinas”\n5️⃣ Trump corta quase US$ 1 bi aprovado pelo Congresso\n6️⃣ Irã diz que líder sumido está “completamente saudável”\n7️⃣ Buraco na pista fecha o aeroporto de Confins\n8️⃣ 10ª mulher achada morta assusta Joanesburgo\n9️⃣ Ebola no Congo passa de 7.800 casos\n\n👉 Arraste para ver o resumo de cada uma.\n\n📲 Manda o card 3 pro amigo que vive no Facebook: um júri concluiu que a rede enganou os usuários sobre privacidade.\n\nO Pisca é feito com o Claude, da Anthropic.\n\n💬 O papa diz que a IA pode nos levar a um “paraíso de máquinas”. Você concorda com ele?\n\nFontes: CBS News, Reuters, Al Jazeera, Axios, AP, Fortune, CNBC, NPR, The Hill, PBS, CNN Brasil, Poder360, ABC News e ONU News.\n\n#noticias #atualidades #mundo #ia #papa"
+}

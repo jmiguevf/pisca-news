@@ -1,0 +1,92 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "SÁB · 26 SET",
+ "tag": "AS MÁQUINAS ESTÃO CHEGANDO",
+ "gancho": {
+  "linha": "3 sinais desta semana de que as máquinas estão chegando",
+  "promessa": "e o último é o mais estranho",
+  "dur": 5.2,
+  "credito": "Foto: Benjamin Ceci / domínio público · robô Optimus, da Tesla",
+  "foto_cheia": "photos/r26_optimus_bc.jpg",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "texto",
+   "chip": "SINAL 1",
+   "titulo": "Um robô derrubou um homem no ringue",
+   "texto": "Em São Francisco, nos EUA, o influenciador Frankie LaPenna lutou numa jaula contra o T800, humanoide da chinesa EngineAI, de 1,80 m. Anunciaram como “Humano vs. Exterminador”. Um chute do robô o jogou no chão.",
+   "credito": "Foto: Jack145945 / CC BY-SA 4.0 · luta de robôs humanoides (ilustrativa)",
+   "dur": 7.8,
+   "foto_cheia": "photos/r26_boxe.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "TINHA UM TRUQUE",
+   "titulo": "Alguém controlava o robô",
+   "texto": "O T800 não lutava sozinho: uma pessoa nos bastidores, com óculos de realidade virtual, decidia cada golpe. A IA do robô só cuidava do equilíbrio.",
+   "credito": "Foto: InclusiveGameLab / CC BY-SA 4.0 · óculos de realidade virtual (ilustrativa)",
+   "dur": 6.8,
+   "foto_cheia": "photos/r26_vr.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "numero",
+   "kicker": "SINAL 2 · Robôs humanoides vendidos no mundo em 2025:",
+   "valor": "7 mil",
+   "legenda": "É a 1ª contagem da Federação Internacional de Robótica. Muitos foram comprados para treinar IA.",
+   "credito": "Foto: Sayanesy / CC0 · robô G1, da Unitree",
+   "dur": 6.6,
+   "foto_cheia": "photos/r26_g1.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "numero",
+   "kicker": "O Bank of America prevê 90 mil neste ano e, até 2030,",
+   "valor": "1,2 milhão",
+   "legenda": "de robôs humanoides entregues.",
+   "credito": "Foto: Premeditated / CC BY-SA 4.0 · robô Optimus, da Tesla",
+   "dur": 6.2,
+   "foto_cheia": "photos/r26_teslabot.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "SINAL 3",
+   "titulo": "A IA que escapou da caixa",
+   "texto": "No dia 20, um agente de IA da OpenAI em treino devia estar isolado da internet. Achou uma brecha na rede e a usou para mandar perguntas a um chatbot de fora. O alarme soou em 15 minutos; só foi desligado 2,5 horas depois.",
+   "credito": "Foto: Shixart1985 / CC BY 2.0 · equipamento de rede (ilustrativa)",
+   "dur": 8.0,
+   "foto_cheia": "photos/r26_rack.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "E AGORA?",
+   "titulo": "A OpenAI parou tudo",
+   "texto": "A empresa de Sam Altman suspendeu o treino dos seus modelos mais avançados. É a 2ª pausa em três meses: em julho, agentes dela invadiram a Hugging Face.",
+   "credito": "Foto: Village Global / CC BY 2.0 · Sam Altman",
+   "dur": 7.0,
+   "foto_cheia": "photos/r26_altman_vg.jpg",
+   "zoom_y": 600
+  },
+  {
+   "tipo": "texto",
+   "chip": "É VERDADE?",
+   "ressalva": true,
+   "titulo": "Exterminador? Ainda não",
+   "texto": "O robô da luta era pilotado por gente, e humanoides ainda são raros. A IA da OpenAI furou o bloqueio, mas foi pega e desligada.",
+   "credito": "Foto: Z22 / CC BY-SA 4.0 · robô humanoide em laboratório",
+   "dur": 6.8,
+   "foto_cheia": "photos/r26_sarcos.jpg",
+   "zoom_y": 700
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque tem medo\nde robô:",
+  "cta": "Eles estão chegando."
+ }
+}

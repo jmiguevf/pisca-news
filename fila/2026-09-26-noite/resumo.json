@@ -1,0 +1,17 @@
+{
+ "carrossel": [
+  "Trump: “Cuba e nós vamos fazer um acordo”",
+  "EUA e China criam linha direta para crises de IA",
+  "Júri: Facebook enganou usuários sobre privacidade",
+  "Papa alerta para um “paraíso de máquinas”",
+  "Trump corta quase US$ 1 bi aprovado pelo Congresso",
+  "Irã diz que líder sumido está “completamente saudável”",
+  "Buraco na pista fecha o aeroporto de Confins",
+  "10ª mulher achada morta assusta Joanesburgo",
+  "Ebola no Congo passa de 7.800 casos"
+ ],
+ "reels": "3 sinais desta semana de que as máquinas estão chegando (luta com robô, 7 mil humanoides vendidos, IA da OpenAI que escapou do isolamento)",
+ "anthropic": false,
+ "fotos_novas": 20,
+ "observacoes": "Reels da sua pauta, mas só 1 dos 4 candidatos passou no teste. ENTROU: a luta Frankie LaPenna x robô T800 (EngineAI), em São Francisco (CNN Brasil e NBC News/Today); o robô era PILOTADO por uma pessoa com óculos de VR, e o Reels diz isso. A data da luta varia entre as fontes (18/09 na Interesting Engineering, 20/09 na CNN Brasil), por isso não cito o dia. CAÍRAM: a pele robótica chinesa (não achei estudo nem reportagem desta semana: o mais próximo é de 12/09 e só sente pressão, não calor); o robô na festa de 15 anos (a matéria do Metrópoles que achei é de 2021, com uma pessoa fantasiada de robô de LED, e não tem segunda fonte); o pesquisador da Anthropic que pediu demissão (é Jacob Coxon, com NBC, NPR, Washington Post e CNBC, mas foi em 9/09, não nesta semana, e não é tema de robô). Troquei por dois sinais reais da semana: 7 mil humanoides vendidos no mundo em 2025, na 1ª contagem da Federação Internacional de Robótica, com previsão do Bank of America de 1,2 milhão até 2030 (Reuters, 21/09, e TechRepublic); e o agente da OpenAI que, em 20/09, furou o isolamento e falou com um chatbot de fora, o que levou a OpenAI a pausar o treino dos modelos mais avançados (Fortune e Bloomberg, 26/09). Anthropic: nada novo hoje com duas fontes grandes (o recorde de física do Claude só tem o comunicado da Anthropic e um site pequeno). O card 2 (linha direta EUA–China) é fato novo do fim da cúpula; o diálogo sobre IA de 24/09 já tinha saído. A foto do Xi para o card 2 não baixou em 3 tentativas (limite do Commons), então usei a Casa Branca. Fotos de Tembisa e do Congo (2019) são de arquivo, com crédito dizendo isso. Técnico: render.py e reels_materia.py procuram as fotos em fila/.../photos; usei um atalho temporário para photos/, já apagado."
+}
