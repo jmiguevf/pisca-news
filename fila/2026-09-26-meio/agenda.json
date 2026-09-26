@@ -8,17 +8,31 @@
   {
    "tipo": "reels",
    "quando": "2026-09-26T12:00",
-   "estado": "pendente",
-   "tentativas": 0
+   "estado": "publicado",
+   "tentativas": 1,
+   "links": [
+    "https://www.facebook.com/reel/1560957965784531/",
+    "https://www.instagram.com/reel/DdwXgnfj_FO/",
+    "https://www.threads.com/@pisca.news/post/DdwYAQskZh4",
+    "https://www.youtube.com/shorts/mF5a5RAMUNk"
+   ],
+   "publicado_em": "2026-09-26T12:38"
   },
   {
    "tipo": "carrossel",
    "quando": "2026-09-26T13:00",
-   "estado": "pendente",
-   "tentativas": 0
+   "estado": "publicado",
+   "tentativas": 1,
+   "links": [
+    "https://www.facebook.com/122115896169469462/posts/122117879271469462",
+    "https://www.instagram.com/p/DdwZnSonfT8/",
+    "https://www.threads.com/@pisca.news/post/DdwZvaKEao8"
+   ],
+   "publicado_em": "2026-09-26T12:53"
   }
  ],
  "problemas": {},
  "minutos_agente": 18,
- "custo_referencia_usd": 6.771182999999993
+ "custo_referencia_usd": 6.771182999999993,
+ "fechada": true
 }
