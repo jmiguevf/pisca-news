@@ -64,8 +64,19 @@ def publica(tipo, ag):
 
 
 
-def stories_recentes(minutos=20):
-    """Confere na API se os stories do Instagram e do Facebook saíram agora (para o relatório)."""
+def stories_recentes(minutos=20, tentativas=4):
+    """Confere na API se os stories do Instagram e do Facebook saíram agora (para o relatório).
+    O story do Facebook às vezes aparece na API 1–2 min depois: tenta de novo antes de avisar."""
+    import time
+    for _ in range(tentativas):
+        out = _stories(minutos)
+        if any(l.startswith("Story Facebook") for l in out) and any(l.startswith("Story Instagram") for l in out):
+            return out
+        time.sleep(30)
+    return out
+
+
+def _stories(minutos):
     import requests, time
     tk, ig, fb = os.environ.get("META_PAGE_TOKEN"), os.environ.get("IG_USER_ID"), os.environ.get("FB_PAGE_ID")
     G = "https://graph.facebook.com/v23.0"
