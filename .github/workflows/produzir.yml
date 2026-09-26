@@ -55,7 +55,7 @@ jobs:
           if "${{ github.event_name }}" == "workflow_dispatch":
               print("sim=1"); raise SystemExit
           a = d.datetime.utcnow() - d.timedelta(hours=3); t = a.hour + a.minute / 60
-          J = {"manha": (4.5, 8.5), "meio": (9.5, 12.5), "noite": (15.5, 19.0)}
+          J = {"manha": (4.5, 9.0), "meio": (9.0, 15.0), "noite": (15.0, 21.0)}
           ed = next((e for e, (x, y) in J.items() if x <= t < y), None)
           feito = ed and os.path.exists(f"fila/{a:%Y-%m-%d}-{ed}/agenda.json")
           print("sim=" + ("1" if ed and not feito else "0"))

@@ -19,7 +19,7 @@ TEMPO = int(os.environ.get("TEMPO_PRODUCAO_MIN", "95")) * 60
 
 # 25/09: o agendamento do GitHub atrasa horas ou nem dispara. O fluxo agora roda a cada 15 min e só produz a
 # edição cuja JANELA está aberta e que ainda não foi feita (idempotente).
-JANELAS = {"manha": (4.5, 8.5), "meio": (9.5, 12.5), "noite": (15.5, 19.0)}
+JANELAS = {"manha": (4.5, 9.0), "meio": (9.0, 15.0), "noite": (15.0, 21.0)}
 
 
 def escolhe_edicao():
