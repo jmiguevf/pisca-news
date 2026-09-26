@@ -1,3 +1,26 @@
+[2026-09-25T22:58] REELS
+🤖 Elon Musk descreveu como vai ser o mundo em 2036 — e, para ele, os humanos não estarão no comando.
+
+🎙️ Foi numa entrevista à The Economist, em julho
+🧠 A IA pode superar a soma da inteligência humana em uns 5 anos (~2031)
+🐒 Humanos no comando em 10 anos? “Acho improvável”
+💸 “O dinheiro não vai importar em 2036”
+🌱 Trabalhar vai ser opcional: “uma boa comparação seria a jardinagem”
+☠️ Ele confirmou que já estimou em 10% a 20% a chance de robôs assassinos acabarem com a humanidade
+
+❓ Vai acontecer? É previsão, não fato. Musk já errou prazos (prometeu carro 100% autônomo para uns 3 anos depois de 2015), e a Forbes lembra que energia, terra e minerais seguem escassos.
+
+📲 Manda pro amigo que acha que a IA nunca vai mandar em nada.
+
+💬 Você acredita na previsão do Musk para 2036?
+
+O Pisca é feito com o Claude, da Anthropic.
+
+Fontes: The Economist, Gizmodo, Forbes e Yahoo Finance.
+📷 Fotos (Wikim
+
+=====
+
 [2026-09-25T22:23] FEED
 Piscada da noite (sex, 25/09) — piscou? O mundo já mudou:
 
@@ -841,28 +864,3 @@ Fontes: Reuters, WSJ, Investing.com. Fotos: Wikimedia Commons (créditos no víd
 Apuração e arte feitas por IA (Claude, da Anthropic). As regras são de gente: @pisca.news
 
 #noticias #tecnologia #piscanews
-
-=====
-
-[2026-09-18T22:21] FEED
-Piscada da noite (sex, 18/09) — piscou? O mundo já mudou:
-
-1. Buffett, aos 96, deixa a presidência da Berkshire
-2. Huawei antecipa chip de IA para o 1º tri de 2027
-3. Lucid e Bolt anunciam 25 mil robotáxis na Europa
-4. Rei Charles reúne chefes de IA na Escócia
-5. Manus busca US$ 4 bi após veto de Pequim à Meta
-6. EUA somam 3.471 casos de sarampo neste ano
-7. Kennedy nomeia 8 para painel de prevenção dos EUA
-8. NHS inglês libera Enhertu para mil mulheres por ano
-9. Anestésico reduz dor na inserção de DIU, diz estudo
-
-Arraste para ver o resumo de cada uma.
-
-Manda o card 1 pro seu amigo que investe: aos 96 anos, Buffett largou a cadeira que ocupava desde 1970 e deixou com o filho.
-
-Amanhã cedo tem mais.
-Fontes: Reuters, AP, Bloomberg, STAT News, JAMA. Fotos: Wikimedia Commons (créditos nas artes).
-Apuração e arte feitas por IA (Claude, da Anthropic). As regras são de gente: @pisca.news
-
-#no

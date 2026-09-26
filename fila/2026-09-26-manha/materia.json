@@ -1,0 +1,73 @@
+{
+ "brand": "PISCA",
+ "handle": "@pisca.news",
+ "date_label": "SÁB · 26 SET",
+ "tag": "RISCO DA IA",
+ "gancho": {
+  "linha": "Bill Gates fez um alerta sobre a IA",
+  "promessa": "e o número que ele usou assusta",
+  "dur": 5.0,
+  "credito": "Foto: European Commission / Lukasz Kobus / CC BY 4.0 · Bill Gates",
+  "foto_cheia": "photos/g26_ec2.jpg",
+  "zoom_y": 700,
+  "classe": "sm"
+ },
+ "blocos": [
+  {
+   "tipo": "numero",
+   "kicker": "Gates, à NBC: a IA já é poderosa o bastante para provocar eventos que causem",
+   "valor": "1 bilhão",
+   "legenda": "de mortes. “A IA certamente é poderosa o bastante”, disse o fundador da Microsoft.",
+   "credito": "Foto: Mueller / MSC / CC BY 3.0 DE · Bill Gates",
+   "dur": 7.0,
+   "foto_cheia": "photos/g26_msc2.jpg",
+   "zoom_y": 500
+  },
+  {
+   "tipo": "texto",
+   "chip": "A ARMA",
+   "titulo": "“Nunca houve arma tão poderosa”",
+   "texto": "…quanto pessoas mal-intencionadas usando as ferramentas de IA mais novas, disse ele.",
+   "credito": "Foto: DFID / CC BY 2.0 · Bill Gates",
+   "dur": 6.6,
+   "foto_cheia": "photos/g26_dfid.jpg",
+   "posicao": "90% 30%",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "OS ALVOS",
+   "titulo": "Hospitais, bancos, energia",
+   "texto": "Em agosto, Gates escreveu que a IA pode ser usada em ataques hackers, fraudes e desinformação contra hospitais, instituições financeiras, redes de energia e governos.",
+   "credito": "Foto: Dennis G. Jarvis / CC BY-SA 2.0 · sala de controle de energia (ilustrativa)",
+   "dur": 7.4,
+   "foto_cheia": "photos/g26_controle.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "QUEM SEGURA?",
+   "titulo": "Só as empresas não bastam",
+   "texto": "“Ninguém acha que a autorregulação basta.” Para Gates, polícia e políticos precisam discutir as proteções — e isso tem de ser obrigatório.",
+   "credito": "Foto: Bradley Weber / CC BY 2.0 · Congresso dos EUA",
+   "dur": 7.0,
+   "foto_cheia": "photos/g26_capitolio2.jpg",
+   "zoom_y": 700
+  },
+  {
+   "tipo": "texto",
+   "chip": "É VERDADE?",
+   "ressalva": true,
+   "titulo": "Vai acontecer? Ele não disse isso",
+   "texto": "Gates falou do poder da IA nas mãos erradas, não fez uma previsão. A entrevista completa vai ao ar neste domingo (27/09).",
+   "credito": "Foto: Kuhlmann / MSC / CC BY 3.0 DE · Bill Gates",
+   "dur": 6.6,
+   "foto_cheia": "photos/g26_msc1.jpg",
+   "zoom_y": 600
+  }
+ ],
+ "fecho": {
+  "linha": "Manda pro amigo\nque acha que a IA\né só um chatbot:",
+  "cta": "O alerta veio de Bill Gates."
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": "2026-09-26-manha",
+ "edicao": "manha",
+ "issue": 14,
+ "run_id": "36231053998",
+ "artefato": "edicao-2026-09-26-manha",
+ "itens": [
+  {
+   "tipo": "reels",
+   "quando": "2026-09-26T07:00",
+   "estado": "pendente",
+   "tentativas": 0
+  },
+  {
+   "tipo": "carrossel",
+   "quando": "2026-09-26T08:00",
+   "estado": "pendente",
+   "tentativas": 0
+  }
+ ],
+ "problemas": {},
+ "minutos_agente": 23,
+ "custo_referencia_usd": 8.852307599999998
+}
