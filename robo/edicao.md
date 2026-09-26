@@ -82,6 +82,8 @@ Regras (todas valem para o carrossel e para o Reels):
 3. Folha de quadros: `python3 robo/folha_video.py $PASTA/reels.mp4 $PASTA/reels_folha.jpg $PASTA/materia.json` e abra a folha (Read).
    Texto só entre 250 px do topo e 1520 px (área segura do Reels), rosto inteiro, foto certa.
 4. Legenda em `$PASTA/legenda.txt` no estilo de `exemplos/reels_legenda.txt`: curta (até 1.200 caracteres), emoji
+   PRIMEIRA LINHA DA LEGENDA DO REELS EM CAIXA ALTA (26/09, dados das páginas que mais viralizam: "ISSO TRARIA IMPACTOS
+   DESASTROSOS", "PORNOGRAFIA NO INSTAGRAM EM MINUTOS") — a frase mais forte e verdadeira do Reels, sem exagero.
    marcando as linhas, chamada para mandar com destinatário, pergunta, "Fontes: ...", "📷 Fotos (Wikimedia Commons): ..."
    com autor e licença, até 5 hashtags.
 
